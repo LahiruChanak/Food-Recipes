@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Lankan Yellow Rice - Tasty Tales</title>
+    <link rel="icon" href="/assets/images/logo.png" />
+    <style>
+      /* body css */
+      body {
+        font-family: sans-serif;
+      }
+
+      /* hyperlink css */
+      a {
+        text-decoration: none;
+        color: #1b1a18;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #fe5f55;
+      }
+
+      /* checkbox css */
+      .checkbox-label input[type="checkbox"] {
+        cursor: pointer;
+      }
+      .checkbox-label input[type="checkbox"]:checked + span {
+        cursor: pointer;
+        text-decoration: line-through;
+        color: #808080;
+        transition: text-decoration 0.2s ease-in-out;
+      }
+
+      /* bold text css */
+      strong {
+        color: #808080;
+        padding-left: 25px;
+      }
+
+      /* search bar css */
+      .search-bar {
+        display: flex;
+        width: 250px;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+      }
+
+      .search-bar button {
+        background: none;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+<<<<<<< HEAD
+      /* icon css */
+      .icon:hover {
+=======
+      /* search icon css */
+      .search-icon:hover {
+>>>>>>> 564b8eb05d3954a784f472688f09c91a58511d98
+        filter: brightness(0) saturate(100%) invert(48%) sepia(93%)
+          saturate(3250%) hue-rotate(332deg) brightness(102%) contrast(101%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- /////////////////// navigation bar /////////////////// -->
+    <header style="display: flex; justify-content: center; align-items: center">
+      <div style="display: flex; align-items: center">
+        <!-- logo -->
+        <div style="margin-right: 20px">
+          <img
+            src="/assets/images/logo.png"
+            alt="Tasty Tales logo"
+            style="width: auto; height: 100px"
+          />
+        </div>
+
+        <!-- navigation links -->
+        <nav>
+          <div style="display: flex">
+            <div style="margin-right: 30px">
+              <a href="/pages/homePage.html">Home</a>
+            </div>
+
+            <div style="margin-right: 30px">
+              <a href="/pages/contact.html">Contact</a>
+            </div>
+
+            <div style="margin-right: 30px">
+              <a href="/pages/aboutMe.html">About Me</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- search bar -->
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search..."
+            style="
+              border: none;
+              margin-left: 15px;
+              outline: none;
+              font-size: 15px;
+            "
+          />
+          <button>
+            <i class="fas fa-search">
+              <img
+                src="/assets/icons/search.svg"
+                alt="search icon"
+                style="width: 25px; vertical-align: middle"
+<<<<<<< HEAD
+                class="icon"
+=======
+                class="search-icon"
+>>>>>>> 564b8eb05d3954a784f472688f09c91a58511d98
+              />
+            </i>
+          </button>
+        </div>
+
+        <!-- social media icons -->
+        <div
+          style="
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <a href="https://www.facebook.com/hungrylankan/" target="_blank">
+            <img
+              src="/assets/icons/facebook.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.youtube.com/HungryLankan" target="_blank">
+            <img
+              src="/assets/icons/youtube.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.pinterest.com/hlankan/" target="_blank">
+            <img
+              src="/assets/icons/pinterest.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.tiktok.com/@hungrylankan" target="_blank">
+            <img
+              src="/assets/icons/tiktok.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <br />
+
+    <!-- ///////////////////////// recipe /////////////////////// -->
+
+    <main>
+      <h2>Sri Lankan Yellow Rice</h2>
+
+      <section style="width: 1000px">
+        <!-- to side recipe details  -->
+        <div style="display: flex; align-items: center">
+          <!-- image -->
+          <div style="padding-left: 50px">
+            <img
+              src="/assets/images/yellowRice/yr1.jpg"
+              style="width: 215px; height: 285px"
+              alt="image1 of yellow rice"
+            />
+          </div>
+
+          <!-- sided recipe details -->
+          <div style="padding: 50px; font-size: 15px">
+            <!-- difficulty -->
+            <div style="margin-bottom: 10px">
+              <img
+                src="/assets/icons/difficult.png"
+                alt="Difficulty icon"
+                style="width: 20px; height: 20px; vertical-align: middle"
+              />
+              Difficulty
+              <br />
+              <strong>Beginner</strong>
+            </div>
+
+            <br />
+
+            <!-- prep, cook, and total time -->
+            <div style="margin-bottom: 10px">
+              <img
+                src="/assets/icons/time.png"
+                alt="Time icon"
+                style="width: 20px; height: 20px; vertical-align: middle"
+              />
+              Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
+              &emsp;&emsp;&emsp;&emsp; Total Time
+              <!-- (&nbsp; => single space), (&ensp; => two spaces), (&emsp; => four spaces) -->
+              <br />
+              <strong>
+                10 mins &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; 15 mins
+                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 25 mins
+              </strong>
+            </div>
+
+            <br />
+
+            <!-- servings -->
+            <div style="margin-bottom: 10px">
+              <img
+                src="/assets/icons/servings.png"
+                alt="Servings icon"
+                style="width: 20px; height: 20px; vertical-align: middle"
+              />
+              Servings
+              <br />
+              <strong>4</strong>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
+
+        <div style="padding-left: 50px">
+          <!-- description -->
+          <div>
+            <h3><u>Description</u></h3>
+            <blockquote>
+              An easy way to make delicious Sri Lankan yellow rice in the
+              instant pot or rice cooker. A must for your Sri Lankan party menu.
+              This recipe is suitable for the 4 servings.
+            </blockquote>
+          </div>
+
+          <br />
+
+          <!-- ingredients -->
+          <div>
+            <h3><u>Ingredients</u></h3>
+            <blockquote>
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 1.5 cup Washed and drained rice </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> cloves of garlic </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 1 inch piece of ginger </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 1 tbsp butter </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 4 cardamom </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 4 cloves </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 25 black peppercorns </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 0.25 tsp turmeric powder </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 1 sprig of curry leaves </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 1 pandan leaf </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 0.25 cup chopped onion </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 2 cup chicken or vegetable stock </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span>
+                  0.25 cup unsweetened coconut cream (or thick coconut milk)
+                </span>
+              </label>
+            </blockquote>
+          </div>
+
+          <br />
+
+          <!-- steps -->
+          <div>
+            <h3><u>Instructions</u></h3>
+            <ol>
+              <li>
+                Wash rice thoroughly until water runs clear and then drain all
+                the water Pound ginger and garlic using a mortar and a pestle.
+                You should have about 1 tbsp of ginger garlic paste. Do not use
+                the store-bought one. Open the cardamom pod a bit by gently
+                crushing them using the flat side of your knife.
+              </li>
+              <br />
+              <li>
+                Turn on the multicooker/instant pot (or rice cooker) and select
+                the saute mode. Add butter. When the butter is melting, add
+                cardamoms, cloves and peppercorns. And add pandan leaves and
+                curry leaves. Mix for a few seconds.
+              </li>
+              <br />
+              <img
+                src="/assets/images/yellowRice/yr2.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image2 of yellow rice"
+              />
+              <br /><br />
+              <li>
+                Now add ginger garlic paste and chopped onion. Keep. Stirring
+                until they get light brown. If they seem to burn, turn off the
+                multicooker/instant pot and add a bit more butter.
+              </li>
+              <br />
+              <img
+                src="/assets/images/yellowRice/yr3.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image3 of yellow rice"
+              />
+              <br /><br />
+              <li>
+                When onions are soft and brown, add your washed and drained
+                rice. And add turmeric powder. Now mix with the onion mixture.
+              </li>
+              <br />
+              <img
+                src="/assets/images/yellowRice/yr4.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image4 of yellow rice"
+              />
+              <br /><br />
+              <li>
+                Then add the chicken/vegetable stock and coconut milk. Stir.
+              </li>
+              <br />
+              <img
+                src="/assets/images/yellowRice/yr5.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image5 of yellow rice"
+              />
+              <br /><br />
+              <li>Check for salt. Add more if you need salt. Stir.</li>
+              <br />
+              <img
+                src="/assets/images/yellowRice/yr6.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image6 of yellow rice"
+              />
+              <br /><br />
+              <li>
+                Then cover and select the “rice” preset on the multicooker. If
+                you use a rice cooker, then cook as you normally do.
+              </li>
+              <br />
+              <img
+                src="/assets/images/yellowRice/yr7.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image7 of yellow rice"
+              />
+              <br /><br />
+              <li>
+                Remove the cardamom pods, cloves, and pandan leaves. You can see
+                them around the edges sitting on top of the rice. So it's easy
+                to spot them.
+              </li>
+              <br />
+              <img
+                src="/assets/images/yellowRice/yr8.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image8 of yellow rice"
+              />
+              <br /><br />
+              <li>And fluff the rice carefully without breaking the grains.</li>
+              <br />
+              <img
+                src="/assets/images/yellowRice/yr9.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image9 of yellow rice"
+              />
+              <br /><br />
+              <li>
+                Use fried onions, fried cashews, peas(optional) to decorate.
+              </li>
+            </ol>
+          </div>
+
+          <br />
+
+          <h4 style="text-align: center">Enjoy your meal !</h4>
+        </div>
+      </section>
+    </main>
+
+    <br />
+
+    <!-- footer -->
+    <footer style="background-color: #1b1a18">
+      <hr />
+
+      <h5 style="color: white; text-align: center">
+        &copy; Copyright 2024 Tasty Tales. All Rights Reserved. Privacy Policy.
+      </h5>
+
+      <hr />
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Lankan Hoppers - Tasty Tales</title>
+    <link rel="icon" href="/assets/images/logo.png" />
+    <style>
+      /* body css */
+      body {
+        font-family: sans-serif;
+      }
+
+      /* hyperlink css */
+      a {
+        text-decoration: none;
+        color: #1b1a18;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #fe5f55;
+      }
+
+      /* checkbox css */
+      .checkbox-label input[type="checkbox"] {
+        cursor: pointer;
+      }
+      .checkbox-label input[type="checkbox"]:checked + span {
+        cursor: pointer;
+        text-decoration: line-through;
+        color: #808080;
+        transition: text-decoration 0.2s ease-in-out;
+      }
+
+      /* bold text css */
+      strong {
+        color: #808080;
+        padding-left: 25px;
+      }
+
+      /* search bar css */
+      .search-bar {
+        display: flex;
+        width: 250px;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+      }
+
+      .search-bar button {
+        background: none;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+<<<<<<< HEAD
+      /* icon css */
+      .icon:hover {
+=======
+      /* search icon css */
+      .search-icon:hover {
+>>>>>>> 564b8eb05d3954a784f472688f09c91a58511d98
+        filter: brightness(0) saturate(100%) invert(48%) sepia(93%)
+          saturate(3250%) hue-rotate(332deg) brightness(102%) contrast(101%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- /////////////////// navigation bar /////////////////// -->
+    <header style="display: flex; justify-content: center; align-items: center">
+      <div style="display: flex; align-items: center">
+        <!-- logo -->
+        <div style="margin-right: 20px">
+          <img
+            src="/assets/images/logo.png"
+            alt="Tasty Tales logo"
+            style="width: auto; height: 100px"
+          />
+        </div>
+
+        <!-- navigation links -->
+        <nav>
+          <div style="display: flex">
+            <div style="margin-right: 30px">
+              <a href="/pages/homePage.html">Home</a>
+            </div>
+
+            <div style="margin-right: 30px">
+              <a href="/pages/contact.html">Contact</a>
+            </div>
+
+            <div style="margin-right: 30px">
+              <a href="/pages/aboutMe.html">About Me</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- search bar -->
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search..."
+            style="
+              border: none;
+              margin-left: 15px;
+              outline: none;
+              font-size: 15px;
+            "
+          />
+          <button>
+            <i class="fas fa-search">
+              <img
+                src="/assets/icons/search.svg"
+                alt="search icon"
+                style="width: 25px; vertical-align: middle"
+<<<<<<< HEAD
+                class="icon"
+=======
+                class="search-icon"
+>>>>>>> 564b8eb05d3954a784f472688f09c91a58511d98
+              />
+            </i>
+          </button>
+        </div>
+
+        <!-- social media icons -->
+        <div
+          style="
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <a href="https://www.facebook.com/hungrylankan/" target="_blank">
+            <img
+              src="/assets/icons/facebook.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.youtube.com/HungryLankan" target="_blank">
+            <img
+              src="/assets/icons/youtube.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.pinterest.com/hlankan/" target="_blank">
+            <img
+              src="/assets/icons/pinterest.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.tiktok.com/@hungrylankan" target="_blank">
+            <img
+              src="/assets/icons/tiktok.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <br />
+
+    <!-- ///////////////////////// recipe /////////////////////// -->
+    <main>
+      <h2>Sri Lankan Hoppers</h2>
+
+      <section style="width: 1000px">
+        <!-- to side recipe details  -->
+        <div style="display: flex; align-items: center">
+          <!-- image -->
+          <div style="padding-left: 50px">
+            <img
+              src="/assets/images/hoppers/h1.jpg"
+              style="width: 215px; height: 285px"
+              alt="image1 of hoppers"
+            />
+          </div>
+
+          <!-- sided recipe details -->
+          <div style="padding: 50px; font-size: 15px">
+            <!-- difficulty -->
+            <div style="margin-bottom: 10px">
+              <img
+                src="/assets/icons/difficult.png"
+                alt="Difficulty icon"
+                style="width: 20px; height: 20px; vertical-align: middle"
+              />
+              Difficulty
+              <br />
+              <strong> Intermediate </strong>
+            </div>
+
+            <br />
+
+            <!-- prep, cook, and total time -->
+            <div style="margin-bottom: 10px">
+              <img
+                src="/assets/icons/time.png"
+                alt="Time icon"
+                style="width: 20px; height: 20px; vertical-align: middle"
+              />
+              Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
+              &emsp;&emsp;&emsp;&emsp; Total Time
+              <!-- (&nbsp; => single space), (&ensp; => two spaces), (&emsp; => four spaces) -->
+              <br />
+              <strong>
+                19 hrs &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 30 mins
+                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&ensp; 19 hrs 30 mins
+              </strong>
+            </div>
+
+            <br />
+
+            <!-- servings -->
+            <div style="margin-bottom: 10px">
+              <img
+                src="/assets/icons/servings.png"
+                alt="Servings icon"
+                style="width: 20px; height: 20px; vertical-align: middle"
+              />
+              Servings
+              <br />
+              <strong>4</strong>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
+
+        <div style="padding-left: 50px">
+          <!-- description -->
+          <div>
+            <h3><u>Description</u></h3>
+            <blockquote>
+              Easy Sri Lankan hoppers recipe that uses rice flour. And uses
+              18-hour fermentation to get the authentic hopper taste. This
+              recipe is suitable for the 4 servings.
+            </blockquote>
+          </div>
+
+          <br />
+
+          <!-- ingredients -->
+          <div>
+            <h3><u>Ingredients</u></h3>
+            <blockquote>
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 400 g Rice flour </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> pinch of yeast </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 1.5 cup water (175mg) </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 400 ml of coconut milk </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> tsp sugar </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> salt as needed </span>
+              </label>
+            </blockquote>
+          </div>
+
+          <br />
+          <!-- steps -->
+          <div>
+            <h3><u>Instructions</u></h3>
+            <ol>
+              <li>
+                The night before you make hoppers (18hrs - 20hrs earlier) make a
+                very thigh dough-like paste using rice flour, yeast, and water.
+                You can use a spoon or fork to mix this. Then cover with and let
+                it ferment for 18 to 20 hours. It's okay to make them a little
+                earlier or a little later. Do NOT add sugar or salt.
+              </li>
+              <br />
+              <img
+                src="/assets/images/hoppers/h2.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image2 of hoppers"
+              />
+              <br /><br />
+              <li>
+                18 to 20 hours later you should be able to notice that there are
+                some bubbles on the surface and the paste has risen a little
+                bit.
+              </li>
+              <br />
+              <img
+                src="/assets/images/hoppers/h3.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image2 of hoppers"
+              />
+              <br /><br />
+              <li>
+                After 18 - 20 hours add sugar and coconut milk and make a
+                somewhat thick batter. Not too thick or not too thin. Careful
+                when you add coconut milk. You might need less or more than
+                200ml. So add a little by little and see the consistency is
+                right. Do NOT add salt yet. Now cover again and let it sit for
+                30 mins.
+              </li>
+              <br />
+              <img
+                src="/assets/images/hoppers/h4.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image3 of hoppers"
+              />
+              <br /><br />
+              <li>
+                Meanwhile, add a generous amount of oil to your hopper pan. Let
+                the oil heat a bit and then add an egg yolk if your pan is too
+                sticky. ( Or you can use the whole egg if your pan is old and
+                well seasoned) break the egg yolk in the oil as it frying and
+                rub it all in the pan using your spoon. Then remove the oil and
+                the egg yolk to a heatproof bowl. We are going to use this oil
+                to rub the pan before making each hopper. **Skip this step
+                completely if you're using a nonstick hopper pan.
+              </li>
+              <br />
+              <img
+                src="/assets/images/hoppers/h5.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image4 of hoppers"
+              />
+              <br /><br />
+              <li>
+                After 30 mins of mixing coconut milk and sugar, add salt to the
+                batter and mix very well.
+              </li>
+              <br />
+              <li>
+                Heat the hopper pan on medium heat, add a ladle full of batter
+                to the center. and swirl the pan around to coat the inside with
+                the batter. Now cover the pan and let it cook for about 45
+                seconds or until it's done.
+              </li>
+              <br />
+              <img
+                src="/assets/images/hoppers/h6.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image6 of hoppers"
+              />
+              <br /><br />
+              <li>
+                and swirl the pan around to coat the inside with the batter. Now
+                cover the pan. Do not open the lid again and again.
+              </li>
+              <br />
+              <img
+                src="/assets/images/hoppers/h7.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image7 of hoppers"
+              />
+              <br /><br />
+              <li>and let it cook for about 45 seconds or until it's done.</li>
+              <br />
+              <img
+                src="/assets/images/hoppers/h8.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image8 of hoppers"
+              />
+              <br /><br />
+              <li>
+                For egg hoppers, pour the batter ( a little less than plain
+                hoppers), break an egg in, add salt and pepper, cover, and cook
+                on low heat until you get the desired texture.
+              </li>
+              <br />
+              <img
+                src="/assets/images/hoppers/h9.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image9 of hoppers"
+              />
+            </ol>
+          </div>
+
+          <br />
+
+          <h4 style="text-align: center">Enjoy your meal !</h4>
+        </div>
+      </section>
+    </main>
+
+    <br />
+
+    <!-- footer -->
+    <footer style="background-color: #1b1a18">
+      <hr />
+
+      <h5 style="color: white; text-align: center">
+        &copy; Copyright 2024 Tasty Tales. All Rights Reserved. Privacy Policy.
+      </h5>
+
+      <hr />
+    </footer>
+  </body>
+</html>

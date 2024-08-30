@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Tales - Recipes</title>
+    <link rel="icon" href="/assets/images/logo.png" />
+    <style>
+      /* body css */
+      body {
+        font-family: sans-serif;
+      }
+
+      /* hyperlink css */
+      a {
+        text-decoration: none;
+        color: #1b1a18;
+      }
+
+      /* hyperlink hover css */
+      a:hover {
+        text-decoration: underline;
+        color: #fe5f55;
+        font-weight: bold;
+      }
+
+      /* bold text css */
+      strong {
+        font-size: 20px;
+      }
+
+      /* paragraph css */
+      p {
+        color: #808080;
+        font-size: 15px;
+        margin-right: 25px;
+      }
+
+      /* horizontal line css */
+      hr {
+        border: 1px solid #ccc;
+        width: 73%;
+        float: right;
+      }
+
+      /* search bar css */
+      .search-bar {
+        display: flex;
+        width: 250px;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+      }
+
+      .search-bar button {
+        background: none;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- /////////////////// navigation bar /////////////////// -->
+    <header style="display: flex; justify-content: center; align-items: center">
+      <div style="display: flex; align-items: center">
+        <!-- logo -->
+        <div style="margin-right: 20px">
+          <img
+            src="/assets/images/logo.png"
+            alt="Tasty Tales logo"
+            style="width: auto; height: 100px"
+          />
+        </div>
+
+        <!-- navigation links -->
+        <nav>
+          <div style="display: flex">
+            <div style="margin-right: 30px; color: #fe5f55">
+              <a href="/pages/homePage.html">
+                <b style="color: #fe5f55">Home</b>
+              </a>
+            </div>
+
+            <div style="margin-right: 30px">
+              <a href="/pages/contact.html">Contact</a>
+            </div>
+
+            <div style="margin-right: 30px">
+              <a href="/pages/aboutMe.html">About Me</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- search bar -->
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search..."
+            style="
+              border: none;
+              margin-left: 15px;
+              outline: none;
+              font-size: 15px;
+            "
+          />
+          <button>
+            <i class="fas fa-search">
+              <img
+                src="/assets/icons/search.svg"
+                alt="search icon"
+                style="width: 25px; vertical-align: middle"
+              />
+            </i>
+          </button>
+        </div>
+
+        <!-- social media icons -->
+        <div
+          style="
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <a href="https://www.facebook.com/hungrylankan/" target="_blank">
+            <img
+              src="/assets/icons/facebook.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.youtube.com/HungryLankan" target="_blank">
+            <img
+              src="/assets/icons/youtube.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.pinterest.com/hlankan/" target="_blank">
+            <img
+              src="/assets/icons/pinterest.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.tiktok.com/@hungrylankan" target="_blank">
+            <img
+              src="/assets/icons/tiktok.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <br /><br /><br />
+
+    <!-- //////////////////// recipes list /////////////////// -->
+    <main>
+      <section style="width: 1000px">
+        <!-- yellow rice -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px">
+          <div>
+            <a href="/pages/yellowRice.html" target="_blank">
+              <img
+                src="/assets/images/yellowRice/yr1.jpg"
+                alt="Image of Yellow Rice"
+                style="width: 200px; height: 200px; padding-left: 50px"
+              />
+            </a>
+          </div>
+
+          <div style="padding-left: 40px">
+            <a href="/pages/yellowRice.html" target="_blank">
+              <strong>Sri Lankan Yellow Rice</strong>
+            </a>
+            <p>
+              An easy way to make delicious Sri Lankan yellow rice in the
+              instant pot or rice cooker. A must for your Sri Lankan party
+              menu...
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <br /><br />
+
+        <!-- lunu miris -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px">
+          <div>
+            <a href="/pages/lunuMiris.html" target="_blank">
+              <img
+                src="/assets/images/lunuMiris/lm1.jpg"
+                alt="Image of Lunu Miris"
+                style="width: 200px; height: 200px; padding-left: 50px"
+              />
+            </a>
+          </div>
+
+          <div style="padding-left: 40px">
+            <a href="/pages/lunuMiris.html" target="_blank">
+              <strong>Sri Lankan Lunu Miris</strong>
+            </a>
+            <p>
+              Sri Lankan Lunu Miris is a beloved traditional condiment that's
+              super easy to make. Made from finely chopped onions, red chili
+              flakes, salt, lime juice, and Maldive fish, it packs a punch with
+              its bold, spicy, citrusy, salty, and umami flavors. It's a
+              must-have for some Sri Lankan dishes, including milk rice
+              (Kiribath), coconut rotti, ...
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <br /><br />
+
+        <!-- cajun shrimp -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px">
+          <div>
+            <a href="/pages/cajunShrimp.html" target="_blank">
+              <img
+                src="/assets/images/cajunShrimp/cs1.jpg"
+                alt="Image of Cajun Shrimp"
+                style="width: 200px; height: 200px; padding-left: 50px"
+              />
+            </a>
+          </div>
+
+          <div style="padding-left: 40px">
+            <a href="/pages/cajunShrimp.html" target="_blank">
+              <strong>Cajun Shrimp in Air Fryer</strong>
+            </a>
+            <p>
+              This Cajun Shrimp in the Air fryer is one of the easiest quickest
+              recipes you can make. You only need 5 ingredients if you have a
+              cajun seasoning at home. If you don't, I also added my super
+              simple cajun seasoning recipe here as well...
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <br /><br />
+
+        <!-- hoppers -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px">
+          <div>
+            <a href="/pages/hoppers.html" target="_blank">
+              <img
+                src="/assets/images/hoppers/h1.jpg"
+                alt="Image of Hoppers"
+                style="width: 200px; height: 200px; padding-left: 50px"
+              />
+            </a>
+          </div>
+          <div style="padding-left: 40px">
+            <a href="/pages/hoppers.html" target="_blank">
+              <strong>Sri Lankan Hoppers</strong>
+            </a>
+            <p>
+              Sri Lankan Hoppers recipe that uses long 18-20 hour fermentation
+              to get the authentic Hopper taste. The ultimate Sri Lankan street
+              food that everyone loves. I've never met a person who doesn't like
+              these crispy coconutty Sri Lankan hoppers. I have no idea why
+              these are called Hoppers. Maybe because these are too good that
+              you would jump for joy when you taste...
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <br /><br />
+
+        <!-- kottu -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px">
+          <div>
+            <a href="/pages/chickenKottu.html" target="_blank">
+              <img
+                src="/assets/images/chickenKottu/ck1.jpg"
+                alt="Image of Chicken Kottu"
+                style="width: 200px; height: 200px; padding-left: 50px"
+              />
+            </a>
+          </div>
+          <div style="padding-left: 40px">
+            <a href="/pages/chickenKottu.html" target="_blank">
+              <strong>Sri Lankan Chicken Kottu</strong>
+            </a>
+            <p>
+              Chicken kottu - The best and the most popular Sri Lankan street
+              food and probably the most popular Sri Lankan food in the world.
+              It's a mix of roti pieces, some veggies, eggs, and a curry sauce.
+              Chicken curry in this case...
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <br /><br />
+
+        <!-- biryani -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px">
+          <div>
+            <a href="/pages/chickenDumBiryani.html" target="_blank">
+              <img
+                src="/assets/images/chickenBiryani/cb1.jpg"
+                alt="Image of Chicken Dum Biryani"
+                style="width: 200px; height: 200px; padding-left: 50px"
+              />
+            </a>
+          </div>
+          <div style="padding-left: 40px">
+            <a href="/pages/chickenDumBiryani.html" target="_blank">
+              <strong>Chicken Dum Biryani (Kacchi style)</strong>
+            </a>
+            <p>
+              The BEST chicken dum biryani recipe that actually gives you the
+              perfect Biryani every time...
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <br /><br />
+
+    <!-- footer -->
+    <footer style="background-color: #1b1a18">
+      <hr style="border: none; width: 100%; float: none" />
+
+      <h5 style="color: white; text-align: center">
+        &copy; Copyright 2024 Tasty Tales. All Rights Reserved. Privacy Policy
+      </h5>
+
+      <hr style="border: none; width: 100%; float: none" />
+    </footer>
+  </body>
+</html>

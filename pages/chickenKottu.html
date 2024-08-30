@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sri Lankan Chicken Kottu - Tasty Tales</title>
+    <link rel="icon" href="/assets/images/logo.png" />
+    <style>
+      /* body css */
+      body {
+        font-family: sans-serif;
+      }
+
+      /* hyperlink css */
+      a {
+        text-decoration: none;
+        color: #1b1a18;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: #fe5f55;
+      }
+
+      /* checkbox css */
+      .checkbox-label input[type="checkbox"] {
+        cursor: pointer;
+      }
+      .checkbox-label input[type="checkbox"]:checked + span {
+        cursor: pointer;
+        text-decoration: line-through;
+        color: #808080;
+        transition: text-decoration 0.2s ease-in-out;
+      }
+
+      /* bold text css */
+      strong {
+        color: #808080;
+        padding-left: 25px;
+      }
+
+      /* search bar css */
+      .search-bar {
+        display: flex;
+        width: 250px;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+      }
+
+      .search-bar button {
+        background: none;
+        border: none;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+<<<<<<< HEAD
+      /* icon css */
+      .icon:hover {
+=======
+      /* search icon css */
+      .search-icon:hover {
+>>>>>>> 564b8eb05d3954a784f472688f09c91a58511d98
+        filter: brightness(0) saturate(100%) invert(48%) sepia(93%)
+          saturate(3250%) hue-rotate(332deg) brightness(102%) contrast(101%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- /////////////////// navigation bar /////////////////// -->
+    <header style="display: flex; justify-content: center; align-items: center">
+      <div style="display: flex; align-items: center">
+        <!-- logo -->
+        <div style="margin-right: 20px">
+          <img
+            src="/assets/images/logo.png"
+            alt="Tasty Tales logo"
+            style="width: auto; height: 100px"
+          />
+        </div>
+
+        <!-- navigation links -->
+        <nav>
+          <div style="display: flex">
+            <div style="margin-right: 30px">
+              <a href="/pages/homePage.html">Home</a>
+            </div>
+
+            <div style="margin-right: 30px">
+              <a href="/pages/contact.html">Contact</a>
+            </div>
+
+            <div style="margin-right: 30px">
+              <a href="/pages/aboutMe.html">About Me</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- search bar -->
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Search..."
+            style="
+              border: none;
+              margin-left: 15px;
+              outline: none;
+              font-size: 15px;
+            "
+          />
+          <button>
+            <i class="fas fa-search">
+              <img
+                src="/assets/icons/search.svg"
+                alt="search icon"
+                style="width: 25px; vertical-align: middle"
+<<<<<<< HEAD
+                class="icon"
+=======
+                class="search-icon"
+>>>>>>> 564b8eb05d3954a784f472688f09c91a58511d98
+              />
+            </i>
+          </button>
+        </div>
+
+        <!-- social media icons -->
+        <div
+          style="
+            margin-left: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <a href="https://www.facebook.com/hungrylankan/" target="_blank">
+            <img
+              src="/assets/icons/facebook.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.youtube.com/HungryLankan" target="_blank">
+            <img
+              src="/assets/icons/youtube.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.pinterest.com/hlankan/" target="_blank">
+            <img
+              src="/assets/icons/pinterest.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+
+          <a href="https://www.tiktok.com/@hungrylankan" target="_blank">
+            <img
+              src="/assets/icons/tiktok.svg"
+              alt=""
+              style="width: 30px"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <br />
+
+    <main>
+      <h2>Sri Lankan Chicken Kottu</h2>
+
+      <!-- //////////////////// recipe /////////////////// -->
+      <section style="width: 1000px">
+        <!-- to side recipe details  -->
+        <div style="display: flex; align-items: center">
+          <!-- image -->
+          <div style="padding-left: 50px">
+            <img
+              src="/assets/images/chickenKottu/ck1.jpg"
+              alt="Image of Chicken Kottu"
+              style="width: 215px; height: 285px"
+            />
+          </div>
+
+          <!-- sided recipe details -->
+          <div style="padding: 50px; font-size: 15px">
+            <!-- difficulty -->
+            <div style="margin-bottom: 10px">
+              <img
+                src="/assets/icons/difficult.png"
+                alt="author icon"
+                style="width: 20px; height: 20px; vertical-align: middle"
+              />
+              Difficulty
+              <br />
+              <strong> Beginner </strong>
+            </div>
+
+            <br />
+
+            <!-- prep, cook, and total time -->
+            <div style="margin-bottom: 10px">
+              <img
+                src="/assets/icons/time.png"
+                alt="author icon"
+                style="width: 20px; height: 20px; vertical-align: middle"
+              />
+              Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
+              &emsp;&emsp;&emsp;&emsp; Total Time
+              <br />
+              <strong>
+                <!-- &nbsp; => single space, &ensp; => two spaces, &emsp; => four spaces -->
+                15 mins &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; 10 mins
+                &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp; 25 mins
+              </strong>
+            </div>
+
+            <br />
+
+            <!-- servings -->
+            <div style="margin-bottom: 10px">
+              <img
+                src="/assets/icons/servings.png"
+                alt="author icon"
+                style="width: 20px; height: 20px; vertical-align: middle"
+              />
+              Servings
+              <br />
+              <strong> 4 </strong>
+            </div>
+          </div>
+        </div>
+
+        <br />
+
+        <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
+
+        <div style="padding-left: 50px">
+          <!-- description -->
+          <div>
+            <h3><u>Description</u></h3>
+            <blockquote>
+              Chicken kottu - The best and the most popular Sri Lankan street
+              food and probably the most popular Sri Lankan food in the world.
+              It's a mix of roti pieces, some veggies, eggs, and a curry sauce.
+              Chicken curry in this case.
+            </blockquote>
+          </div>
+
+          <br />
+
+          <!-- ingredients -->
+          <div>
+            <h3><u>Ingredients</u></h3>
+
+            <blockquote>
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span>
+                  8 Godamba roti pieces (check description for substitutes)
+                </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> cup chicken curry (broth only) </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 16 chicken pieces from the curry or roast chicken </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 2 cup carrot julianned </span></label
+              >
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 2 cup leek green part sliced </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 1 cup diced tomatoes/ 1 small tomato </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span>
+                  12 inch leek white/light green part cut into rings
+                </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span>
+                  8 chilies sliced (can substitute with chili flakes)
+                </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> tsp garlic & ginger minced </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> 8 tbsp onion </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> egg </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> tbsp oil </span>
+              </label>
+
+              <br /><br />
+
+              <label class="checkbox-label">
+                <input type="checkbox" />
+                <span> salt & pepper as needed </span>
+              </label>
+
+              <br /><br />
+            </blockquote>
+          </div>
+
+          <br />
+
+          <!-- steps -->
+          <div>
+            <h3><u>Instructions</u></h3>
+
+            <ol>
+              <li>
+                Heat oil in a wok and add minced ginger, garlic, and leek rings.
+                (White part or light green part only)
+              </li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck2.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image2 of chicken kottu"
+              />
+              <br /><br />
+              <li>
+                Add the chicken pieces you took from the chicken curry to the
+                wok. Break them using your wok spatula. You can also cut them
+                beforehand if it's hard to break the chicken pieces with the
+                spatula.
+              </li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck3.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image2 of chicken kottu"
+              />
+              <br /><br />
+              <li>
+                Mix with the rest of the ingredients and let the chicken get
+                brown a little bit.
+              </li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck4.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image3 of chicken kottu"
+              />
+              <br /><br />
+              <li>
+                Move everything to a side and crack an egg to the middle of the
+                wok. Let it fry for few seconds and then scramble the egg. When
+                the egg is almost cooked, mix with the rest of the ingredients
+                on the wok.
+              </li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck5.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image4 of chicken kottu"
+              />
+              <br /><br />
+              <li>
+                Move the mixture aside and add your chopped onion and sliced
+                chilies. You can substitute chilies with chili flakes or you can
+                use both fresh chilies and chili flakes for some extra heat.
+              </li>
+              <img
+                src="/assets/images/chickenKottu/ck6.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image4 of chicken kottu"
+              />
+              <br /><br />
+              <li>Mix everything well together. Keep mixing.</li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck7.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image6 of chicken kottu"
+              />
+              <br /><br />
+              <li>
+                Again, move everything to aside and add the julienned carrots.
+                Mix only the carrots to fry them a little bit.
+              </li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck8.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image7 of chicken kottu"
+              />
+              <br /><br />
+              <li>Mix everything together and add your diced tomatoes.</li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck9.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image8 of chicken kottu"
+              />
+              <br /><br />
+              <li>
+                Mix and add salt as you per to your taste. Mix again to
+                distribute salt. Do a taste test and adjust the salt if needed.
+                (You can add pepper too at this point if you want.)
+              </li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck10.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image9 of chicken kottu"
+              />
+              <br /><br />
+              <li>Add the Roti pieces and sliced leeks (green part)</li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck11.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image9 of chicken kottu"
+              />
+              <br /><br />
+              <li>Mix on high heat for about a minute.</li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck12.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image9 of chicken kottu"
+              />
+              <br /><br />
+              <li>
+                Add the chicken curry. You can add more or less according to the
+                texture you want. If you like a dry kottu you can add less than
+                that.
+              </li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck13.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image9 of chicken kottu"
+              />
+              <br /><br />
+              <li>
+                Turn the heat to low. Mix all the roti pieces with the curry.
+                Break the roti pieces and vegetables with the wok spatula while
+                mixing.
+              </li>
+              <br />
+              <img
+                src="/assets/images/chickenKottu/ck14.jpg"
+                style="width: 357.6px; height: 268.2px"
+                alt="image9 of chicken kottu"
+              />
+              <br />
+            </ol>
+          </div>
+
+          <br />
+
+          <h4 style="text-align: center">Enjoy your meal !</h4>
+        </div>
+      </section>
+    </main>
+
+    <br />
+
+    <!-- footer -->
+    <footer style="background-color: #1b1a18">
+      <hr />
+
+      <h5 style="color: white; text-align: center">
+        &copy; Copyright 2024 Tasty Tales. All Rights Reserved. Privacy Policy.
+      </h5>
+
+      <hr />
+    </footer>
+  </body>
+</html>
