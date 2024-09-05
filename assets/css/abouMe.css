@@ -1,0 +1,49 @@
+/* body */
+body {
+  font-family: sans-serif;
+}
+
+/* paragraph */
+p {
+  color: #808080;
+  font-size: 15px;
+  line-height: 1.5;
+  padding-left: 90px;
+  width: 1000px;
+}
+
+/* first letter in paragraph */
+p::first-letter {
+  font-size: 40px;
+  color: #fe5f55;
+}
+
+/* hyperlink hover */
+a:hover {
+  text-decoration: underline;
+  color: #fe5f55;
+  font-weight: bold;
+}
+
+/* place footer to the bottom */
+main {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* image */
+p + img {
+  width: 300px;
+  padding-right: 30px;
+  padding: 50px;
+}
+
+h1 + div {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}

@@ -1,0 +1,60 @@
+/* body css */
+body {
+    font-family: sans-serif;
+  }
+
+  /* hyperlink css */
+  a {
+    text-decoration: none;
+    color: #1b1a18;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #fe5f55;
+    font-weight: bold;
+  }
+
+  /* checkbox css */
+  .checkbox-label input[type="checkbox"] {
+    cursor: pointer;
+  }
+
+  .checkbox-label input[type="checkbox"]:checked + span {
+    cursor: pointer;
+    text-decoration: line-through;
+    color: #808080;
+    transition: text-decoration 0.2s ease-in-out;
+  }
+
+  /* bold text css */
+  strong {
+    color: #808080;
+    padding-left: 25px;
+  }
+
+  /* search bar css */
+  .search-bar {
+    display: flex;
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+  }
+
+  .search-bar button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  /* icon css */
+  .icon {
+    width: 25px;
+    vertical-align: middle;
+  }
+
+  .icon:hover {
+    filter: brightness(0) saturate(100%) invert(48%) sepia(93%)
+      saturate(3250%) hue-rotate(332deg) brightness(102%) contrast(101%);
+  }

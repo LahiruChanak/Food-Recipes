@@ -5,87 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sri Lankan Yellow Rice - Tasty Tales</title>
     <link rel="icon" href="/assets/images/logo.png" />
-    <style>
-      /* body css */
-      body {
-        font-family: sans-serif;
-      }
 
-      /* hyperlink css */
-      a {
-        text-decoration: none;
-        color: #1b1a18;
-      }
-
-      a:hover {
-        text-decoration: underline;
-        color: #fe5f55;
-        font-weight: bold;
-      }
-
-      /* checkbox css */
-      .checkbox-label input[type="checkbox"] {
-        cursor: pointer;
-      }
-
-      .checkbox-label input[type="checkbox"]:checked + span {
-        cursor: pointer;
-        text-decoration: line-through;
-        color: #808080;
-        transition: text-decoration 0.2s ease-in-out;
-      }
-
-      /* bold text css */
-      strong {
-        color: #808080;
-        padding-left: 25px;
-      }
-
-      /* search bar css */
-      .search-bar {
-        display: flex;
-        width: 250px;
-        border: 2px solid #ccc;
-        border-radius: 20px;
-      }
-
-      .search-bar button {
-        background: none;
-        border: none;
-        padding: 5px;
-        cursor: pointer;
-      }
-
-      /* icon css */
-      .icon {
-        width: 25px;
-        vertical-align: middle;
-      }
-
-      .icon:hover {
-        filter: brightness(0) saturate(100%) invert(48%) sepia(93%)
-          saturate(3250%) hue-rotate(332deg) brightness(102%) contrast(101%);
-      }
-    </style>
+    <!-- external css -->
+    <link rel="stylesheet" href="/assets/css/yellowRice.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
   </head>
   <body>
     <!-- /////////////////// navigation bar /////////////////// -->
-    <header style="display: flex; justify-content: center; align-items: center">
-      <div style="display: flex; align-items: center">
+    <header>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+        "
+      >
         <!-- logo -->
-        <div style="margin-right: 20px">
-          <img
-            src="/assets/images/logo.png"
-            alt="Tasty Tales logo"
-            style="width: auto; height: 100px"
-          />
-        </div>
+        <div class="logo">TastyTales</div>
 
         <!-- navigation links -->
         <nav>
           <div style="display: flex">
             <div style="margin-right: 30px">
-              <a href="/pages/homePage.html">Home</a>
+              <a href="/pages/homePage.html">
+                <b style="color: #fe5f55">Home</b>
+              </a>
             </div>
 
             <div style="margin-right: 30px">
@@ -111,14 +56,12 @@
             "
           />
           <button>
-            <i class="fas fa-search">
-              <img
-                src="/assets/icons/search.svg"
-                alt="search icon"
-                title="Search"
-                class="icon"
-              />
-            </i>
+            <img
+              src="/assets/icons/search.svg"
+              alt="search icon"
+              title="Search"
+              class="icon"
+            />
           </button>
         </div>
 
@@ -467,14 +410,16 @@
     <br />
 
     <!-- footer -->
-    <footer style="background-color: #1b1a18">
-      <hr />
+    <footer>
+      <div>
+        <hr />
 
-      <h5 style="color: white; text-align: center">
-        &copy; Copyright 2024 Tasty Tales. All Rights Reserved. Privacy Policy.
-      </h5>
+        <h5>
+          &copy; Copyright 2024 Tasty Tales. All Rights Reserved. Privacy Policy
+        </h5>
 
-      <hr />
+        <hr />
+      </div>
     </footer>
   </body>
 </html>

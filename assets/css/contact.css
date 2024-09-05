@@ -1,0 +1,104 @@
+/* body */
+body {
+  font-family: sans-serif;
+}
+
+/* hyperlink */
+a {
+  text-decoration: none;
+  color: #1b1a18;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fe5f55;
+  font-weight: bold;
+}
+
+/* paragraph */
+p {
+  color: #808080;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+p::first-letter {
+  font-size: 40px;
+  color: #fe5f55;
+  margin-left: 30px;
+}
+
+/* text inputs & textfield */
+br + input[type="text"],
+textarea {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 900px;
+  border: 1px solid #ccc;
+  background-color: #f5f8fa;
+  font-size: 15px;
+  color: #808080;
+}
+
+/* form button */
+br + div button {
+  border-radius: 10px;
+  width: 90px;
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  background-color: #fe5f55;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+br + div button:hover {
+  background-color: #fe776e;
+}
+
+.icon:hover {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(93%) saturate(3250%)
+    hue-rotate(332deg) brightness(102%) contrast(101%);
+}
+
+/* h1 */
+h1 {
+  text-align: center;
+}
+
+/* reduce the content width */
+.content_space {
+  width: 1000px;
+  padding-left: 90px;
+}
+
+/* special notice */
+span {
+  font-weight: bold;
+  font-style: italic;
+  color: #1b1a18;
+}
+
+/* padding for text inputs & checkbox */
+.txt_input {
+  padding-left: 10px;
+}
+
+/* fieldset */
+fieldset {
+  border-radius: 15px;
+}
+
+/* legend */
+legend {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+/* chexkbox */
+input[type="checkbox"] {
+  cursor: pointer;
+}
