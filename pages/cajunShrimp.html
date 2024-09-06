@@ -14,47 +14,32 @@
   <body>
     <!-- /////////////////// navigation bar /////////////////// -->
     <header>
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: space-evenly;
-        "
-      >
+      <div class="navbar_align">
         <!-- logo -->
         <div class="logo">TastyTales</div>
 
         <!-- navigation links -->
         <nav>
-          <div style="display: flex">
-            <div style="margin-right: 30px">
-              <a href="/pages/homePage.html">
-                <b style="color: #fe5f55">Home</b>
-              </a>
-            </div>
+          <div>
+            <a href="/pages/homePage.html"> Home </a>
+          </div>
 
-            <div style="margin-right: 30px">
-              <a href="/pages/contact.html">Contact</a>
-            </div>
+          <div>
+            <a href="/pages/recipes.html" class="active"> Recipes </a>
+          </div>
 
-            <div style="margin-right: 30px">
-              <a href="/pages/aboutMe.html">About Me</a>
-            </div>
+          <div>
+            <a href="/pages/contact.html"> Contact </a>
+          </div>
+
+          <div>
+            <a href="/pages/about.html"> About </a>
           </div>
         </nav>
 
         <!-- search bar -->
         <div class="search-bar">
-          <input
-            type="text"
-            placeholder="Search..."
-            style="
-              border: none;
-              margin-left: 18px;
-              outline: none;
-              font-size: 15px;
-            "
-          />
+          <input type="text" placeholder="Search..." />
           <button>
             <img
               src="/assets/icons/search.svg"
@@ -66,14 +51,7 @@
         </div>
 
         <!-- social media icons -->
-        <div
-          style="
-            margin-left: 40px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-          "
-        >
+        <div class="icon_space">
           <a href="https://www.facebook.com/hungrylankan/" target="_blank">
             <img
               src="/assets/icons/facebook.svg"
@@ -118,65 +96,53 @@
     <!-- ///////////////////////// recipe /////////////////////// -->
 
     <main>
-      <h2>Cajun Shrimp in Air Fryer</h2>
+      <section>
+        <h2>Cajun Shrimp in Air Fryer</h2>
 
-      <section style="width: 1000px">
         <!-- to side recipe details  -->
-        <div style="display: flex; align-items: center">
+        <div class="labels_sided">
           <!-- image -->
-          <div style="padding-left: 50px">
+          <div>
             <img
               src="/assets/images/cajunShrimp/cs1.jpg"
               alt="Image of Cajun Shrimp"
-              style="width: 215px; height: 285px"
+              class="recipe_img"
             />
           </div>
 
           <!-- sided recipe details -->
-          <div style="padding: 50px; font-size: 15px">
+          <div class="sided_details">
             <!-- difficulty -->
-            <div style="margin-bottom: 10px">
-              <img
-                src="/assets/icons/difficult.png"
-                alt="Difficulty icon"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
+            <div class="label_space">
+              <img src="/assets/icons/difficult.png" alt="Difficulty icon" />
               Difficulty
               <br />
-              <strong>Beginner</strong>
+              <span> Beginner </span>
             </div>
 
             <br />
 
             <!-- prep, cook, and total time -->
-            <div style="margin-bottom: 10px">
-              <img
-                src="/assets/icons/time.png"
-                alt="Time icon"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
+            <div class="label_space">
+              <img src="/assets/icons/time.png" alt="Time icon" />
               Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
               &emsp;&emsp;&emsp;&emsp; Total Time
               <!-- (&nbsp; => single space), (&ensp; => two spaces), (&emsp; => four spaces) -->
               <br />
-              <strong>
-                5 mins &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 5 mins
-                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&ensp; 10 mins
-              </strong>
+              <span>
+                5 mins &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5 mins
+                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; 10 mins
+              </span>
             </div>
 
             <br />
 
             <!-- servings -->
-            <div style="margin-bottom: 10px">
-              <img
-                src="/assets/icons/servings.png"
-                alt="Servings icon"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
+            <div class="label_space">
+              <img src="/assets/icons/servings.png" alt="Servings icon" />
               Servings
               <br />
-              <strong>4</strong>
+              <span> 4 </span>
             </div>
           </div>
         </div>
@@ -185,121 +151,112 @@
 
         <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
 
-        <div style="padding-left: 50px">
-          <!-- description -->
-          <div>
-            <h3><u>Description</u></h3>
-            <blockquote>
-              This Cajun Shrimp in the Air fryer is one of the easiest quickest
-              recipes you can make. You only need 5 ingredients if you have a
-              cajun seasoning at home. If you don't, check out the description
-              to easily make it from scratch.
-            </blockquote>
-          </div>
-
-          <br />
-
-          <!-- ingredients -->
-          <div>
-            <h3><u>Ingredients</u></h3>
-
-            <blockquote>
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span>
-                  2 lb Peeled and deveined large Shrimp (1lb = 453g)
-                </span>
-              </label>
-
-              <br /><br />
-
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span>
-                  4 tsp Cajun Seasoning (check the description for the recipe to
-                  make at home)
-                </span>
-              </label>
-
-              <br /><br />
-
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> 4 Large garlic clove, minced </span>
-              </label>
-
-              <br /><br />
-
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> 2 tsp Avocado oil/ Cooking oil of your choice </span>
-              </label>
-
-              <br /><br />
-
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> 4 tsp Lime/lemon juice </span>
-              </label>
-            </blockquote>
-          </div>
-
-          <br />
-
-          <!-- steps -->
-          <div>
-            <h3><u>Instructions</u></h3>
-
-            <ol>
-              <li>Preheat the Air fryer to 400 °F for 2 - 3 minutes.</li>
-
-              <br /><br />
-
-              <li>
-                Pat dry shrimp and add them into a bowl. Add Cajun seasoning,
-                minced garlic, oil, and lemon juice. Mix well.
-              </li>
-              <br />
-              <img
-                src="/assets/images/cajunShrimp/cs2.jpg"
-                style="width: 357.6px; height: 268.2px"
-                alt="image2 of cajun shrimp"
-              />
-
-              <br /><br />
-
-              <li>
-                Place the shrimp in the air fryer basket in a single layer. (if
-                you can't fit them in a single layer, cook shrimp in batches).
-              </li>
-              <br />
-              <img
-                src="/assets/images/cajunShrimp/cs3.jpg"
-                style="width: 357.6px; height: 268.2px"
-                alt="image3 of cajun shrimp"
-              />
-
-              <br /><br />
-
-              <li>
-                Air Fry for 3 minutes at 400F. Then, flip the shrimp and air fry
-                for another 2 - 3 minutes. Cooked shrimp should look opaque with
-                a light pink-orange color. And the tail should curl into a "C"
-                shape. Serve warm.
-              </li>
-              <br />
-              <img
-                src="/assets/images/cajunShrimp/cs4.jpg"
-                style="width: 357.6px; height: 268.2px"
-                alt="image4 of cajun shrimp"
-              />
-            </ol>
-          </div>
-
-          <br />
-
-          <h4 style="text-align: center">Enjoy your meal!</h4>
+        <!-- description -->
+        <div>
+          <h3>Description</h3>
+          <p>
+            This Cajun Shrimp in the Air fryer is one of the easiest quickest
+            recipes you can make. You only need 5 ingredients if you have a
+            cajun seasoning at home. If you don't, check out the description to
+            easily make it from scratch.
+          </p>
         </div>
+
+        <br />
+
+        <!-- ingredients -->
+        <div>
+          <h3>Ingredients</h3>
+
+          <label>
+            <input type="checkbox" />
+            <span> 2 lb Peeled and deveined large Shrimp (1lb = 453g) </span>
+          </label>
+
+          <br /><br />
+
+          <label>
+            <input type="checkbox" />
+            <span>
+              4 tsp Cajun Seasoning (check the description for the recipe to
+              make at home)
+            </span>
+          </label>
+
+          <br /><br />
+
+          <label>
+            <input type="checkbox" />
+            <span> 4 Large garlic clove, minced </span>
+          </label>
+
+          <br /><br />
+
+          <label>
+            <input type="checkbox" />
+            <span> 2 tsp Avocado oil/ Cooking oil of your choice </span>
+          </label>
+
+          <br /><br />
+
+          <label>
+            <input type="checkbox" />
+            <span> 4 tsp Lime/lemon juice </span>
+          </label>
+        </div>
+
+        <br />
+
+        <!-- steps -->
+        <div>
+          <h3>Instructions</h3>
+
+          <ol>
+            <li>Preheat the Air fryer to 400 °F for 2 - 3 minutes.</li>
+
+            <br /><br />
+
+            <li>
+              Pat dry shrimp and add them into a bowl. Add Cajun seasoning,
+              minced garlic, oil, and lemon juice. Mix well.
+            </li>
+            <br />
+            <img
+              src="/assets/images/cajunShrimp/cs2.jpg"
+              alt="image2 of cajun shrimp"
+            />
+
+            <br /><br />
+
+            <li>
+              Place the shrimp in the air fryer basket in a single layer. (if
+              you can't fit them in a single layer, cook shrimp in batches).
+            </li>
+            <br />
+            <img
+              src="/assets/images/cajunShrimp/cs3.jpg"
+              alt="image3 of cajun shrimp"
+            />
+
+            <br /><br />
+
+            <li>
+              Air Fry for 3 minutes at 400F. Then, flip the shrimp and air fry
+              for another 2 - 3 minutes. Cooked shrimp should look opaque with a
+              light pink-orange color. And the tail should curl into a "C"
+              shape. Serve warm.
+            </li>
+            <br />
+            <img
+              src="/assets/images/cajunShrimp/cs4.jpg"
+              alt="image4 of cajun shrimp"
+            />
+          </ol>
+        </div>
+
+        <br />
+
+        <h4>Enjoy your meal!</h4>
       </section>
     </main>
 

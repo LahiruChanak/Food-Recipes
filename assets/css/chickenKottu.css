@@ -1,60 +1,78 @@
 /* body css */
 body {
-    font-family: sans-serif;
-  }
+  font-family: sans-serif;
+}
 
-  /* hyperlink css */
-  a {
-    text-decoration: none;
-    color: #1b1a18;
-  }
+/* reduce content width & padding */
+section {
+  width: 1000px;
+  padding-left: 50px;
+}
 
-  a:hover {
-    text-decoration: underline;
-    color: #fe5f55;
-    font-weight: bold;
-  }
+/* align the image & labels */
+.labels_sided {
+  display: flex;
+  align-items: center;
+}
 
-  /* checkbox css */
-  .checkbox-label input[type="checkbox"] {
-    cursor: pointer;
-  }
+/* sided recipe details */
+.sided_details {
+  padding: 50px;
+  font-size: 15px;
+}
 
-  .checkbox-label input[type="checkbox"]:checked + span {
-    cursor: pointer;
-    text-decoration: line-through;
-    color: #808080;
-    transition: text-decoration 0.2s ease-in-out;
-  }
+/* space between label */
+.label_space {
+  margin-bottom: 10px;
+}
 
-  /* bold text css */
-  strong {
-    color: #808080;
-    padding-left: 25px;
-  }
+/* label icons */
+div[class="label_space"] img {
+  width: 20px;
+  vertical-align: middle;
+}
 
-  /* search bar css */
-  .search-bar {
-    display: flex;
-    width: 250px;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-  }
+/* label icons */
+.recipe_img {
+  width: 215px;
+  height: 285px;
+}
 
-  .search-bar button {
-    background: none;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-  }
+/* checkbox css */
+input[type="checkbox"] {
+  cursor: pointer;
+}
 
-  /* icon css */
-  .icon {
-    width: 25px;
-    vertical-align: middle;
-  }
+input[type="checkbox"]:checked + span {
+  cursor: pointer;
+  text-decoration: line-through;
+  color: #808080;
+  transition: text-decoration 0.2s ease-in-out;
+}
 
-  .icon:hover {
-    filter: brightness(0) saturate(100%) invert(48%) sepia(93%)
-      saturate(3250%) hue-rotate(332deg) brightness(102%) contrast(101%);
-  }
+/* bold text css */
+br + span {
+  color: #808080;
+  padding-left: 25px;
+}
+
+/* images of instructions */
+li + br + img {
+  width: 360px;
+  height: 320px;
+}
+
+/* h4 */
+h4 {
+  text-align: center;
+}
+
+/* h3 */
+h3 {
+  text-decoration: underline;
+}
+
+/* paragraph */
+p {
+  margin-left: 40px;
+}

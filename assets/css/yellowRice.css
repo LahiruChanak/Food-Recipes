@@ -3,24 +3,47 @@ body {
   font-family: sans-serif;
 }
 
-/* hyperlink css */
-a {
-  text-decoration: none;
-  color: #1b1a18;
+/* reduce content width & padding */
+section {
+  width: 1000px;
+  padding-left: 50px;
 }
 
-a:hover {
-  text-decoration: underline;
-  color: #fe5f55;
-  font-weight: bold;
+/* align the image & labels */
+.labels_sided {
+  display: flex;
+  align-items: center;
+}
+
+/* sided recipe details */
+.sided_details {
+  padding: 50px;
+  font-size: 15px;
+}
+
+/* space between label */
+.label_space {
+  margin-bottom: 10px;
+}
+
+/* label icons */
+div[class="label_space"] img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+/* label icons */
+.recipe_img {
+  width: 215px;
+  height: 285px;
 }
 
 /* checkbox css */
-.checkbox-label input[type="checkbox"] {
+input[type="checkbox"] {
   cursor: pointer;
 }
 
-.checkbox-label input[type="checkbox"]:checked + span {
+input[type="checkbox"]:checked + span {
   cursor: pointer;
   text-decoration: line-through;
   color: #808080;
@@ -28,33 +51,28 @@ a:hover {
 }
 
 /* bold text css */
-strong {
+br + span {
   color: #808080;
   padding-left: 25px;
 }
 
-/* search bar css */
-.search-bar {
-  display: flex;
-  width: 250px;
-  border: 2px solid #ccc;
-  border-radius: 20px;
+/* images of instructions */
+li + br + img {
+  width: 360px;
+  height: 320px;
 }
 
-.search-bar button {
-  background: none;
-  border: none;
-  padding: 5px;
-  cursor: pointer;
+/* h4 */
+h4 {
+  text-align: center;
 }
 
-/* icon css */
-.icon {
-  width: 25px;
-  vertical-align: middle;
+/* h3 */
+h3 {
+  text-decoration: underline;
 }
 
-.icon:hover {
-  filter: brightness(0) saturate(100%) invert(48%) sepia(93%) saturate(3250%)
-    hue-rotate(332deg) brightness(102%) contrast(101%);
+/* paragraph */
+p {
+  margin-left: 40px;
 }

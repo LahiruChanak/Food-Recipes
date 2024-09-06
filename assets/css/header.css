@@ -3,6 +3,34 @@
   font-family: "SkateSemiBold";
   src: url(/assets/fonts/skate-5.ttf);
 }
+/* align navbar */
+.navbar_align {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* hyperlink */
+nav a {
+  text-decoration: none;
+  color: #1b1a18;
+  font-size: 15px;
+}
+
+/* hyperlink hover */
+a:hover {
+  text-decoration: underline;
+  color: #fe5f55;
+  font-weight: bold;
+}
+
+/* icon space */
+.icon_space {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 
 /* logo */
 .logo {
@@ -53,30 +81,12 @@ nav div {
   margin-right: 30px;
 }
 
-nav a {
-  text-decoration: none;
-  color: #1b1a18;
-}
-
 /* search input */
 div input {
   border: none;
   margin-left: 18px;
   outline: none;
   font-size: 15px;
-}
-
-.icon_space {
-  margin-left: 40px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.navbar_flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 /* active page */

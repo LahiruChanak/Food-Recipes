@@ -1,56 +1,5 @@
-/* body css */
+/* body */
 body {
   font-family: sans-serif;
 }
 
-/* hyperlink css */
-section div a {
-  text-decoration: none;
-  color: #1b1a18;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #fe5f55;
-  font-weight: bold;
-}
-
-/* bold text css */
-strong {
-  font-size: 20px;
-}
-
-/* paragraph css */
-p {
-  color: #808080;
-  font-size: 15px;
-  margin-right: 25px;
-}
-
-/* horizontal line css */
-div + hr {
-  border: 1px solid #ccc;
-  width: 73%;
-  float: right;
-}
-
-/* side the text  */
-.txt_flex {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-/* recipe image */
-.recipe_img {
-  width: 200px;
-  height: 200px;
-  padding-left: 50px;
-}
-
-/* image and text space */
-.img_txt_space {
-  padding-left: 40px;
-}

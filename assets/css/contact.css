@@ -3,18 +3,6 @@ body {
   font-family: sans-serif;
 }
 
-/* hyperlink */
-a {
-  text-decoration: none;
-  color: #1b1a18;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #fe5f55;
-  font-weight: bold;
-}
-
 /* paragraph */
 p {
   color: #808080;
@@ -22,6 +10,7 @@ p {
   line-height: 1.5;
 }
 
+/* first letter in paragraph */
 p::first-letter {
   font-size: 40px;
   color: #fe5f55;
@@ -54,13 +43,9 @@ br + div button {
   cursor: pointer;
 }
 
+/* form button hover */
 br + div button:hover {
   background-color: #fe776e;
-}
-
-.icon:hover {
-  filter: brightness(0) saturate(100%) invert(48%) sepia(93%) saturate(3250%)
-    hue-rotate(332deg) brightness(102%) contrast(101%);
 }
 
 /* h1 */

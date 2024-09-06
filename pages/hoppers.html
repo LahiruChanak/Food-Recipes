@@ -14,47 +14,32 @@
   <body>
     <!-- /////////////////// navigation bar /////////////////// -->
     <header>
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: space-evenly;
-        "
-      >
+      <div class="navbar_align">
         <!-- logo -->
         <div class="logo">TastyTales</div>
 
         <!-- navigation links -->
         <nav>
-          <div style="display: flex">
-            <div style="margin-right: 30px">
-              <a href="/pages/homePage.html">
-                <b style="color: #fe5f55">Home</b>
-              </a>
-            </div>
+          <div>
+            <a href="/pages/homePage.html"> Home </a>
+          </div>
 
-            <div style="margin-right: 30px">
-              <a href="/pages/contact.html">Contact</a>
-            </div>
+          <div>
+            <a href="/pages/contact.html"> Contact </a>
+          </div>
 
-            <div style="margin-right: 30px">
-              <a href="/pages/aboutMe.html">About Me</a>
-            </div>
+          <div>
+            <a href="/pages/recipes.html" class="active"> Recipes </a>
+          </div>
+
+          <div>
+            <a href="/pages/about.html"> About Me </a>
           </div>
         </nav>
 
         <!-- search bar -->
         <div class="search-bar">
-          <input
-            type="text"
-            placeholder="Search..."
-            style="
-              border: none;
-              margin-left: 18px;
-              outline: none;
-              font-size: 15px;
-            "
-          />
+          <input type="text" placeholder="Search..." />
           <button>
             <img
               src="/assets/icons/search.svg"
@@ -66,14 +51,7 @@
         </div>
 
         <!-- social media icons -->
-        <div
-          style="
-            margin-left: 40px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-          "
-        >
+        <div class="icon_space">
           <a href="https://www.facebook.com/hungrylankan/" target="_blank">
             <img
               src="/assets/icons/facebook.svg"
@@ -117,65 +95,53 @@
 
     <!-- ///////////////////////// recipe /////////////////////// -->
     <main>
-      <h2>Sri Lankan Hoppers</h2>
+      <section>
+        <h2>Sri Lankan Hoppers</h2>
 
-      <section style="width: 1000px">
         <!-- to side recipe details  -->
-        <div style="display: flex; align-items: center">
+        <div class="labels_sided">
           <!-- image -->
-          <div style="padding-left: 50px">
+          <div>
             <img
               src="/assets/images/hoppers/h1.jpg"
-              style="width: 215px; height: 285px"
               alt="image1 of hoppers"
+              class="recipe_img"
             />
           </div>
 
           <!-- sided recipe details -->
-          <div style="padding: 50px; font-size: 15px">
+          <div class="sided_details">
             <!-- difficulty -->
-            <div style="margin-bottom: 10px">
-              <img
-                src="/assets/icons/difficult.png"
-                alt="Difficulty icon"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
+            <div class="label_space">
+              <img src="/assets/icons/difficult.png" alt="Difficulty icon" />
               Difficulty
               <br />
-              <strong> Intermediate </strong>
+              <span> Intermediate </span>
             </div>
 
             <br />
 
             <!-- prep, cook, and total time -->
-            <div style="margin-bottom: 10px">
-              <img
-                src="/assets/icons/time.png"
-                alt="Time icon"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
+            <div class="label_space">
+              <img src="/assets/icons/time.png" alt="Time icon" />
               Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
               &emsp;&emsp;&emsp;&emsp; Total Time
               <!-- (&nbsp; => single space), (&ensp; => two spaces), (&emsp; => four spaces) -->
               <br />
-              <strong>
-                19 hrs &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 30 mins
-                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&ensp; 19 hrs 30 mins
-              </strong>
+              <span>
+                19 hrs &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; 30 mins
+                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 19 hrs 30 mins
+              </span>
             </div>
 
             <br />
 
             <!-- servings -->
-            <div style="margin-bottom: 10px">
-              <img
-                src="/assets/icons/servings.png"
-                alt="Servings icon"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
+            <div class="label_space">
+              <img src="/assets/icons/servings.png" alt="Servings icon" />
               Servings
               <br />
-              <strong>4</strong>
+              <span>4</span>
             </div>
           </div>
         </div>
@@ -184,66 +150,66 @@
 
         <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
 
-        <div style="padding-left: 50px">
+        <div>
           <!-- description -->
           <div>
-            <h3><u>Description</u></h3>
-            <blockquote>
+            <h3>Description</h3>
+            <p>
               Easy Sri Lankan hoppers recipe that uses rice flour. And uses
               18-hour fermentation to get the authentic hopper taste. This
               recipe is suitable for the 4 servings.
-            </blockquote>
+            </p>
           </div>
 
           <br />
 
           <!-- ingredients -->
           <div>
-            <h3><u>Ingredients</u></h3>
-            <blockquote>
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> 400 g Rice flour </span>
-              </label>
+            <h3>Ingredients</h3>
 
-              <br /><br />
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              <span> 400 g Rice flour </span>
+            </label>
 
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> pinch of yeast </span>
-              </label>
+            <br /><br />
 
-              <br /><br />
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              <span> pinch of yeast </span>
+            </label>
 
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> 1.5 cup water (175mg) </span>
-              </label>
+            <br /><br />
 
-              <br /><br />
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              <span> 1.5 cup water (175mg) </span>
+            </label>
 
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> 400 ml of coconut milk </span>
-              </label>
+            <br /><br />
 
-              <br /><br />
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              <span> 400 ml of coconut milk </span>
+            </label>
 
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> tsp sugar </span>
-              </label>
+            <br /><br />
 
-              <br /><br />
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              <span> tsp sugar </span>
+            </label>
 
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> salt as needed </span>
-              </label>
-            </blockquote>
+            <br /><br />
+
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              <span> salt as needed </span>
+            </label>
           </div>
 
           <br />
+
           <!-- steps -->
           <div>
             <h3><u>Instructions</u></h3>
@@ -258,7 +224,6 @@
               <br />
               <img
                 src="/assets/images/hoppers/h2.jpg"
-                style="width: 357.6px; height: 268.2px"
                 alt="image2 of hoppers"
               />
               <br /><br />
@@ -270,8 +235,7 @@
               <br />
               <img
                 src="/assets/images/hoppers/h3.jpg"
-                style="width: 357.6px; height: 268.2px"
-                alt="image2 of hoppers"
+                alt="image3 of hoppers"
               />
               <br /><br />
               <li>
@@ -285,8 +249,7 @@
               <br />
               <img
                 src="/assets/images/hoppers/h4.jpg"
-                style="width: 357.6px; height: 268.2px"
-                alt="image3 of hoppers"
+                alt="image4 of hoppers"
               />
               <br /><br />
               <li>
@@ -302,8 +265,7 @@
               <br />
               <img
                 src="/assets/images/hoppers/h5.jpg"
-                style="width: 357.6px; height: 268.2px"
-                alt="image4 of hoppers"
+                alt="image5 of hoppers"
               />
               <br /><br />
               <li>
@@ -320,7 +282,6 @@
               <br />
               <img
                 src="/assets/images/hoppers/h6.jpg"
-                style="width: 357.6px; height: 268.2px"
                 alt="image6 of hoppers"
               />
               <br /><br />
@@ -331,7 +292,6 @@
               <br />
               <img
                 src="/assets/images/hoppers/h7.jpg"
-                style="width: 357.6px; height: 268.2px"
                 alt="image7 of hoppers"
               />
               <br /><br />
@@ -339,7 +299,6 @@
               <br />
               <img
                 src="/assets/images/hoppers/h8.jpg"
-                style="width: 357.6px; height: 268.2px"
                 alt="image8 of hoppers"
               />
               <br /><br />
@@ -351,7 +310,6 @@
               <br />
               <img
                 src="/assets/images/hoppers/h9.jpg"
-                style="width: 357.6px; height: 268.2px"
                 alt="image9 of hoppers"
               />
             </ol>
@@ -359,7 +317,7 @@
 
           <br />
 
-          <h4 style="text-align: center">Enjoy your meal !</h4>
+          <h4>Enjoy your meal !</h4>
         </div>
       </section>
     </main>

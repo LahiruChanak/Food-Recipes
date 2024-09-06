@@ -14,47 +14,32 @@
   <body>
     <!-- /////////////////// navigation bar /////////////////// -->
     <header>
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: space-evenly;
-        "
-      >
+      <div class="navbar_align">
         <!-- logo -->
         <div class="logo">TastyTales</div>
 
         <!-- navigation links -->
         <nav>
-          <div style="display: flex">
-            <div style="margin-right: 30px">
-              <a href="/pages/homePage.html">
-                <b style="color: #fe5f55">Home</b>
-              </a>
-            </div>
+          <div>
+            <a href="/pages/homePage.html"> Home </a>
+          </div>
 
-            <div style="margin-right: 30px">
-              <a href="/pages/contact.html">Contact</a>
-            </div>
+          <div>
+            <a href="/pages/recipes.html" class="active"> Recipes </a>
+          </div>
 
-            <div style="margin-right: 30px">
-              <a href="/pages/aboutMe.html">About Me</a>
-            </div>
+          <div>
+            <a href="/pages/contact.html"> Contact </a>
+          </div>
+
+          <div>
+            <a href="/pages/about.html"> About </a>
           </div>
         </nav>
 
         <!-- search bar -->
         <div class="search-bar">
-          <input
-            type="text"
-            placeholder="Search..."
-            style="
-              border: none;
-              margin-left: 18px;
-              outline: none;
-              font-size: 15px;
-            "
-          />
+          <input type="text" placeholder="Search..." />
           <button>
             <img
               src="/assets/icons/search.svg"
@@ -66,14 +51,7 @@
         </div>
 
         <!-- social media icons -->
-        <div
-          style="
-            margin-left: 40px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-          "
-        >
+        <div class="icon_space">
           <a href="https://www.facebook.com/hungrylankan/" target="_blank">
             <img
               src="/assets/icons/facebook.svg"
@@ -116,67 +94,54 @@
     <br />
 
     <!-- ///////////////////////// recipe /////////////////////// -->
-
     <main>
-      <h2>Sri Lankan Lunu Miris</h2>
+      <section>
+        <h2>Sri Lankan Lunu Miris</h2>
 
-      <section style="width: 1000px">
         <!-- to side recipe details  -->
-        <div style="display: flex; align-items: center">
+        <div class="labels_sided">
           <!-- image -->
-          <div style="padding-left: 50px">
+          <div>
             <img
               src="/assets/images/lunuMiris/lm1.jpg"
-              style="width: 215px; height: 285px"
               alt="image1 of lunu miris"
+              class="recipe_img"
             />
           </div>
 
           <!-- sided recipe details -->
-          <div style="padding: 50px; font-size: 15px">
+          <div class="sided_details">
             <!-- difficulty -->
-            <div style="margin-bottom: 10px">
-              <img
-                src="/assets/icons/difficult.png"
-                alt="Difficulty icon"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
+            <div class="label_space">
+              <img src="/assets/icons/difficult.png" alt="Difficulty icon" />
               Difficulty
               <br />
-              <strong>Beginner</strong>
+              <span>Beginner</span>
             </div>
 
             <br />
 
             <!-- prep, cook, and total time -->
-            <div style="margin-bottom: 10px">
-              <img
-                src="/assets/icons/time.png"
-                alt="Time icon"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
+            <div class="label_space">
+              <img src="/assets/icons/time.png" alt="Time icon" />
               Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
               &emsp;&emsp;&emsp;&emsp; Total Time
               <!-- (&nbsp; => single space), (&ensp; => two spaces), (&emsp; => four spaces) -->
               <br />
-              <strong>
+              <span>
                 10 mins &emsp;&emsp;&emsp;&emsp;&emsp; -
                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 10 mins
-              </strong>
+              </span>
             </div>
 
             <br />
 
             <!-- servings -->
-            <div style="margin-bottom: 10px">
-              <img
-                src="/assets/icons/servings.png"
-                alt="Servings icon"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
+            <div class="label_space">
+              <img src="/assets/icons/servings.png" alt="Servings icon" />
               Servings
               <br />
-              <strong>4</strong>
+              <span>4</span>
             </div>
           </div>
         </div>
@@ -185,121 +150,114 @@
 
         <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
 
-        <div style="padding-left: 50px">
-          <!-- description -->
-          <div>
-            <h3><u>Description</u></h3>
-            <blockquote>
-              Sri Lankan Lunu Miris is a vibrant and bold condiment that packs a
-              punch of flavors, combining spicy, citrusy, salty, and umami
-              notes. It's incredibly easy to make in under 10 minutes with no
-              cooking required. This recipe is suitable for the 4 servings.
-            </blockquote>
-          </div>
-
-          <br />
-
-          <!-- ingredients -->
-          <div>
-            <h3><u>Ingredients</u></h3>
-
-            <blockquote>
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> 3 tsp Chili flakes </span>
-              </label>
-
-              <br /><br />
-
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> 1.5 tbsp Maldive Fish Chips </span>
-              </label>
-
-              <br /><br />
-
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> 1 tsp Salt </span>
-              </label>
-
-              <br /><br />
-
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span>
-                  1 tsp Chili powder(optional, make the lunu miris more red in
-                  color)
-                </span>
-              </label>
-
-              <br /><br />
-
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span>
-                  1.33 Cup Chopped red onion or Asian Shallots (1 cup is roughly
-                  about 120g)
-                </span>
-              </label>
-
-              <br /><br />
-
-              <label class="checkbox-label">
-                <input type="checkbox" />
-                <span> 2.67 tsp Lime Juice </span>
-              </label>
-            </blockquote>
-          </div>
-
-          <br />
-
-          <!-- steps -->
-          <div>
-            <h3><u>Instructions</u></h3>
-            <ol>
-              <li>
-                Add chili flakes, Maldive fish chips, salt, and Chili powder
-                into the mortar and grind them until there aren't any big pieces
-                of Maldive fish chips left. They could be hard to chew.
-              </li>
-              <br />
-              <img
-                src="/assets/images/lunuMiris/lm2.jpg"
-                style="width: 357.6px; height: 268.2px"
-                alt="image2 of lunu Miris"
-              />
-              <br /><br />
-              <li>
-                Add the onions. Pound with the pestle until onions and chilies
-                are thoroughly mixed and turned into a rough paste.
-              </li>
-              <br />
-              <img
-                src="/assets/images/lunuMiris/lm3.jpg"
-                style="width: 357.6px; height: 268.2px"
-                alt="image3 of lunu Miris"
-              />
-              <br /><br />
-              <li>
-                Add lime juice. Mix well with a spoon. Taste and adjust the salt
-                and lime if needed. Lunu Miris should have a prominent citrus
-                flavor. It's best to serve it freshly made.
-              </li>
-              <br />
-              <img
-                src="/assets/images/lunuMiris/lm4.jpg"
-                style="width: 357.6px; height: 268.2px"
-                alt="image4 of lunu Miris"
-              />
-              <br />
-            </ol>
-          </div>
-
-          <br />
-
-          <h4 style="text-align: center">Enjoy your meal !</h4>
+        <!-- description -->
+        <div>
+          <h3>Description</h3>
+          <p>
+            Sri Lankan Lunu Miris is a vibrant and bold condiment that packs a
+            punch of flavors, combining spicy, citrusy, salty, and umami notes.
+            It's incredibly easy to make in under 10 minutes with no cooking
+            required. This recipe is suitable for the 4 servings.
+          </p>
         </div>
+
+        <br />
+
+        <!-- ingredients -->
+        <div>
+          <h3>Ingredients</h3>
+
+          <label class="checkbox-label">
+            <input type="checkbox" />
+            <span> 3 tsp Chili flakes </span>
+          </label>
+
+          <br /><br />
+
+          <label class="checkbox-label">
+            <input type="checkbox" />
+            <span> 1.5 tbsp Maldive Fish Chips </span>
+          </label>
+
+          <br /><br />
+
+          <label class="checkbox-label">
+            <input type="checkbox" />
+            <span> 1 tsp Salt </span>
+          </label>
+
+          <br /><br />
+
+          <label class="checkbox-label">
+            <input type="checkbox" />
+            <span>
+              1 tsp Chili powder(optional, make the lunu miris more red in
+              color)
+            </span>
+          </label>
+
+          <br /><br />
+
+          <label class="checkbox-label">
+            <input type="checkbox" />
+            <span>
+              1.33 Cup Chopped red onion or Asian Shallots (1 cup is roughly
+              about 120g)
+            </span>
+          </label>
+
+          <br /><br />
+
+          <label class="checkbox-label">
+            <input type="checkbox" />
+            <span> 2.67 tsp Lime Juice </span>
+          </label>
+        </div>
+
+        <br />
+
+        <!-- steps -->
+        <div>
+          <h3>Instructions</h3>
+          <ol>
+            <li>
+              Add chili flakes, Maldive fish chips, salt, and Chili powder into
+              the mortar and grind them until there aren't any big pieces of
+              Maldive fish chips left. They could be hard to chew.
+            </li>
+            <br />
+            <img
+              src="/assets/images/lunuMiris/lm2.jpg"
+              alt="image2 of lunu Miris"
+            />
+            <br /><br />
+            <li>
+              Add the onions. Pound with the pestle until onions and chilies are
+              thoroughly mixed and turned into a rough paste.
+            </li>
+            <br />
+            <img
+              src="/assets/images/lunuMiris/lm3.jpg"
+              alt="image3 of lunu Miris"
+            />
+            <br /><br />
+            <li>
+              Add lime juice. Mix well with a spoon. Taste and adjust the salt
+              and lime if needed. Lunu Miris should have a prominent citrus
+              flavor. It's best to serve it freshly made.
+            </li>
+            <br />
+            <img
+              src="/assets/images/lunuMiris/lm4.jpg"
+              alt="image4 of lunu Miris"
+            />
+            <br />
+          </ol>
+        </div>
+
+        <br />
+
+        <h4>Enjoy your meal !</h4>
       </section>
     </main>
 
