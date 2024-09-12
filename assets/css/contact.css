@@ -17,13 +17,26 @@ p::first-letter {
   margin-left: 30px;
 }
 
+.name-email-align {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+br + input[type="text"] {
+  width: 415px;
+}
+
+textarea {
+  width: 900px;
+}
+
 /* text inputs & textfield */
 br + input[type="text"],
 textarea {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
-  width: 900px;
   border: 1px solid #ccc;
   background-color: #f5f8fa;
   font-size: 15px;
@@ -45,7 +58,7 @@ br + div button {
 
 /* form button hover */
 br + div button:hover {
-  background-color: #fe776e;
+  background-color: #ff8f8f;
 }
 
 /* h1 */
@@ -54,7 +67,7 @@ h1 {
 }
 
 /* reduce the content width */
-.content_space {
+.content-space {
   width: 1000px;
   padding-left: 90px;
 }
@@ -67,7 +80,7 @@ span {
 }
 
 /* padding for text inputs & checkbox */
-.txt_input {
+.txt-input {
   padding-left: 10px;
 }
 

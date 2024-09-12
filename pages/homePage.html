@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <div class="navbar_align">
+      <div class="navbar-container">
         <!-- logo -->
         <div class="logo">TastyTales</div>
 
@@ -38,8 +38,8 @@
 
         <!-- search bar -->
         <div class="search-bar">
-          <input type="text" placeholder="Search..." />
-          <button>
+          <input type="text" placeholder="Search..." required />
+          <button type="submit">
             <img
               src="/assets/icons/search.svg"
               alt="search icon"
@@ -50,7 +50,7 @@
         </div>
 
         <!-- social media icons -->
-        <div class="icon_space">
+        <div class="icon-space">
           <a href="https://www.facebook.com/hungrylankan/" target="_blank">
             <img
               src="/assets/icons/facebook.svg"
@@ -88,135 +88,246 @@
           </a>
         </div>
       </div>
+      <hr />
     </header>
-
-    <br /><br /><br />
 
     <!-- /////////////////////////// Home Content /////////////////////////// -->
     <main>
-      <section>
-        <!-- //////////// Recipe Card 1 //////////// -->
-
-        <div class="recipe-card">
-          <!-- Left Side Content -->
-          <div class="recipe-content">
-            <!-- Badge -->
-            <div class="badge">Hot Recipes</div>
-
-            <!-- Recipe Title -->
-            <h1 class="recipe-title">Chicken Dum Biryani (Kacchi style)</h1>
-
-            <!-- Recipe Description -->
-            <p class="recipe-description">
-              The BEST chicken dum biryani recipe that actually gives you the
-              perfect Biryani every time...
-            </p>
-
-            <!-- Recipe Information -->
-            <div class="recipe-info">
-              <div class="info-badge">
-                <img src="/assets/icons/time.png" alt="time icon" /> 30 Minutes
+      <section class="recipe-container">
+        <h2>Most Popular Recipes</h2>
+        <div class="cards">
+          <!-- /////// Card 1 /////// -->
+          <div class="card">
+            <div class="recipe-content">
+              <div class="badge">Hot Recipes</div>
+              <h1 class="recipe-title">Chicken Dum Biryani (Kacchi style)</h1>
+              <p class="recipe-description">
+                The BEST chicken dum biryani recipe...
+              </p>
+              <div class="recipe-info">
+                <div class="info-badge">
+                  <img src="/assets/icons/time.png" alt="time icon" />
+                  30 Minutes
+                </div>
+                <div class="info-badge">
+                  <img src="/assets/icons/meal.png" alt="meal icon" />
+                  Chicken
+                </div>
               </div>
-              <div class="info-badge">
-                <img src="/assets/icons/meal.png" alt="meal icon" /> Chicken
+              <div class="author-info">
+                <img
+                  src="/assets/images/chef1.jpg"
+                  alt="John Smith"
+                  class="author-img"
+                />
+                <div class="author-details">
+                  <span class="author-name"> Heston Blumenthal </span>
+                  <span class="author-date"> 15 March 2024 </span>
+                </div>
               </div>
+
+              <br />
+
+              <a href="/pages/chickenDumBiryani.html" class="view-recipes-btn">
+                View Recipes
+              </a>
             </div>
-
-            <!-- Author Info -->
-            <div class="author-info">
+            <div class="recipe-image">
               <img
-                src="/assets/images/chef1.jpg"
-                alt="John Smith"
-                class="author-image"
+                src="/assets/images/chickenBiryani/cb1.jpg"
+                alt="Spicy Chicken Wings"
               />
-              <div class="author-details">
-                <span class="author-name">John Smith</span>
-                <span class="author-date">15 March 2024</span>
-              </div>
             </div>
-
-            <br />
-
-            <!-- view Recipe Button -->
-            <a href="/pages/chickenDumBiryani.html" class="view-recipes-btn"
-              >View Recipes</a
-            >
           </div>
 
-          <!-- recipe Image -->
-          <div class="recipe-image">
+          <!-- /////// Card 2 /////// -->
+          <div class="card">
+            <div class="recipe-content">
+              <div class="badge">Hot Recipes</div>
+              <h1 class="recipe-title">Cajun Shrimp in Air Fryer</h1>
+              <p class="recipe-description">
+                This Cajun Shrimp in the Air fryer is one of the easiest
+                quickest recipes you can make...
+              </p>
+              <div class="recipe-info">
+                <div class="info-badge">
+                  <img src="/assets/icons/time.png" alt="time icon" />
+                  5 Minutes
+                </div>
+                <div class="info-badge">
+                  <img src="/assets/icons/meal.png" alt="meal icon" />
+                  Shrimp
+                </div>
+              </div>
+              <div class="author-info">
+                <img
+                  src="/assets/images/chef4.jpg"
+                  alt="John Smith"
+                  class="author-img"
+                />
+                <div class="author-details">
+                  <span class="author-name"> Delia Smith </span>
+                  <span class="author-date"> 20 December 2023 </span>
+                </div>
+              </div>
+
+              <br />
+
+              <a href="/pages/cajunShrimp.html" class="view-recipes-btn">
+                View Recipes
+              </a>
+            </div>
+            <div class="recipe-image">
+              <img
+                src="/assets/images/cajunShrimp/cs1.jpg"
+                alt="Spicy Chicken Wings"
+              />
+            </div>
+          </div>
+
+          <!-- /////// Card 3 /////// -->
+          <div class="card">
+            <div class="recipe-content">
+              <div class="badge">Hot Recipes</div>
+              <h1 class="recipe-title">Sri Lankan Yellow Rice</h1>
+              <p class="recipe-description">
+                An easy way to make delicious Sri Lankan yellow rice in the
+                instant pot or rice cooker...
+              </p>
+              <div class="recipe-info">
+                <div class="info-badge">
+                  <img src="/assets/icons/time.png" alt="time icon" />
+                  15 Minutes
+                </div>
+                <div class="info-badge">
+                  <img src="/assets/icons/meal.png" alt="meal icon" />
+                  Chicken
+                </div>
+              </div>
+              <div class="author-info">
+                <img
+                  src="/assets/images/chef2.jpg"
+                  alt="John Smith"
+                  class="author-img"
+                />
+                <div class="author-details">
+                  <span class="author-name"> Gordon Ramsay </span>
+                  <span class="author-date"> 10 April 2024</span>
+                </div>
+              </div>
+
+              <br />
+
+              <a href="/pages/yellowRice.html" class="view-recipes-btn">
+                View Recipes
+              </a>
+            </div>
+            <div class="recipe-image">
+              <img
+                src="/assets/images/yellowRice/yr1.jpg"
+                alt="Spicy Chicken Wings"
+              />
+            </div>
+          </div>
+
+          <!-- /////// Card 4 /////// -->
+          <div class="card">
+            <div class="recipe-content">
+              <div class="badge">Hot Recipes</div>
+              <h1 class="recipe-title">Sri Lankan Chicken Kottu</h1>
+              <p class="recipe-description">
+                The best and the most popular Sri Lankan street food and
+                probably the most popular Sri Lankan food in the world...
+              </p>
+              <div class="recipe-info">
+                <div class="info-badge">
+                  <img src="/assets/icons/time.png" alt="time icon" />
+                  10 Minutes
+                </div>
+                <div class="info-badge">
+                  <img src="/assets/icons/meal.png" alt="meal icon" />
+                  Chicken
+                </div>
+              </div>
+              <div class="author-info">
+                <img
+                  src="/assets/images/chef5.jpg"
+                  alt="John Smith"
+                  class="author-img"
+                />
+                <div class="author-details">
+                  <span class="author-name"> Dharshan Munidasa </span>
+                  <span class="author-date"> 05 May 2023</span>
+                </div>
+              </div>
+
+              <br />
+
+              <a href="/pages/chickenKottu.html" class="view-recipes-btn">
+                View Recipes
+              </a>
+            </div>
+            <div class="recipe-image">
+              <img
+                src="/assets/images/chickenKottu/ck1.jpg"
+                alt="Spicy Chicken Wings"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br /><br />
+
+      <section class="moti-sub-align">
+        <div class="motivation-card">
+          <div class="motivation-content">
+            <div>
+              <h1>Everyone Can Be A Chef In Their Own Kitchen</h1>
+              <p>
+                Cooking is a skill anyone can learn. With online recipes and
+                creativity, you can become a chef right in your own kitchen.
+                Start your culinary journey today!
+              </p>
+            </div>
             <img
-              src="/assets/images/chickenBiryani/cb1.jpg"
-              alt="Spicy Chicken Wings"
+              src="/assets/images/motivation.jpg"
+              alt="Anyone can cook"
+              class="motivation-img"
             />
           </div>
         </div>
 
-        <br />
+        <div class="subscribe-card">
+          <h1>Deliciousness To Your Inbox.</h1>
+          <p>
+            Sign up with your email to never miss out on any new delicious
+            recipes! We will send information about special dishes directly to
+            your Gmail inbox.
+          </p>
 
-        <!-- //////////// Recipe Card 2 //////////// -->
+          <form class="subscribe-form">
+            <input type="email" placeholder="Your email address.." required />
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
 
-        <div class="recipe-card">
-          <!-- Left Side Content -->
-          <div class="recipe-content">
-            <!-- Badge -->
-            <div class="badge">Hot Recipes</div>
-
-            <!-- Recipe Title -->
-            <h1 class="recipe-title">Cajun Shrimp in Air Fryer</h1>
-
-            <!-- Recipe Description -->
-            <p class="recipe-description">
-              This Cajun Shrimp in the Air fryer is one of the easiest quickest
-              recipes you can make. You only need 5 ingredients if you have a
-              cajun seasoning at home. If you don't, I also added my super
-              simple cajun seasoning recipe here as well...
-            </p>
-
-            <!-- Recipe Information -->
-            <div class="recipe-info">
-              <div class="info-badge">
-                <img src="/assets/icons/time.png" alt="time icon" /> 5 Minutes
-              </div>
-              <div class="info-badge">
-                <img src="/assets/icons/meal.png" alt="meal icon" /> Cajan
-                Shrimp
-              </div>
-            </div>
-
-            <!-- Author Info -->
-            <div class="author-info">
-              <img
-                src="/assets/images/chef4.jpg"
-                alt="Delia Smith"
-                class="author-image"
-              />
-              <div class="author-details">
-                <span class="author-name">Delia Smith</span>
-                <span class="author-date">20 December 2025</span>
-              </div>
-            </div>
-
-            <br />
-
-            <!-- view Recipe Button -->
-            <a href="/pages/cajunShrimp.html" class="view-recipes-btn"
-              >View Recipes</a
-            >
-          </div>
-
-          <!-- recipe Image -->
-          <div class="recipe-image">
+          <div class="food-img">
             <img
-              src="/assets/images/cajunShrimp/cs1.jpg"
-              alt="Spicy Chicken Wings"
+              src="/assets/images/subscribe1.webp"
+              alt="Various vegetables and ingredients"
+              id="left-img"
+            />
+            <img
+              src="/assets/images/subscribe2.webp"
+              alt="Salad bowl with eggs and vegetables"
+              id="right-img"
             />
           </div>
         </div>
       </section>
     </main>
 
-    <br /><br />
+    <br /><br /><br />
 
     <!-- footer -->
     <footer>

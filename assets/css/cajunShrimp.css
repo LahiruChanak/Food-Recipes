@@ -10,30 +10,30 @@ section {
 }
 
 /* align the image & labels */
-.labels_sided {
+.labels-sided {
   display: flex;
   align-items: center;
 }
 
 /* sided recipe details */
-.sided_details {
+.sided-details {
   padding: 50px;
   font-size: 15px;
 }
 
 /* space between label */
-.label_space {
+.label-space {
   margin-bottom: 10px;
 }
 
 /* label icons */
-div[class="label_space"] img {
+div[class=".label-space"] img {
   width: 20px;
   vertical-align: middle;
 }
 
 /* label icons */
-.recipe_img {
+.recipe-img {
   width: 215px;
   height: 285px;
 }

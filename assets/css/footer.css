@@ -3,3 +3,7 @@ footer div {
   color: white;
   text-align: center;
 }
+
+footer hr {
+  border: 1px solid #ccc;
+}

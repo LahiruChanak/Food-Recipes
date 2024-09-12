@@ -4,9 +4,9 @@ body {
 }
 
 /* /////////////////////////////////// */
-.container {
+.recipe-container {
   max-width: 1400px;
-  padding: 0 15px;
+  padding: 20px 15px;
   margin: 0 auto;
 }
 
@@ -17,7 +17,7 @@ h2 {
 
 .cards {
   display: flex;
-  padding: 25px 0px;
+  padding: 20px 0;
   list-style: none;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -26,12 +26,15 @@ h2 {
 .card {
   display: flex;
   flex-direction: row;
+  align-items: center;
   flex: 0 0 100%;
-  padding: 20px;
-  background-color: #e6f7ff;
+  max-width: 600px;
+  padding: 20px 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: #fbe8d3;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-  scroll-snap-align: start;
   transition: all 0.2s;
 }
 
@@ -39,13 +42,13 @@ h2 {
   margin-right: 10px;
 }
 
-.card .card-content {
-  margin: 20px 0;
-  max-width: 85%;
+.card:hover {
+  transform: scale(1.03);
 }
 
 .recipe-img {
   display: flex;
+  align-items: center;
 }
 
 .recipe-img img {
@@ -55,23 +58,21 @@ h2 {
 }
 
 .cards::-webkit-scrollbar {
-  height: 12px;
-}
-
-.cards::-webkit-scrollbar-thumb,
-.cards::-webkit-scrollbar-track {
-  border-radius: 92px;
+  height: 10px;
 }
 
 .cards::-webkit-scrollbar-thumb {
   background-color: #fe5f55;
+  border-radius: 6px;
 }
 
 .cards::-webkit-scrollbar-track {
-  background-color: #fbe8d3;
+  background-color: #ffb9b9;
+  border-radius: 6px;
+  border: 3px solid #fff;
 }
 
-@media (min-width: 500px) {
+/* @media (min-width: 500px) {
   .card {
     flex-basis: calc(50% - 10px);
   }
@@ -99,7 +100,7 @@ h2 {
   .card:not(:last-child) {
     margin-right: 40px;
   }
-}
+} */
 
 /* //////////////////////////////////////////// */
 .recipe-content {
@@ -108,7 +109,7 @@ h2 {
 }
 
 .badge {
-  background-color: #fbe8d3;
+  background-color: #fe5f5550;
   color: #a0582e;
   padding: 8px 16px;
   border-radius: 50px;
@@ -142,14 +143,14 @@ h2 {
 .info-badge {
   display: flex;
   align-items: center;
-  background-color: #dde9f3;
+  background-color: #fe5f5550;
   padding: 10px 20px;
   border-radius: 50px;
   color: #333;
   font-size: 14px;
 }
 
-.info-badge i {
+.info-badge img {
   margin-right: 8px;
   font-size: 16px;
 }
@@ -217,18 +218,37 @@ div[class="info-badge"] img {
 }
 
 /* //////////////////////////////////////////// */
-.motivation-container {
+.moti-sub-align {
   display: flex;
-  background-color: #e6f7ff;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-  margin: 50px 0;
-  margin: 20px 60px;
-  width: 800px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.motivation-title {
+.motivation-card,
+.subscribe-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbe8d3;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+}
+
+.motivation-card {
+  flex: 1 1 600px;
+  max-width: 800px;
+}
+
+.subscribe-card {
+  flex: 1 1 400px;
+  max-width: 600px;
+  position: relative;
+}
+
+h1 {
   font-size: 32px;
   text-transform: capitalize;
   color: #222;
@@ -237,26 +257,68 @@ div[class="info-badge"] img {
   margin-bottom: 15px;
 }
 
-.motivation-description {
+p {
   color: #555;
   font-size: 16px;
   margin-bottom: 20px;
 }
 
+.motivation-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .motivation-img {
-  height: 350px;
-  margin-left: 10px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 /* //////////////////////////////////////////// */
-.newsletter-container {
+.subscribe-form {
   display: flex;
-  background-color: #e6f7ff;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
-  margin: 50px 0;
-  margin: 20px 60px;
-  width: 500px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+}
+
+.subscribe-btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.food-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-img img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+}
+
+#left-img {
+  border-radius: 0 0 0 20px;
+}
+
+#right-img {
+  border-radius: 0 0 20px 0;
 }

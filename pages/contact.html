@@ -14,7 +14,7 @@
   <body>
     <!-- /////////////////// navigation bar /////////////////// -->
     <header>
-      <div class="navbar_align">
+      <div class="navbar-container">
         <!-- logo -->
         <div class="logo">TastyTales</div>
 
@@ -39,8 +39,8 @@
 
         <!-- search bar -->
         <div class="search-bar">
-          <input type="text" placeholder="Search..." />
-          <button>
+          <input type="text" placeholder="Search..." required />
+          <button type="submit">
             <img
               src="/assets/icons/search.svg"
               alt="search icon"
@@ -51,7 +51,7 @@
         </div>
 
         <!-- social media icons -->
-        <div class="icon_space">
+        <div class="icon-space">
           <a href="https://www.facebook.com/hungrylankan/" target="_blank">
             <img
               src="/assets/icons/facebook.svg"
@@ -89,6 +89,7 @@
           </a>
         </div>
       </div>
+      <hr />
     </header>
 
     <br />
@@ -98,7 +99,7 @@
         <!-- contact me -->
         <h1>Contact Me</h1>
 
-        <div class="content_space">
+        <div class="content-space">
           <p>
             We would love to hear from you. If you need any help or would like
             to contact Tasty Tales to work with Us please contact Us through the
@@ -116,29 +117,29 @@
 
           <!-- /////////////////// contact form /////////////////// -->
 
-          <div class="form_padding">
+          <div class="form-padding">
             <fieldset>
               <legend>Personal Details</legend>
 
               <br />
 
-              <div class="txt_input">
-                <label for="name">Name</label>
-                <br />
-                <input type="text" id="name" name="name" required />
+              <div class="name-email-align">
+                <div class="txt-input">
+                  <label for="name">Name</label>
+                  <br />
+                  <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="txt-input">
+                  <label for="email">Email</label>
+                  <br />
+                  <input type="text" id="email" name="email" required />
+                </div>
               </div>
 
               <br />
 
-              <div class="txt_input">
-                <label for="email">Email</label>
-                <br />
-                <input type="text" id="email" name="email" required />
-              </div>
-
-              <br />
-
-              <div class="txt_input">
+              <div class="txt-input">
                 <label for="message">Message</label>
                 <br />
                 <textarea id="message" rows="10px" required></textarea>
@@ -146,13 +147,13 @@
 
               <br />
 
-              <div class="txt_input">
+              <div class="txt-input">
                 <label for="privacyPolicy">Privacy Policy</label>
               </div>
 
               <br />
 
-              <div class="txt_input">
+              <div class="txt-input">
                 <input type="checkbox" id="privacyPolicy" required />
                 <label for="privacyPolicy" aria-required="true">
                   I have read and understood the Privacy Policy.

@@ -3,11 +3,17 @@
   font-family: "SkateSemiBold";
   src: url(/assets/fonts/skate-5.ttf);
 }
-/* align navbar */
-.navbar_align {
+/* align the navigation menu */
+.navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+header hr {
+  border: 1px solid #ccc;
+  width: 90%;
+  align-items: center;
 }
 
 /* hyperlink */
@@ -25,7 +31,7 @@ a:hover {
 }
 
 /* icon space */
-.icon_space {
+.icon-space {
   margin-left: 40px;
   display: flex;
   align-items: center;
