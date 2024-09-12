@@ -3,6 +3,18 @@ body {
   font-family: sans-serif;
 }
 
+/* recipe & side container */
+.recipe-side-container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* recipe content */
+.recipe-content {
+  max-width: 1000px;
+  flex: 1;
+}
+
 /* hyperlink css */
 section div a {
   text-decoration: none;
@@ -30,7 +42,7 @@ p {
 }
 
 /* horizontal line css */
-section + hr {
+section div + hr {
   border: 1px solid #ccc;
   width: 73%;
   float: right;
@@ -54,4 +66,27 @@ section + hr {
 /* image and text space */
 .img-txt-space {
   margin-left: 40px;
+}
+
+/* ///////////////////////////////////////////// */
+.vertical-line {
+  background-color: #ccc;
+  margin: 100px 40px;
+}
+
+.side-content {
+  width: 300px;
+  margin: 60px 0;
+  padding: 10px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.video-content {
+  margin: 40px 0;
+}
+
+iframe {
+  border: 5px solid #ccc;
+  border-radius: 10px;
 }

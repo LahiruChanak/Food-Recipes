@@ -34,7 +34,7 @@ h2 {
   margin-right: 15px;
   background-color: #fbe8d3;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transition: all 0.2s;
 }
 
