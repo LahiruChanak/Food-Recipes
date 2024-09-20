@@ -1,6 +1,7 @@
 /* body css */
 body {
   font-family: sans-serif;
+  position: relative;
 }
 
 /* recipe & side container */

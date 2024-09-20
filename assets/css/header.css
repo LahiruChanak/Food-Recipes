@@ -100,3 +100,37 @@ div input {
   color: #fe5f55;
   font-weight: bold;
 }
+
+/* __________________________________ scroll-up _________________________________ */
+.scroll-container {
+  position: absolute;
+  bottom: 0;
+  right: 4vh;
+  height: 100%;
+}
+
+.scroll-container:before {
+  content: "";
+  display: block;
+  height: 130vh;
+  pointer-events: none;
+}
+
+.scroll-container div {
+  position: sticky;
+  top: 89vh;
+  cursor: pointer;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  /* glassmorphism effect */
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+html {
+  scroll-behavior: smooth;
+}
