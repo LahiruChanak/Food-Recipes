@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/cajunShrimp.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/common.css" />
   </head>
   <body>
     <!-- /////////////////// navigation bar /////////////////// -->
@@ -20,21 +21,12 @@
 
         <!-- navigation links -->
         <nav>
-          <div>
-            <a href="/index.html"> Home </a>
-          </div>
-
-          <div>
-            <a href="/pages/recipes.html" class="active"> Recipes </a>
-          </div>
-
-          <div>
-            <a href="/pages/contact.html"> Contact </a>
-          </div>
-
-          <div>
-            <a href="/pages/about.html"> About </a>
-          </div>
+          <ul class="nav-links">
+            <li><a href="/index.html"> Home </a></li>
+            <li><a href="/pages/recipes.html" class="active"> Recipes </a></li>
+            <li><a href="/pages/contact.html"> Contact </a></li>
+            <li><a href="/pages/about.html"> About </a></li>
+          </ul>
         </nav>
 
         <!-- search bar -->
@@ -51,7 +43,7 @@
         </div>
 
         <!-- social media icons -->
-        <div class="icon-space">
+        <div class="icon-container">
           <a href="https://www.facebook.com/hungrylankan/" target="_blank">
             <img
               src="/assets/icons/facebook.svg"
@@ -89,19 +81,19 @@
           </a>
         </div>
       </div>
-      <hr>
+      <hr />
     </header>
 
     <br />
 
-    <!-- ///////////////////////// recipe /////////////////////// -->
+    <!-- _____________________________ recipe _____________________________ -->
 
     <main>
-      <section>
+      <section class="recipe-content">
         <h2>Cajun Shrimp in Air Fryer</h2>
 
         <!-- to side recipe details  -->
-        <div class="label-sided">
+        <div class="recipe-container">
           <!-- image -->
           <div>
             <img
@@ -112,38 +104,40 @@
           </div>
 
           <!-- sided recipe details -->
-          <div class="sided-details">
+          <div class="label-container">
             <!-- difficulty -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/difficult.png" alt="Difficulty icon" />
-              Difficulty
-              <br />
-              <span> Beginner </span>
+              <span> Difficulty </span>
+              <div id="first-label">Beginner</div>
             </div>
-
-            <br />
 
             <!-- prep, cook, and total time -->
-            <div class="label-space">
-              <img src="/assets/icons/time.png" alt="Time icon" />
-              Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
-              &emsp;&emsp;&emsp;&emsp; Total Time
-              <!-- (&nbsp; => single space), (&ensp; => two spaces), (&emsp; => four spaces) -->
-              <br />
-              <span>
-                5 mins &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5 mins
-                &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; 10 mins
-              </span>
+            <div class="label">
+              <div class="time-container">
+                <div>
+                  <img src="/assets/icons/time.png" alt="Time icon" />
+                  <span> Prep Time </span>
+                  <div id="first-label">5 mins</div>
+                </div>
+
+                <div>
+                  <span> Cook Time </span>
+                  <div>5 mins</div>
+                </div>
+
+                <div>
+                  <span> Total Time </span>
+                  <div>10 mins</div>
+                </div>
+              </div>
             </div>
 
-            <br />
-
             <!-- servings -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/servings.png" alt="Servings icon" />
-              Servings
-              <br />
-              <span> 4 </span>
+              <span>Servings</span>
+              <div id="first-label">4</div>
             </div>
           </div>
         </div>
@@ -258,6 +252,99 @@
         <br />
 
         <h4>Enjoy your meal!</h4>
+      </section>
+
+      <div class="vertical-line"><hr /></div>
+
+      <!-- __________________________ side content __________________________ -->
+      <section class="side-content">
+        <aside>
+          <h2 class="side-title">Featured Videos</h2>
+
+          <!-- video 01 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/QvKHcrOxE3Q?si=h4DIVQrPrmvwmXzz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Pineapple Fried Rice</p>
+          </div>
+
+          <!-- video 02 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/3XeWJdQaKt4?si=PN0jPXxQojUbM5Yb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Sri Lankan Fish Cutlets / Croquettes</p>
+          </div>
+
+          <!-- video 03 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/jZuK_4rg5DM?si=E0lI8IXYKmSc3VZb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Oreo Truffles</p>
+          </div>
+
+          <!-- video 04 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/w0JvDgup1ag?si=CvpcdADNwE5fwAOw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Sri Lankan Milk Tea with Fresh Milk</p>
+          </div>
+
+          <!-- video 05 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/OSoZXu30EVM?si=OEfnN_FemC-IzZfG"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Seafood Fried Rice</p>
+          </div>
+
+          <!-- video 06 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/ubzxkC-dZDY?si=W5M5d-ns8a8zWK7o"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Amaretti cookies</p>
+          </div>
+        </aside>
       </section>
     </main>
 

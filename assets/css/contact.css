@@ -70,7 +70,7 @@ h1 {
 /* reduce the content width */
 .content-space {
   width: 900px;
-  padding-left: 90px;
+  padding-left: 40px;
 }
 
 /* special notice */
@@ -105,7 +105,6 @@ input[type="checkbox"] {
 /* //////////////////////////////////////////////// */
 .contact-side-container {
   display: flex;
-  flex-direction: row;
 }
 
 .vertical-line {

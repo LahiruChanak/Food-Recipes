@@ -1,11 +1,7 @@
-/* body */
-body {
-  font-family: sans-serif;
-}
-
 /* /////////////////////////////////// */
-.recipe-container {
-  max-width: 1400px;
+
+.card-container {
+  max-width: 1350px;
   padding: 20px 15px;
   margin: 0 auto;
 }
@@ -21,6 +17,11 @@ h2 {
   list-style: none;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+
+  /*  */
+  /* border: 1px solid black; */
+  border-radius: 20px;
+  background-color: #ecf0f1;
 }
 
 .card {

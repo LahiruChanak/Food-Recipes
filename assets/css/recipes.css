@@ -5,15 +5,14 @@ body {
 }
 
 /* recipe & side container */
-.recipe-side-container {
+main {
   display: flex;
-  flex-direction: row;
+  padding: 0 60px;
 }
 
 /* recipe content */
 .recipe-content {
   max-width: 1000px;
-  flex: 1;
 }
 
 /* hyperlink css */
@@ -60,34 +59,10 @@ section div + hr {
 .recipe-img {
   width: 200px;
   height: 200px;
-  margin-left: 50px;
   border-radius: 0 15px 15px 0;
 }
 
 /* image and text space */
 .img-txt-space {
   margin-left: 40px;
-}
-
-/* ///////////////////////////////////////////// */
-.vertical-line {
-  background-color: #ccc;
-  margin: 100px 40px;
-}
-
-.side-content {
-  width: 300px;
-  margin: 60px 0;
-  padding: 10px 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-.video-content {
-  margin: 40px 0;
-}
-
-iframe {
-  border: 5px solid #ccc;
-  border-radius: 10px;
 }

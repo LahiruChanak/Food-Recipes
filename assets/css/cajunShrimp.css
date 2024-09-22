@@ -1,33 +1,32 @@
-/* body css */
-body {
-  font-family: sans-serif;
+main {
+  display: flex;
 }
 
 /* reduce content width & padding */
-section {
-  width: 1000px;
-  padding-left: 50px;
+.recipe-content {
+  width: 957px;
 }
 
 /* align the image & labels */
-.labels-sided {
+.recipe-container {
   display: flex;
   align-items: center;
 }
 
 /* sided recipe details */
-.sided-details {
-  padding: 50px;
+.label-container {
+  margin-left: 50px;
+  gap: 0px;
   font-size: 15px;
 }
 
 /* space between label */
-.label-space {
+.label {
   margin-bottom: 10px;
 }
 
 /* label icons */
-div[class=".label-space"] img {
+.label img {
   width: 20px;
   vertical-align: middle;
 }
@@ -36,6 +35,20 @@ div[class=".label-space"] img {
 .recipe-img {
   width: 215px;
   height: 285px;
+}
+
+.time-container {
+  display: flex;
+  gap: 50px;
+  margin: 25px 0;
+}
+
+#first-label {
+  margin-left: 25px;
+}
+
+.label span + div {
+  color: #808080;
 }
 
 /* checkbox css */
@@ -51,10 +64,6 @@ input[type="checkbox"]:checked + span {
 }
 
 /* bold text css */
-br + span {
-  color: #808080;
-  padding-left: 25px;
-}
 
 /* images of instructions */
 li + br + img {
@@ -76,3 +85,4 @@ h3 {
 p {
   margin-left: 40px;
 }
+

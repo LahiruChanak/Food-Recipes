@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/homePage.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/common.css" />
   </head>
   <body>
     <header>
@@ -19,21 +20,12 @@
 
         <!-- navigation links -->
         <nav>
-          <div>
-            <a href="/index.html" class="active"> Home </a>
-          </div>
-
-          <div>
-            <a href="/pages/recipes.html"> Recipes </a>
-          </div>
-
-          <div>
-            <a href="/pages/contact.html"> Contact </a>
-          </div>
-
-          <div>
-            <a href="/pages/about.html"> About </a>
-          </div>
+          <ul class="nav-links">
+            <li><a href="/index.html" class="active"> Home </a></li>
+            <li><a href="/pages/recipes.html"> Recipes </a></li>
+            <li><a href="/pages/contact.html"> Contact </a></li>
+            <li><a href="/pages/about.html"> About </a></li>
+          </ul>
         </nav>
 
         <!-- search bar -->
@@ -50,7 +42,7 @@
         </div>
 
         <!-- social media icons -->
-        <div class="icon-space">
+        <div class="icon-container">
           <a href="https://www.facebook.com/hungrylankan/" target="_blank">
             <img
               src="/assets/icons/facebook.svg"
@@ -93,7 +85,7 @@
 
     <!-- /////////////////////////// Home Content /////////////////////////// -->
     <main>
-      <section class="recipe-container">
+      <section class="card-container">
         <h2>Most Popular Recipes</h2>
         <div class="cards">
           <!-- /////// Card 1 /////// -->
@@ -331,15 +323,11 @@
 
     <!-- footer -->
     <footer>
-      <div>
-        <hr />
-
-        <h5>
-          &copy; Copyright 2024 Tasty Tales. All Rights Reserved. Privacy Policy
-        </h5>
-
-        <hr />
-      </div>
+      <hr />
+      <p>
+        &copy; Copyright 2024 Tasty Tales. All Rights Reserved. Privacy Policy
+      </p>
+      <hr />
     </footer>
   </body>
 </html>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/contact.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/common.css" />
   </head>
   <body>
     <!-- /////////////////// navigation bar /////////////////// -->
@@ -20,21 +21,12 @@
 
         <!-- navigation links -->
         <nav>
-          <div>
-            <a href="/index.html"> Home </a>
-          </div>
-
-          <div>
-            <a href="/pages/recipes.html"> Recipes </a>
-          </div>
-
-          <div>
-            <a href="/pages/contact.html" class="active"> Contact </a>
-          </div>
-
-          <div>
-            <a href="/pages/about.html"> About </a>
-          </div>
+          <ul class="nav-links">
+            <li><a href="/index.html"> Home </a></li>
+            <li><a href="/pages/recipes.html"> Recipes </a></li>
+            <li><a href="/pages/contact.html" class="active"> Contact </a></li>
+            <li><a href="/pages/about.html"> About </a></li>
+          </ul>
         </nav>
 
         <!-- search bar -->
@@ -51,7 +43,7 @@
         </div>
 
         <!-- social media icons -->
-        <div class="icon-space">
+        <div class="icon-container">
           <a href="https://www.facebook.com/hungrylankan/" target="_blank">
             <img
               src="/assets/icons/facebook.svg"
@@ -95,7 +87,7 @@
     <br />
 
     <!-- /////////////////// main content /////////////////// -->
-    <main>
+    <main style="display: flex; flex-direction: column">
       <h1>Contact Me</h1>
       <div class="contact-side-container">
         <section>

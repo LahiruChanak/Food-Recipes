@@ -4,7 +4,7 @@ body {
 }
 
 /* reduce content width & padding */
-section {
+.repipe-content {
   width: 1000px;
   padding-left: 50px;
 }

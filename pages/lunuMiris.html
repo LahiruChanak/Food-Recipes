@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/lunuMiris.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/common.css" />
   </head>
   <body>
     <!-- /////////////////// navigation bar /////////////////// -->
@@ -20,21 +21,12 @@
 
         <!-- navigation links -->
         <nav>
-          <div>
-            <a href="/index.html"> Home </a>
-          </div>
-
-          <div>
-            <a href="/pages/recipes.html" class="active"> Recipes </a>
-          </div>
-
-          <div>
-            <a href="/pages/contact.html"> Contact </a>
-          </div>
-
-          <div>
-            <a href="/pages/about.html"> About </a>
-          </div>
+          <ul class="nav-links">
+            <li><a href="/index.html"> Home </a></li>
+            <li><a href="/pages/recipes.html" class="active"> Recipes </a></li>
+            <li><a href="/pages/contact.html"> Contact </a></li>
+            <li><a href="/pages/about.html"> About </a></li>
+          </ul>
         </nav>
 
         <!-- search bar -->
@@ -51,7 +43,7 @@
         </div>
 
         <!-- social media icons -->
-        <div class="icon-space">
+        <div class="icon-container">
           <a href="https://www.facebook.com/hungrylankan/" target="_blank">
             <img
               src="/assets/icons/facebook.svg"
@@ -89,14 +81,14 @@
           </a>
         </div>
       </div>
-      <hr>
+      <hr />
     </header>
 
     <br />
 
     <!-- ///////////////////////// recipe /////////////////////// -->
     <main>
-      <section>
+      <section class="recipe-content">
         <h2>Sri Lankan Lunu Miris</h2>
 
         <!-- to side recipe details  -->
@@ -259,6 +251,99 @@
         <br />
 
         <h4>Enjoy your meal !</h4>
+      </section>
+
+      <div class="vertical-line"><hr /></div>
+
+      <!-- __________________________ side content __________________________ -->
+      <section class="side-content">
+        <aside>
+          <h2 class="side-title">Featured Videos</h2>
+
+          <!-- video 01 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/QvKHcrOxE3Q?si=h4DIVQrPrmvwmXzz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Pineapple Fried Rice</p>
+          </div>
+
+          <!-- video 02 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/3XeWJdQaKt4?si=PN0jPXxQojUbM5Yb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Sri Lankan Fish Cutlets / Croquettes</p>
+          </div>
+
+          <!-- video 03 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/jZuK_4rg5DM?si=E0lI8IXYKmSc3VZb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Oreo Truffles</p>
+          </div>
+
+          <!-- video 04 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/w0JvDgup1ag?si=CvpcdADNwE5fwAOw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Sri Lankan Milk Tea with Fresh Milk</p>
+          </div>
+
+          <!-- video 05 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/OSoZXu30EVM?si=OEfnN_FemC-IzZfG"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Seafood Fried Rice</p>
+          </div>
+
+          <!-- video 06 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/ubzxkC-dZDY?si=W5M5d-ns8a8zWK7o"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Amaretti cookies</p>
+          </div>
+        </aside>
       </section>
     </main>
 

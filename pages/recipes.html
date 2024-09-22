@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/css/recipes.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/common.css" />
   </head>
   <body>
     <!-- /////////////////// navigation bar /////////////////// -->
@@ -20,21 +21,12 @@
 
         <!-- navigation links -->
         <nav>
-          <div>
-            <a href="/index.html"> Home </a>
-          </div>
-
-          <div>
-            <a href="/pages/recipes.html" class="active"> Recipes </a>
-          </div>
-
-          <div>
-            <a href="/pages/contact.html"> Contact </a>
-          </div>
-
-          <div>
-            <a href="/pages/about.html"> About </a>
-          </div>
+          <ul class="nav-links">
+            <li><a href="/index.html"> Home </a></li>
+            <li><a href="/pages/recipes.html" class="active"> Recipes </a></li>
+            <li><a href="/pages/contact.html"> Contact </a></li>
+            <li><a href="/pages/about.html"> About </a></li>
+          </ul>
         </nav>
 
         <!-- search bar -->
@@ -51,7 +43,7 @@
         </div>
 
         <!-- social media icons -->
-        <div class="icon-space">
+        <div class="icon-container">
           <a href="https://www.facebook.com/hungrylankan/" target="_blank">
             <img
               src="/assets/icons/facebook.svg"
@@ -89,22 +81,10 @@
           </a>
         </div>
       </div>
+
       <hr />
 
       <!-- ________________________ scroll-up button ________________________ -->
-
-      <!-- <div>
-        <button class="scroll-up-btn">
-          <a href="#">
-            <img
-              src="/assets/icons/scroll-up.svg"
-              alt="scroll-up icon"
-              title="Scroll up"
-              class="icon"
-            />
-          </a>
-        </button>
-      </div> -->
 
       <div class="scroll-container">
         <div>
@@ -117,282 +97,276 @@
 
     <br /><br /><br />
 
-    <!-- //////////////////// recipes list /////////////////// -->
+    <!-- __________________________ recipes list __________________________ -->
     <main>
-      <div class="recipe-side-container">
-        <section class="recipe-content">
-          <!-- yellow rice -->
-          <div class="txt-flex">
-            <div>
-              <a href="/pages/yellowRice.html" target="_blank">
-                <img
-                  src="/assets/images/yellowRice/yr1.jpg"
-                  alt="Image of Yellow Rice"
-                  class="recipe-img"
-                />
-              </a>
-            </div>
-
-            <div class="img-txt-space">
-              <a href="/pages/yellowRice.html" target="_blank">
-                Sri Lankan Yellow Rice
-              </a>
-              <p>
-                An easy way to make delicious Sri Lankan yellow rice in the
-                instant pot or rice cooker. A must for your Sri Lankan party
-                menu...
-              </p>
-            </div>
+      <section class="recipe-content">
+        <!-- yellow rice -->
+        <div class="txt-flex">
+          <div>
+            <a href="/pages/yellowRice.html" target="_blank">
+              <img
+                src="/assets/images/yellowRice/yr1.jpg"
+                alt="Image of Yellow Rice"
+                class="recipe-img"
+              />
+            </a>
           </div>
 
-          <hr />
-          <br /><br />
+          <div class="img-txt-space">
+            <a href="/pages/yellowRice.html" target="_blank">
+              Sri Lankan Yellow Rice
+            </a>
+            <p>
+              An easy way to make delicious Sri Lankan yellow rice in the
+              instant pot or rice cooker. A must for your Sri Lankan party
+              menu...
+            </p>
+          </div>
+        </div>
 
-          <!-- lunu miris -->
-          <div class="txt-flex">
-            <div>
-              <a href="/pages/lunuMiris.html" target="_blank">
-                <img
-                  src="/assets/images/lunuMiris/lm1.jpg"
-                  alt="Image of Lunu Miris"
-                  class="recipe-img"
-                />
-              </a>
-            </div>
+        <hr />
+        <br /><br />
 
-            <div class="img-txt-space">
-              <a href="/pages/lunuMiris.html" target="_blank">
-                <strong>Sri Lankan Lunu Miris</strong>
-              </a>
-              <p>
-                Sri Lankan Lunu Miris is a beloved traditional condiment that's
-                super easy to make. Made from finely chopped onions, red chili
-                flakes, salt, lime juice, and Maldive fish, it packs a punch
-                with its bold, spicy, citrusy, salty, and umami flavors. It's a
-                must-have for some Sri Lankan dishes, including milk rice
-                (Kiribath), coconut rotti, ...
-              </p>
-            </div>
+        <!-- lunu miris -->
+        <div class="txt-flex">
+          <div>
+            <a href="/pages/lunuMiris.html" target="_blank">
+              <img
+                src="/assets/images/lunuMiris/lm1.jpg"
+                alt="Image of Lunu Miris"
+                class="recipe-img"
+              />
+            </a>
           </div>
 
-          <hr />
-          <br /><br />
+          <div class="img-txt-space">
+            <a href="/pages/lunuMiris.html" target="_blank">
+              <strong>Sri Lankan Lunu Miris</strong>
+            </a>
+            <p>
+              Sri Lankan Lunu Miris is a beloved traditional condiment that's
+              super easy to make. Made from finely chopped onions, red chili
+              flakes, salt, lime juice, and Maldive fish, it packs a punch with
+              its bold, spicy, citrusy, salty, and umami flavors. It's a
+              must-have for some Sri Lankan dishes, including milk rice
+              (Kiribath), coconut rotti, ...
+            </p>
+          </div>
+        </div>
 
-          <!-- cajun shrimp -->
-          <div class="txt-flex">
-            <div>
-              <a href="/pages/cajunShrimp.html" target="_blank">
-                <img
-                  src="/assets/images/cajunShrimp/cs1.jpg"
-                  alt="Image of Cajun Shrimp"
-                  class="recipe-img"
-                />
-              </a>
-            </div>
+        <hr />
+        <br /><br />
 
-            <div class="img-txt-space">
-              <a href="/pages/cajunShrimp.html" target="_blank">
-                <strong>Cajun Shrimp in Air Fryer</strong>
-              </a>
-              <p>
-                This Cajun Shrimp in the Air fryer is one of the easiest
-                quickest recipes you can make. You only need 5 ingredients if
-                you have a cajun seasoning at home. If you don't, I also added
-                my super simple cajun seasoning recipe here as well...
-              </p>
-            </div>
+        <!-- cajun shrimp -->
+        <div class="txt-flex">
+          <div>
+            <a href="/pages/cajunShrimp.html" target="_blank">
+              <img
+                src="/assets/images/cajunShrimp/cs1.jpg"
+                alt="Image of Cajun Shrimp"
+                class="recipe-img"
+              />
+            </a>
           </div>
 
-          <hr />
-          <br /><br />
+          <div class="img-txt-space">
+            <a href="/pages/cajunShrimp.html" target="_blank">
+              <strong>Cajun Shrimp in Air Fryer</strong>
+            </a>
+            <p>
+              This Cajun Shrimp in the Air fryer is one of the easiest quickest
+              recipes you can make. You only need 5 ingredients if you have a
+              cajun seasoning at home. If you don't, I also added my super
+              simple cajun seasoning recipe here as well...
+            </p>
+          </div>
+        </div>
 
-          <!-- hoppers -->
-          <div class="txt-flex">
-            <div>
-              <a href="/pages/hoppers.html" target="_blank">
-                <img
-                  src="/assets/images/hoppers/h1.jpg"
-                  alt="Image of Hoppers"
-                  class="recipe-img"
-                />
-              </a>
-            </div>
-            <div class="img-txt-space">
-              <a href="/pages/hoppers.html" target="_blank">
-                <strong>Sri Lankan Hoppers</strong>
-              </a>
-              <p>
-                Sri Lankan Hoppers recipe that uses long 18-20 hour fermentation
-                to get the authentic Hopper taste. The ultimate Sri Lankan
-                street food that everyone loves. I've never met a person who
-                doesn't like these crispy coconutty Sri Lankan hoppers. I have
-                no idea why these are called Hoppers. Maybe because these are
-                too good that you would jump for joy when you taste...
-              </p>
-            </div>
+        <hr />
+        <br /><br />
+
+        <!-- hoppers -->
+        <div class="txt-flex">
+          <div>
+            <a href="/pages/hoppers.html" target="_blank">
+              <img
+                src="/assets/images/hoppers/h1.jpg"
+                alt="Image of Hoppers"
+                class="recipe-img"
+              />
+            </a>
+          </div>
+          <div class="img-txt-space">
+            <a href="/pages/hoppers.html" target="_blank">
+              <strong>Sri Lankan Hoppers</strong>
+            </a>
+            <p>
+              Sri Lankan Hoppers recipe that uses long 18-20 hour fermentation
+              to get the authentic Hopper taste. The ultimate Sri Lankan street
+              food that everyone loves. I've never met a person who doesn't like
+              these crispy coconutty Sri Lankan hoppers. I have no idea why
+              these are called Hoppers. Maybe because these are too good that
+              you would jump for joy when you taste...
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <br /><br />
+
+        <!-- kottu -->
+        <div class="txt-flex">
+          <div>
+            <a href="/pages/chickenKottu.html" target="_blank">
+              <img
+                src="/assets/images/chickenKottu/ck1.jpg"
+                alt="Image of Chicken Kottu"
+                class="recipe-img"
+              />
+            </a>
+          </div>
+          <div class="img-txt-space">
+            <a href="/pages/chickenKottu.html" target="_blank">
+              <strong>Sri Lankan Chicken Kottu</strong>
+            </a>
+            <p>
+              Chicken kottu - The best and the most popular Sri Lankan street
+              food and probably the most popular Sri Lankan food in the world.
+              It's a mix of roti pieces, some veggies, eggs, and a curry sauce.
+              Chicken curry in this case...
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <br /><br />
+
+        <!-- biryani -->
+        <div class="txt-flex">
+          <div>
+            <a href="/pages/chickenDumBiryani.html" target="_blank">
+              <img
+                src="/assets/images/chickenBiryani/cb1.jpg"
+                alt="Image of Chicken Dum Biryani"
+                class="recipe-img"
+              />
+            </a>
+          </div>
+          <div class="img-txt-space">
+            <a href="/pages/chickenDumBiryani.html" target="_blank">
+              <strong>Chicken Dum Biryani (Kacchi style)</strong>
+            </a>
+            <p>
+              The BEST chicken dum biryani recipe that actually gives you the
+              perfect Biryani every time...
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="vertical-line"><hr /></div>
+
+      <!-- __________________________ side content __________________________ -->
+      <section class="side-content">
+        <aside>
+          <h2 class="side-title">Featured Videos</h2>
+
+          <!-- video 01 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/QvKHcrOxE3Q?si=h4DIVQrPrmvwmXzz"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Pineapple Fried Rice</p>
           </div>
 
-          <hr />
-          <br /><br />
-
-          <!-- kottu -->
-          <div class="txt-flex">
-            <div>
-              <a href="/pages/chickenKottu.html" target="_blank">
-                <img
-                  src="/assets/images/chickenKottu/ck1.jpg"
-                  alt="Image of Chicken Kottu"
-                  class="recipe-img"
-                />
-              </a>
-            </div>
-            <div class="img-txt-space">
-              <a href="/pages/chickenKottu.html" target="_blank">
-                <strong>Sri Lankan Chicken Kottu</strong>
-              </a>
-              <p>
-                Chicken kottu - The best and the most popular Sri Lankan street
-                food and probably the most popular Sri Lankan food in the world.
-                It's a mix of roti pieces, some veggies, eggs, and a curry
-                sauce. Chicken curry in this case...
-              </p>
-            </div>
+          <!-- video 02 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/3XeWJdQaKt4?si=PN0jPXxQojUbM5Yb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Sri Lankan Fish Cutlets / Croquettes</p>
           </div>
 
-          <hr />
-          <br /><br />
-
-          <!-- biryani -->
-          <div class="txt-flex">
-            <div>
-              <a href="/pages/chickenDumBiryani.html" target="_blank">
-                <img
-                  src="/assets/images/chickenBiryani/cb1.jpg"
-                  alt="Image of Chicken Dum Biryani"
-                  class="recipe-img"
-                />
-              </a>
-            </div>
-            <div class="img-txt-space">
-              <a href="/pages/chickenDumBiryani.html" target="_blank">
-                <strong>Chicken Dum Biryani (Kacchi style)</strong>
-              </a>
-              <p>
-                The BEST chicken dum biryani recipe that actually gives you the
-                perfect Biryani every time...
-              </p>
-            </div>
+          <!-- video 03 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/jZuK_4rg5DM?si=E0lI8IXYKmSc3VZb"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Oreo Truffles</p>
           </div>
-        </section>
 
-        <div class="vertical-line"><hr /></div>
+          <!-- video 04 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/w0JvDgup1ag?si=CvpcdADNwE5fwAOw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Sri Lankan Milk Tea with Fresh Milk</p>
+          </div>
 
-        <!-- ///// side content ///// -->
-        <section>
-          <aside class="side-content">
-            <h2 class="side-title">Featured Videos</h2>
+          <!-- video 05 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/OSoZXu30EVM?si=OEfnN_FemC-IzZfG"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Seafood Fried Rice</p>
+          </div>
 
-            <!-- video 01 -->
-            <div class="video-content">
-              <iframe
-                src="https://www.youtube.com/embed/QvKHcrOxE3Q?si=h4DIVQrPrmvwmXzz"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              >
-              </iframe>
-              <p>Pineapple Fried Rice</p>
-            </div>
-
-            <!-- video 02 -->
-            <div class="video-content">
-              <iframe
-                src="https://www.youtube.com/embed/3XeWJdQaKt4?si=PN0jPXxQojUbM5Yb"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              >
-              </iframe>
-              <p>Sri Lankan Fish Cutlets / Croquettes</p>
-            </div>
-
-            <!-- video 03 -->
-            <div class="video-content">
-              <iframe
-                src="https://www.youtube.com/embed/jZuK_4rg5DM?si=E0lI8IXYKmSc3VZb"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              >
-              </iframe>
-              <p>Oreo Truffles</p>
-            </div>
-
-            <!-- video 04 -->
-            <div class="video-content">
-              <iframe
-                src="https://www.youtube.com/embed/w0JvDgup1ag?si=CvpcdADNwE5fwAOw"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              >
-              </iframe>
-              <p>Sri Lankan Milk Tea with Fresh Milk</p>
-            </div>
-
-            <!-- video 05 -->
-            <div class="video-content">
-              <iframe
-                src="https://www.youtube.com/embed/OSoZXu30EVM?si=OEfnN_FemC-IzZfG"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              >
-              </iframe>
-              <p>Seafood Fried Rice</p>
-            </div>
-
-            <!-- video 06 -->
-            <div class="video-content">
-              <iframe
-                src="https://www.youtube.com/embed/ubzxkC-dZDY?si=W5M5d-ns8a8zWK7o"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              >
-              </iframe>
-              <p>Amaretti cookies</p>
-            </div>
-          </aside>
-        </section>
-      </div>
+          <!-- video 06 -->
+          <div class="video-content">
+            <iframe
+              src="https://www.youtube.com/embed/ubzxkC-dZDY?si=W5M5d-ns8a8zWK7o"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+            <p>Amaretti cookies</p>
+          </div>
+        </aside>
+      </section>
     </main>
 
     <br />
 
     <!-- footer -->
     <footer>
-      <div>
-        <hr />
-
-        <h5>
-          &copy; Copyright 2024 Tasty Tales. All Rights Reserved. Privacy Policy
-        </h5>
-
-        <hr />
-      </div>
+      <hr />
+      <p>
+        &copy; Copyright 2024 Tasty Tales. All Rights Reserved. Privacy Policy
+      </p>
+      <hr />
     </footer>
   </body>
 </html>
