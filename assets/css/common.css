@@ -9,6 +9,11 @@ main {
   display: flex;
 }
 
+.main-class {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ___________________________ side content ________________________ */
 .vertical-line {
   background-color: #ccc;

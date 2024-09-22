@@ -5,7 +5,7 @@ body {
 
 /* reduce content width & padding */
 .repipe-content {
-  width: 1000px;
+  width: 840px;
   padding-left: 50px;
 }
 
@@ -57,7 +57,7 @@ br + span {
 }
 
 /* images of instructions */
-li + br + img {
+.step-img {
   width: 360px;
   height: 320px;
 }

@@ -1,29 +1,28 @@
-/* body */
-body {
-  font-family: sans-serif;
+.main-container {
+  display: flex;
 }
 
 /* paragraph */
 .contact-description {
   color: #808080;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 /* first letter in paragraph */
 .contact-description::first-letter {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #fe5f55;
   margin-left: 30px;
 }
 
-.name-email-align {
+.name-email-container {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-br + input[type="text"] {
+.txt-input input[type="text"] {
   width: 365px;
 }
 
@@ -32,52 +31,53 @@ textarea {
 }
 
 /* text inputs & textfield */
-br + input[type="text"],
-textarea {
+#name,
+#email,
+#message {
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
   border: 1px solid #ccc;
   background-color: #f5f8fa;
-  font-size: 15px;
+  font-size: 0.9rem;
   color: #808080;
 }
 
 /* form button */
-br + div button {
+.submit-btn {
   border-radius: 10px;
-  width: 90px;
+  width: 85px;
   padding: 10px;
   margin-left: 10px;
   border: none;
   background-color: #fe5f55;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-/* form button hover */
-br + div button:hover {
+.submit-btn:hover {
   background-color: #ff8f8f;
 }
 
 /* h1 */
 h1 {
   text-align: center;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 /* reduce the content width */
-.content-space {
+.contact-container {
   width: 900px;
   padding-left: 40px;
 }
 
 /* special notice */
-span {
+.note {
   font-weight: bold;
   font-style: italic;
   color: #1b1a18;
+  font-size: 1rem;
 }
 
 /* padding for text inputs & checkbox */
@@ -94,22 +94,24 @@ fieldset {
 legend {
   padding-left: 10px;
   padding-right: 10px;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 /* checkbox */
-input[type="checkbox"] {
+#privacyPolicy {
   cursor: pointer;
 }
 
 /* //////////////////////////////////////////////// */
-.contact-side-container {
-  display: flex;
-}
 
-.vertical-line {
+.vertical-hr {
   background-color: #ccc;
   margin: 100px 40px;
+  height: 400px;
+}
+
+.main-container {
+  display: flex;
 }
 
 .side-content {
@@ -125,7 +127,7 @@ input[type="checkbox"] {
 }
 
 .contact-title {
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 
