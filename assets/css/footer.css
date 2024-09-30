@@ -1,9 +1,12 @@
+footer {
+  border-top: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
+  margin-bottom: 8px;
+}
+
 footer p {
   color: #3d3d3d;
   font-size: 0.9rem;
   text-align: center;
-}
-
-footer hr {
-  border: 1px solid #ccc;
+  font-weight: 700;
 }

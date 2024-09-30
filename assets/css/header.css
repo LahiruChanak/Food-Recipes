@@ -4,11 +4,16 @@
   src: url(/assets/fonts/skate-5.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* __________________________ navbar __________________________ */
 .navbar-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 10px;
 }
 
 header hr {
@@ -28,12 +33,30 @@ header hr {
   text-decoration: none;
   color: #1b1a18;
   font-size: 15px;
+  position: relative;
+  /* transition: color 0.3s ease-in-out; */
 }
 
-a:hover {
-  text-decoration: underline;
+.nav-links a:hover {
   color: #fe5f55;
-  font-weight: bold;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 0;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  margin-right: 4px;
+  border-color: #fe5f55;
 }
 
 a.active {
