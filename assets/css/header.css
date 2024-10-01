@@ -8,7 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* __________________________ navbar __________________________ */
 .navbar-container {
   display: flex;
   align-items: center;
@@ -19,7 +18,7 @@ html {
 header hr {
   border: 1px solid #ccc;
   width: 85%;
-  align-items: center;
+  margin: 10px auto;
 }
 
 .nav-links {
@@ -34,7 +33,6 @@ header hr {
   color: #1b1a18;
   font-size: 15px;
   position: relative;
-  /* transition: color 0.3s ease-in-out; */
 }
 
 .nav-links a:hover {
@@ -106,11 +104,128 @@ a.active {
     hue-rotate(332deg) brightness(102%) contrast(101%);
 }
 
-div input {
+.search-bar input {
   border: none;
   margin-left: 18px;
   outline: none;
   font-size: 15px;
+}
+
+/* ___________________________ hamburger menu __________________________ */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon,
+.close-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon img,
+.close-icon img {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.menu-icon img:hover,
+.close-icon img:hover {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(93%) saturate(3250%)
+    hue-rotate(332deg) brightness(102%) contrast(101%);
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-container {
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  nav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    width: 25vw;
+    background-color: #fff;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    padding-left: 2vw;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px 20px 20px;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  #menu-toggle:checked ~ nav {
+    right: 0;
+  }
+
+  .menu-icon,
+  .close-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+
+  .search-bar,
+  .icon-container {
+    display: none;
+  }
+
+  /* Overlay */
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+
+  #menu-toggle:checked ~ .overlay {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ .menu-icon {
+    display: none;
+  }
+
+  .close-icon {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .close-icon {
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+  }
+
+  /* Close button
+  .close-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .menu-toggle:checked ~ nav .close-menu {
+    display: block;
+  } */
 }
 
 /* __________________________________ scroll-up _________________________________ */

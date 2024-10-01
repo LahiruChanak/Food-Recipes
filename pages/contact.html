@@ -19,6 +19,20 @@
         <!-- logo -->
         <div class="logo">TastyTales</div>
 
+        <!-- Hamburger menu -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <img src="/assets/icons/menu.svg" alt="side menu icon" />
+        </label>
+
+        <!-- close icon -->
+        <label for="menu-toggle" class="close-icon">
+          <img src="/assets/icons/close.svg" alt="close icon" />
+        </label>
+
+        <!-- Overlay -->
+        <label for="menu-toggle" class="overlay"></label>
+
         <!-- navigation links -->
         <nav>
           <ul class="nav-links">
@@ -88,7 +102,8 @@
 
     <!-- /////////////////// main content /////////////////// -->
     <main class="main-class">
-      <h1>Contact Me</h1>
+      <p class="contact-title">Contact Me</p>
+
       <div class="main-container">
         <section>
           <!-- contact me -->
@@ -119,13 +134,13 @@
                   <div class="txt-input">
                     <label for="name">Name</label>
                     <br />
-                    <input type="text" id="name" name="name" required />
+                    <input type="text" id="name" required />
                   </div>
 
                   <div class="txt-input">
                     <label for="email">Email</label>
                     <br />
-                    <input type="text" id="email" name="email" required />
+                    <input type="text" id="email" required />
                   </div>
                 </div>
 
@@ -175,19 +190,15 @@
         <!-- _________________ side content _________________ -->
         <section>
           <aside class="side-content">
-            <h2 class="contact-title">Looking forward to hear from you!</h2>
+            <p class="contact-title">Looking forward to hear from you!</p>
 
-            <h3>Email</h3>
-            <p>tastytales@gmail.com</p>
+            <p class="sub-heading">Email</p>
+            <p class="sub-txt">tastytales@gmail.com</p>
 
-            <br />
+            <p class="sub-heading">Phone</p>
+            <p class="sub-txt">+94 77 123 4567</p>
 
-            <h3>Phone</h3>
-            <p>+94 77 123 4567</p>
-
-            <br />
-
-            <h3>Social Media</h3>
+            <p class="sub-heading">Social Media</p>
             <div class="social-media">
               <a href="https://www.facebook.com/hungrylankan/" target="_blank">
                 <img

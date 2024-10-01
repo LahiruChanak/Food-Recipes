@@ -2,6 +2,7 @@ footer {
   border-top: 2px solid #aaa;
   border-bottom: 2px solid #aaa;
   margin-bottom: 8px;
+  padding: 18px 0;
 }
 
 footer p {
@@ -9,4 +10,5 @@ footer p {
   font-size: 0.9rem;
   text-align: center;
   font-weight: 700;
+  margin: 0;
 }
