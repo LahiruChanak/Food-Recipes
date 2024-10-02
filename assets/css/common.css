@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  width: fit-content;
+  width: 100%;
   font-family: sans-serif;
   position: relative;
 }

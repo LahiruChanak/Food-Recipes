@@ -4,10 +4,6 @@
   src: url(/assets/fonts/skate-5.ttf);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .navbar-container {
   display: flex;
   align-items: center;
@@ -24,8 +20,10 @@ header hr {
 .nav-links {
   list-style-type: none;
   display: flex;
+  align-items: center;
   gap: 30px;
   align-items: center;
+  padding: 0;
 }
 
 .nav-links a {
@@ -82,9 +80,18 @@ a.active {
 
 .search-bar {
   display: flex;
-  width: 250px;
+  width: fit-content;
+  padding: 0 10px 0 15px;
   border: 2px solid #ccc;
   border-radius: 20px;
+}
+
+.search-bar input {
+  width: 12vw;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #808080;
 }
 
 .search-bar button {
@@ -102,13 +109,6 @@ a.active {
 .icon:hover {
   filter: brightness(0) saturate(100%) invert(48%) sepia(93%) saturate(3250%)
     hue-rotate(332deg) brightness(102%) contrast(101%);
-}
-
-.search-bar input {
-  border: none;
-  margin-left: 18px;
-  outline: none;
-  font-size: 15px;
 }
 
 /* ___________________________ hamburger menu __________________________ */
@@ -138,7 +138,7 @@ a.active {
 @media screen and (max-width: 900px) {
   .navbar-container {
     justify-content: space-between;
-    padding: 0 30px;
+    padding-left: 30px;
   }
 
   nav {
@@ -149,7 +149,7 @@ a.active {
     width: 25vw;
     background-color: #fff;
     transition: right 0.3s ease-in-out;
-    z-index: 1000;
+    z-index: 3;
     padding-left: 2vw;
   }
 
@@ -158,10 +158,7 @@ a.active {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 60px 20px 20px;
-  }
-
-  .nav-links li {
-    margin: 15px 0;
+    gap: 50px;
   }
 
   #menu-toggle:checked ~ nav {
@@ -173,8 +170,8 @@ a.active {
     display: block;
     position: absolute;
     top: 20px;
-    right: 20px;
-    z-index: 1001;
+    right: 30px;
+    z-index: 4;
   }
 
   .search-bar,
@@ -191,7 +188,8 @@ a.active {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+    backdrop-filter: blur(3px);
+    z-index: 2;
   }
 
   #menu-toggle:checked ~ .overlay {
@@ -210,22 +208,8 @@ a.active {
     display: block;
     position: fixed;
     top: 30px;
-    right: 20px;
+    right: 30px;
   }
-
-  /* Close button
-  .close-menu {
-    display: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    font-size: 24px;
-  }
-
-  .menu-toggle:checked ~ nav .close-menu {
-    display: block;
-  } */
 }
 
 /* __________________________________ scroll-up _________________________________ */
