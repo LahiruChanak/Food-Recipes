@@ -1,12 +1,15 @@
 /* Main container */
 .main-container {
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  gap: 30px;
 }
 
 /* Contact container */
 .contact-container {
-  width: 900px;
+  max-width: 950px;
   padding: 1rem;
 }
 
@@ -15,35 +18,31 @@
   color: #808080;
   font-size: 1rem;
   line-height: 1.5;
+  margin-bottom: 30px; /* Added space after the description */
 }
 
 /* First letter in paragraph */
 .contact-description::first-letter {
   font-size: 2.5em;
   color: #fe5f55;
-  margin-right: 0.1em;
+  margin-right: 5px;
 }
 
 .name-email-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
+  width: 97%;
 }
 
 .txt-input {
-  flex: 1;
-  min-width: 200px;
+  width: 100%;
 }
 
 /* Text inputs & textarea */
 #name,
-#email {
-  width: 365px;
-}
-
-#name,
 #email,
 textarea {
+  width: 95%;
   border-radius: 5px;
   padding: 10px;
   margin: 10px 0;
@@ -54,7 +53,6 @@ textarea {
 }
 
 textarea {
-  width: 800px;
   resize: vertical;
 }
 
@@ -62,7 +60,7 @@ textarea {
 .submit-btn {
   border-radius: 10px;
   padding: 10px 20px;
-  margin: 10px 0;
+  margin: 20px 0; /* Increased vertical margin */
   border: none;
   background-color: #fe5f55;
   color: white;
@@ -80,8 +78,8 @@ textarea {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 0.67rem;
-  line-height: 1.2;
+  margin-top: 10px;
+  margin-bottom: 0;
   color: #212121;
 }
 
@@ -97,54 +95,50 @@ textarea {
 fieldset {
   border-radius: 15px;
   padding: 0 20px;
+  /* width: 100%; */
 }
 
 /* Legend */
 legend {
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0 20px;
   font-size: 1.2rem;
 }
 
 /* Checkbox */
 #privacyPolicy {
   cursor: pointer;
+  margin-right: 10px; /* Added space after checkbox */
+}
+
+/* Side content */
+.contact-side-content {
+  margin: 100px 0;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  width: 20vw;
 }
 
 /* Vertical line */
 .vertical-hr {
+  border: 2px solid #ccc;
   background-color: #ccc;
-  margin: 100px 40px;
-  height: 400px;
+  border-radius: 5px;
+  margin: 130px 0;
+  height: 350px;
 }
-
-/* _______________________ side content ________________________ */
-.side-content {
-  width: 300px;
-  margin: 150px 0;
-  padding: 10px 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-/* .side-content p {
-  color: #808080;
-} */
 
 .sub-heading {
   font-size: 1.2rem;
   font-weight: bold;
   color: #1b1a18;
+  margin-bottom: 15px; /* Added space after sub-heading */
 }
 
 .sub-txt {
   color: #808080;
   font-size: 1rem;
-}
-
-.sub-txt::after {
-  content: "\a\a";
-  white-space: pre;
+  margin-bottom: 20px; /* Added space after sub-text */
 }
 
 .social-media {
@@ -165,22 +159,30 @@ legend {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .main-container {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px; /* Reduced gap for smaller screens */
   }
 
   .contact-container {
-    width: 80vw;
+    max-width: 100%;
   }
 
   .name-email-container {
     flex-direction: column;
   }
 
-  #name,
-  #email,
-  textarea {
-    width: 95%;
+  .contact-side-content {
+    width: 35vw;
+    margin: 0 auto;
+  }
+
+  .vertical-hr {
+    height: 0;
+    border: 2px solid #ccc;
+    background-color: #ccc;
+    width: 300px;
+    margin: 0 auto 20px;
   }
 }

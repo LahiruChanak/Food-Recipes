@@ -1,6 +1,6 @@
 /* place footer to the bottom */
 .about-main {
-  min-height: 75vh;
+  min-height: 73vh;
   display: flex;
   flex-direction: column;
 }
@@ -8,10 +8,10 @@
 /* paragraph */
 .about-content p {
   color: #808080;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin: 0 30px 0 40px;
-  width: 980px;
+  width: fit-content;
 }
 
 /* first letter in paragraph */
@@ -23,7 +23,8 @@
 
 /* image */
 .about-img img {
-  width: 300px;
+  width: 20vw;
+  min-width: 200px;
   border: 5px solid #808080;
   border-radius: 200px;
 }
@@ -32,13 +33,23 @@
 .about-content {
   display: flex;
   align-items: center;
-  width: 90vw;
+  width: 100%;
+  max-width: 90vw;
 }
 
-/* h1 */
-h1 {
+.about-title {
   text-align: center;
   font-size: 2rem;
+  font-weight: bold;
+  color: #1b1a18;
+}
+
+@media screen and (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 }
 
 /* //////////////////////////////////////// */
