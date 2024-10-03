@@ -55,3 +55,62 @@ section div + hr {
   justify-content: center;
   gap: 10px;
 }
+
+/* ___________________________ search from google ________________________ */
+.recipe-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 85%;
+  max-width: 300px;
+  height: fit-content;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-search-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1b1a18;
+}
+
+.recipe-search-txt {
+  font-size: 1rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  border: none;
+  background-color: #ffe7e6;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="submit"] {
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 0 10px 10px 0;
+  background-color: #fe5f55;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.horizontal-line {
+  height: 0;
+  width: 75%;
+  border: 2px solid #aaa;
+  margin-bottom: 30px;
+}

@@ -281,8 +281,8 @@
       <div class="vertical-line"></div>
 
       <!-- __________________________ side content __________________________ -->
-      <section class="side-content">
-        <aside>
+      <section class="side-container">
+        <aside class="side-content">
           <h2 class="side-title">Featured Videos</h2>
 
           <!-- video 01 -->
@@ -368,6 +368,27 @@
             </iframe>
             <p>Amaretti cookies</p>
           </div>
+        </aside>
+
+        <div class="horizontal-line"></div>
+
+        <!-- _________________________ recipe search __________________________ -->
+        <aside class="recipe-search">
+          <p class="recipe-search-title">Search Recipes</p>
+          <p class="recipe-search-txt">
+            Can't find the recipe? Discover the flavors you've been searching
+            for!
+          </p>
+
+          <form action="https://www.hungrylankan.com/?s=" method="get">
+            <input
+              type="text"
+              name="s"
+              placeholder="Search recipes..."
+              required
+            />
+            <input type="submit" value="Search" />
+          </form>
         </aside>
       </section>
     </main>
