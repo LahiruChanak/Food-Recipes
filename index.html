@@ -44,7 +44,7 @@
 
         <!-- search bar -->
         <div class="search-bar">
-          <input type="text" placeholder="Search..." required />
+          <input type="text" name="q" placeholder="Search..." required />
           <button type="submit">
             <img
               src="/assets/icons/search.svg"
@@ -135,7 +135,8 @@
                 View Recipes
               </a>
             </div>
-            <div class="recipe-img">
+
+            <div class="home-recipe-img">
               <img
                 src="/assets/images/chickenBiryani/cb1.jpg"
                 alt="Spicy Chicken Wings"
@@ -180,7 +181,8 @@
                 View Recipes
               </a>
             </div>
-            <div class="recipe-img">
+
+            <div class="home-recipe-img">
               <img
                 src="/assets/images/cajunShrimp/cs1.jpg"
                 alt="Spicy Chicken Wings"
@@ -225,7 +227,8 @@
                 View Recipes
               </a>
             </div>
-            <div class="recipe-img">
+
+            <div class="home-recipe-img">
               <img
                 src="/assets/images/yellowRice/yr1.jpg"
                 alt="Spicy Chicken Wings"
@@ -270,7 +273,8 @@
                 View Recipes
               </a>
             </div>
-            <div class="recipe-img">
+
+            <div class="home-recipe-img">
               <img
                 src="/assets/images/chickenKottu/ck1.jpg"
                 alt="Spicy Chicken Wings"
@@ -285,32 +289,40 @@
       <section class="sub-container">
         <div class="motivation-card">
           <div class="motivation-content">
-            <div>
-              <p class="motivation-title">
-                Everyone Can Be A Chef In Their Own Kitchen
-              </p>
-              <p>
-                Cooking is a skill anyone can learn. With online recipes and
-                creativity, you can become a chef right in your own kitchen.
-                Start your culinary journey today!
-              </p>
-            </div>
+            <p class="motivation-title">
+              Everyone Can Be A Chef In Their Own Kitchen
+            </p>
+            <p class="motivation-txt">
+              Cooking is a skill anyone can learn. With online recipes and
+              creativity, you can become a chef right in your own kitchen. Start
+              your culinary journey today!
+            </p>
+          </div>
+
+          <div class="motivation-img">
             <img src="/assets/images/motivation.jpg" alt="Anyone can cook" />
           </div>
         </div>
 
         <div class="subscribe-card">
-          <p class="subscribe-title">Deliciousness To Your Inbox.</p>
-          <p>
-            Sign up with your email to never miss out on any new delicious
-            recipes! We will send information about special dishes directly to
-            your Gmail inbox.
-          </p>
+          <div class="subscribe-content">
+            <p class="subscribe-title">Deliciousness To Your Inbox.</p>
+            <p class="subscribe-txt">
+              Sign up with your email to never miss out on any new delicious
+              recipes! We will send information about special dishes directly to
+              your Gmail inbox.
+            </p>
 
-          <form class="subscribe-form">
-            <input type="email" placeholder="Your email address.." required />
-            <button type="submit" class="subscribe-btn">Subscribe</button>
-          </form>
+            <form class="subscribe-form">
+              <input
+                type="email"
+                id="email"
+                placeholder="Your email address.."
+                required
+              />
+              <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+          </div>
 
           <div class="food-img">
             <img

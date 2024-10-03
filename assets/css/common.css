@@ -1,3 +1,4 @@
+/* ________________________ common style CSS for all pages ________________________ */
 html {
   scroll-behavior: smooth;
 }
@@ -24,7 +25,120 @@ hr {
   margin: 0;
 }
 
-/* ___________________________ side content ________________________ */
+h2 {
+  padding-top: 20px;
+}
+
+/* ___________________________ recipes pages and its' side content ________________________ */
+.recipe-content {
+  width: 1000px;
+}
+
+.recipe-container {
+  display: flex;
+  align-items: center;
+  gap: 3.5vw;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.time-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.label-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.label-title {
+  font-size: 1rem;
+}
+
+.label-txt {
+  font-size: 0.95rem;
+  color: #808080;
+}
+
+.label img {
+  width: 20px;
+}
+
+.recipe-img {
+  width: 215px;
+  height: 285px;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+input[type="checkbox"]:checked ~ span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+ol > li {
+  list-style: decimal-leading-zero;
+  margin-top: 30px;
+}
+
+.step-img {
+  width: 360px;
+  height: 320px;
+  object-fit: cover;
+  margin-top: 15px;
+}
+
+.end-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.sub-heading-sub {
+  font-size: 1rem;
+  margin: 20px 10px;
+  font-weight: bold;
+}
+
+.description {
+  color: #212121;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-left: 20px;
+}
+
+label::after {
+  content: "\a\a";
+  white-space: pre;
+}
+
+/* --------------------------- side content --------------------------- */
 .vertical-line {
   border: 2px solid #ccc;
   background-color: #ccc;
@@ -38,7 +152,7 @@ hr {
   width: 300px;
   height: fit-content;
   margin: 60px 0;
-  padding: 10px 30px;
+  padding: 0px 30px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -52,6 +166,7 @@ iframe {
   border-radius: 10px;
 }
 
+/* ___________________________ media queries ____________________________ */
 @media screen and (max-width: 900px) {
   main {
     flex-direction: column;
@@ -60,11 +175,14 @@ iframe {
 
   .recipe-content {
     width: 100%;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .side-content {
     margin: 0 auto;
   }
+
   .vertical-line {
     border: 2px solid #ccc;
     background-color: #ccc;
@@ -72,6 +190,50 @@ iframe {
     margin: 50px auto 30px;
     width: 300px;
     height: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .recipe-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .step-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .vertical-line {
+    width: 100%;
+  }
+
+  .side-content {
+    width: 90%;
+    padding: 0 5vw;
+  }
+
+  iframe {
+    width: 93%;
+    height: auto;
+  }
+
+  .recipe-txt-container {
+    flex-direction: column;
+  }
+
+  .recipe-img {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+
+  .img-txt-container {
+    margin: 0 4vw 3vh;
   }
 }
 

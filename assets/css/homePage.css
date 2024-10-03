@@ -8,7 +8,7 @@
 
 .card-title {
   font-size: 2rem;
-  margin-bottom: 2vh;
+  padding: 3vh;
   color: #212121;
 }
 
@@ -47,12 +47,12 @@
   transform: scale(1.03);
 }
 
-.recipe-img {
+.home-recipe-img {
   display: flex;
   align-items: center;
 }
 
-.recipe-img img {
+.home-recipe-img img {
   border-radius: 20px;
   width: 300px;
   height: auto;
@@ -72,36 +72,6 @@
   border-radius: 6px;
   border: 3px solid #fff;
 }
-
-/* @media (min-width: 500px) {
-  .card {
-    flex-basis: calc(50% - 10px);
-  }
-
-  .card:not(:last-child) {
-    margin-right: 20px;
-  }
-}
-
-@media (min-width: 700px) {
-  .card {
-    flex-basis: calc(calc(100% / 3) - 20px);
-  }
-
-  .card:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .card {
-    flex-basis: calc(25% - 30px);
-  }
-
-  .card:not(:last-child) {
-    margin-right: 40px;
-  }
-} */
 
 .recipe-content {
   margin-right: 20px;
@@ -206,106 +176,74 @@ div[class="info-badge"] img {
   margin-right: 10px;
 }
 
-/* __________________________ motivation card __________________________ */
+/* __________________________ sub-container __________________________ */
 .sub-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: stretch;
   gap: 20px;
-  max-width: 1340px;
+  width: 100%;
+  max-width: 1380px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
 .motivation-card,
 .subscribe-card {
   display: flex;
-  flex-direction: column;
   background-color: #fbe8d3;
   border-radius: 20px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-  padding: 30px;
-}
-
-.motivation-card {
-  flex: 1 1 600px;
-  max-width: 600px;
+  padding: 20px;
+  width: calc(50% - 10px);
+  /* min-width: 250px; */
 }
 
 .subscribe-card {
-  flex: 1 1 400px;
-  max-width: 600px;
   position: relative;
 }
 
-h1 {
-  font-size: 2rem;
-  text-transform: capitalize;
-  color: #222;
-  font-weight: 700;
-  line-height: 1.3;
-  margin-bottom: 15px;
-}
-
-p {
-  color: #555;
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-
-.motivation-content {
+/* __________________________ card content __________________________ */
+.motivation-content,
+.subscribe-content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.motivation-content div {
-  max-width: fit-content;
-  margin-right: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  margin-right: 10px;
 }
 
 .motivation-title,
 .subscribe-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #222;
   font-weight: 700;
   line-height: 1.3;
-  margin: 15px;
+  margin: 15px 0;
+  text-align: center;
 }
 
-.motivation-content img {
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
+.motivation-txt,
+.subscribe-txt {
+  color: #808080;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
-/* _________________________ subscribe form _________________________ */
-
-.subscribe-form {
+/* __________________________ images __________________________ */
+.motivation-img {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 10px 0 70px;
+  margin-top: 20px;
 }
 
-.subscribe-form input {
-  padding: 10px;
-  width: 60%;
-  border: 1px solid #ccc;
-  border-radius: 10px 0 0 10px;
-}
-
-.subscribe-btn {
-  padding: 10px 20px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
-}
-
-.subscribe-btn:hover {
-  background-color: #333;
+.motivation-card img {
+  width: 100%;
+  /* max-width: 300px; */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .food-img {
@@ -315,11 +253,12 @@ p {
   right: 0;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .food-img img {
-  width: 10vw;
-  height: 15vh;
+  width: 20%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -329,4 +268,133 @@ p {
 
 #right-img {
   border-radius: 0 0 20px 0;
+}
+
+/* _________________________ subscribe form _________________________ */
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 70px;
+  width: 100%;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px 0 0 10px;
+  width: 50%;
+}
+
+.subscribe-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  max-width: 100px;
+  color: #fff;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  background-color: #333;
+}
+
+/* ___________________________ media queries ___________________________ */
+@media screen and (max-width: 900px) {
+  .sub-container {
+    width: 98%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .motivation-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .motivation-content {
+    padding: 20px;
+  }
+
+  .motivation-img {
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .motivation-card img {
+    max-width: 100%;
+  }
+
+  .subscribe-content {
+    width: 90%;
+  }
+
+  .subscribe-form input,
+  .subscribe-btn {
+    width: 45%;
+  }
+
+  .subscribe-form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sub-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .motivation-card,
+  .subscribe-card {
+    width: 100%;
+  }
+
+  .motivation-content,
+  .subscribe-content {
+    margin: 0 auto;
+  }
+
+  .food-img {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .food-img img {
+    height: auto;
+    max-height: 150px;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-form input {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-form input {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto 50px;
+  }
+
+  .food-img {
+    position: absolute;
+  }
 }

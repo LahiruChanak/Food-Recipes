@@ -117,6 +117,7 @@ legend {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   width: 20vw;
+  max-width: 300px;
 }
 
 /* Vertical line */
@@ -174,7 +175,7 @@ legend {
   }
 
   .contact-side-content {
-    width: 35vw;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -182,7 +183,7 @@ legend {
     height: 0;
     border: 2px solid #ccc;
     background-color: #ccc;
-    width: 300px;
-    margin: 0 auto 20px;
+    width: 80%;
+    margin: 0 auto 10px;
   }
 }

@@ -7,7 +7,6 @@
     <link rel="icon" href="/assets/images/logo.png" />
 
     <!-- external css -->
-    <link rel="stylesheet" href="/assets/css/cajunShrimp.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
     <link rel="stylesheet" href="/assets/css/common.css" />
@@ -45,7 +44,7 @@
 
         <!-- search bar -->
         <div class="search-bar">
-          <input type="text" placeholder="Search..." required />
+          <input type="text" name="q" placeholder="Search..." required />
           <button type="submit">
             <img
               src="/assets/icons/search.svg"
@@ -108,7 +107,7 @@
       </div>
     </header>
 
-    <br />
+    
 
     <!-- _____________________________ recipe _____________________________ -->
 
@@ -132,27 +131,30 @@
             <!-- difficulty -->
             <div class="label">
               <img src="/assets/icons/difficult.png" alt="Difficulty icon" />
-              <span> Difficulty </span>
-              <div id="first-label">Beginner</div>
+              <div class="label-details">
+                <p class="label-title">Difficulty</p>
+                <p class="label-txt">Beginner</p>
+              </div>
             </div>
 
             <!-- prep, cook, and total time -->
             <div class="label">
+              <img src="/assets/icons/time.png" alt="Time icon" />
+
               <div class="time-container">
-                <div>
-                  <img src="/assets/icons/time.png" alt="Time icon" />
-                  <span> Prep Time </span>
-                  <div id="first-label">5 mins</div>
+                <div class="label-details">
+                  <p class="label-title">Prep Time</p>
+                  <p class="label-txt">5 mins</p>
                 </div>
 
-                <div>
-                  <span> Cook Time </span>
-                  <div>5 mins</div>
+                <div class="label-details">
+                  <p class="label-title">Cook Time</p>
+                  <p class="label-txt">5 mins</p>
                 </div>
 
-                <div>
-                  <span> Total Time </span>
-                  <div>10 mins</div>
+                <div class="label-details">
+                  <p class="label-title">Total Time</p>
+                  <p class="label-txt">10 mins</p>
                 </div>
               </div>
             </div>
@@ -160,20 +162,23 @@
             <!-- servings -->
             <div class="label">
               <img src="/assets/icons/servings.png" alt="Servings icon" />
-              <span>Servings</span>
-              <div id="first-label">4</div>
+
+              <div class="label-details">
+                <p class="label-title">Servings</p>
+                <p class="label-txt">4</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <br />
+        
 
         <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
 
         <!-- description -->
         <div>
-          <h3>Description</h3>
-          <p>
+          <p class="sub-heading">Description</p>
+          <p class="description">
             This Cajun Shrimp in the Air fryer is one of the easiest quickest
             recipes you can make. You only need 5 ingredients if you have a
             cajun seasoning at home. If you don't, check out the description to
@@ -181,18 +186,18 @@
           </p>
         </div>
 
-        <br />
+        
 
         <!-- ingredients -->
         <div>
-          <h3>Ingredients</h3>
+          <p class="sub-heading">Ingredients</p>
 
           <label>
             <input type="checkbox" />
             <span> 2 lb Peeled and deveined large Shrimp (1lb = 453g) </span>
           </label>
 
-          <br /><br />
+          
 
           <label>
             <input type="checkbox" />
@@ -202,21 +207,21 @@
             </span>
           </label>
 
-          <br /><br />
+          
 
           <label>
             <input type="checkbox" />
             <span> 4 Large garlic clove, minced </span>
           </label>
 
-          <br /><br />
+          
 
           <label>
             <input type="checkbox" />
             <span> 2 tsp Avocado oil/ Cooking oil of your choice </span>
           </label>
 
-          <br /><br />
+          
 
           <label>
             <input type="checkbox" />
@@ -224,40 +229,36 @@
           </label>
         </div>
 
-        <br />
+        
 
         <!-- steps -->
         <div>
-          <h3>Instructions</h3>
+          <p class="sub-heading">Instructions</p>
 
           <ol>
             <li>Preheat the Air fryer to 400 °F for 2 - 3 minutes.</li>
-
-            <br /><br />
 
             <li>
               Pat dry shrimp and add them into a bowl. Add Cajun seasoning,
               minced garlic, oil, and lemon juice. Mix well.
             </li>
-            <br />
+            
             <img
               src="/assets/images/cajunShrimp/cs2.jpg"
               alt="image2 of cajun shrimp"
+              class="step-img"
             />
-
-            <br /><br />
 
             <li>
               Place the shrimp in the air fryer basket in a single layer. (if
               you can't fit them in a single layer, cook shrimp in batches).
             </li>
-            <br />
+            
             <img
               src="/assets/images/cajunShrimp/cs3.jpg"
               alt="image3 of cajun shrimp"
+              class="step-img"
             />
-
-            <br /><br />
 
             <li>
               Air Fry for 3 minutes at 400F. Then, flip the shrimp and air fry
@@ -265,17 +266,18 @@
               light pink-orange color. And the tail should curl into a "C"
               shape. Serve warm.
             </li>
-            <br />
+            
             <img
               src="/assets/images/cajunShrimp/cs4.jpg"
               alt="image4 of cajun shrimp"
+              class="step-img"
             />
           </ol>
         </div>
 
-        <br />
+        
 
-        <h4>Enjoy your meal!</h4>
+        <p class="end-text">Enjoy your meal!</p>
       </section>
 
       <div class="vertical-line"><hr /></div>
@@ -372,7 +374,7 @@
       </section>
     </main>
 
-    <br />
+    
 
     <!-- footer -->
     <footer>

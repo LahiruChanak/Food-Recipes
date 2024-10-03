@@ -7,7 +7,6 @@
     <link rel="icon" href="/assets/images/logo.png" />
 
     <!-- external css -->
-    <link rel="stylesheet" href="/assets/css/hoppers.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
     <link rel="stylesheet" href="/assets/css/common.css" />
@@ -45,7 +44,7 @@
 
         <!-- search bar -->
         <div class="search-bar">
-          <input type="text" placeholder="Search..." required />
+          <input type="text" name="q" placeholder="Search..." required />
           <button type="submit">
             <img
               src="/assets/icons/search.svg"
@@ -108,15 +107,13 @@
       </div>
     </header>
 
-    <br />
-
     <!-- ///////////////////////// recipe /////////////////////// -->
     <main>
       <section class="recipe-content">
         <h2>Sri Lankan Hoppers</h2>
 
         <!-- to side recipe details  -->
-        <div class="labels-sided">
+        <div class="recipe-container">
           <!-- image -->
           <div>
             <img
@@ -127,50 +124,57 @@
           </div>
 
           <!-- sided recipe details -->
-          <div class="sided-details">
+          <div class="label-container">
             <!-- difficulty -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/difficult.png" alt="Difficulty icon" />
-              Difficulty
-              <br />
-              <span> Intermediate </span>
-            </div>
 
-            <br />
+              <div class="label-details">
+                <p class="label-title">Difficulty</p>
+                <p class="label-txt">Intermediate</p>
+              </div>
+            </div>
 
             <!-- prep, cook, and total time -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/time.png" alt="Time icon" />
-              Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
-              &emsp;&emsp;&emsp;&emsp; Total Time
-              <!-- (&nbsp; => single space), (&ensp; => two spaces), (&emsp; => four spaces) -->
-              <br />
-              <span>
-                19 hrs &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; 30 mins
-                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 19 hrs 30 mins
-              </span>
+
+              <div class="time-container">
+                <div class="label-details">
+                  <p class="label-title">Prep Time</p>
+                  <p class="label-txt">19 hrs</p>
+                </div>
+
+                <div class="label-details">
+                  <p class="label-title">Cook Time</p>
+                  <p class="label-txt">30 mins</p>
+                </div>
+
+                <div class="label-details">
+                  <p class="label-title">Total Time</p>
+                  <p class="label-txt">19 hrs 30 mins</p>
+                </div>
+              </div>
             </div>
 
-            <br />
-
             <!-- servings -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/servings.png" alt="Servings icon" />
-              Servings
-              <br />
-              <span>4</span>
+
+              <div class="label-details">
+                <p class="label-title">Servings</p>
+                <p class="label-txt">4</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <br />
 
         <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
 
         <div>
           <!-- description -->
           <div>
-            <h3>Description</h3>
+            <p class="sub-heading">Description</p>
             <p>
               Easy Sri Lankan hoppers recipe that uses rice flour. And uses
               18-hour fermentation to get the authentic hopper taste. This
@@ -178,58 +182,44 @@
             </p>
           </div>
 
-          <br />
-
           <!-- ingredients -->
           <div>
-            <h3>Ingredients</h3>
+            <p class="sub-heading">Ingredients</p>
 
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 400 g Rice flour </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> pinch of yeast </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1.5 cup water (175mg) </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 400 ml of coconut milk </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> tsp sugar </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> salt as needed </span>
             </label>
           </div>
 
-          <br />
-
           <!-- steps -->
           <div>
-            <h3><u>Instructions</u></h3>
+            <p class="sub-heading">Instructions</p>
             <ol>
               <li>
                 The night before you make hoppers (18hrs - 20hrs earlier) make a
@@ -238,23 +228,25 @@
                 it ferment for 18 to 20 hours. It's okay to make them a little
                 earlier or a little later. Do NOT add sugar or salt.
               </li>
-              <br />
+
               <img
                 src="/assets/images/hoppers/h2.jpg"
                 alt="image2 of hoppers"
+                class="step-img"
               />
-              <br /><br />
+
               <li>
                 18 to 20 hours later you should be able to notice that there are
                 some bubbles on the surface and the paste has risen a little
                 bit.
               </li>
-              <br />
+
               <img
                 src="/assets/images/hoppers/h3.jpg"
                 alt="image3 of hoppers"
+                class="step-img"
               />
-              <br /><br />
+
               <li>
                 After 18 - 20 hours add sugar and coconut milk and make a
                 somewhat thick batter. Not too thick or not too thin. Careful
@@ -263,12 +255,13 @@
                 right. Do NOT add salt yet. Now cover again and let it sit for
                 30 mins.
               </li>
-              <br />
+
               <img
                 src="/assets/images/hoppers/h4.jpg"
                 alt="image4 of hoppers"
+                class="step-img"
               />
-              <br /><br />
+
               <li>
                 Meanwhile, add a generous amount of oil to your hopper pan. Let
                 the oil heat a bit and then add an egg yolk if your pan is too
@@ -279,62 +272,65 @@
                 to rub the pan before making each hopper. **Skip this step
                 completely if you're using a nonstick hopper pan.
               </li>
-              <br />
+
               <img
                 src="/assets/images/hoppers/h5.jpg"
                 alt="image5 of hoppers"
+                class="step-img"
               />
-              <br /><br />
+
               <li>
                 After 30 mins of mixing coconut milk and sugar, add salt to the
                 batter and mix very well.
               </li>
-              <br />
+
               <li>
                 Heat the hopper pan on medium heat, add a ladle full of batter
                 to the center. and swirl the pan around to coat the inside with
                 the batter. Now cover the pan and let it cook for about 45
                 seconds or until it's done.
               </li>
-              <br />
+
               <img
                 src="/assets/images/hoppers/h6.jpg"
                 alt="image6 of hoppers"
+                class="step-img"
               />
-              <br /><br />
+
               <li>
                 and swirl the pan around to coat the inside with the batter. Now
                 cover the pan. Do not open the lid again and again.
               </li>
-              <br />
+
               <img
                 src="/assets/images/hoppers/h7.jpg"
                 alt="image7 of hoppers"
+                class="step-img"
               />
-              <br /><br />
+
               <li>and let it cook for about 45 seconds or until it's done.</li>
-              <br />
+
               <img
                 src="/assets/images/hoppers/h8.jpg"
                 alt="image8 of hoppers"
+                class="step-img"
               />
-              <br /><br />
+
               <li>
                 For egg hoppers, pour the batter ( a little less than plain
                 hoppers), break an egg in, add salt and pepper, cover, and cook
                 on low heat until you get the desired texture.
               </li>
-              <br />
+
               <img
                 src="/assets/images/hoppers/h9.jpg"
                 alt="image9 of hoppers"
+                class="step-img"
               />
             </ol>
           </div>
 
-          <br />
-
-          <h4>Enjoy your meal !</h4>
+          <p class="end-text">Enjoy your meal !</p>
         </div>
       </section>
 
@@ -431,8 +427,6 @@
         </aside>
       </section>
     </main>
-
-    <br />
 
     <!-- footer -->
     <footer>

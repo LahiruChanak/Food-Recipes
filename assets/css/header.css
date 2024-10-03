@@ -246,10 +246,6 @@ a.active {
 }
 
 /* __________________________________ scroll-up _________________________________ */
-html {
-  scroll-behavior: smooth;
-}
-
 .scroll-container {
   position: absolute;
   bottom: 0;

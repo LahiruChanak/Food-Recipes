@@ -7,7 +7,6 @@
     <link rel="icon" href="/assets/images/logo.png" />
 
     <!-- external css -->
-    <link rel="stylesheet" href="/assets/css/chickenDumBiryani.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
     <link rel="stylesheet" href="/assets/css/common.css" />
@@ -45,7 +44,7 @@
 
         <!-- search bar -->
         <div class="search-bar">
-          <input type="text" placeholder="Search..." required />
+          <input type="text" name="q" placeholder="Search..." required />
           <button type="submit">
             <img
               src="/assets/icons/search.svg"
@@ -108,14 +107,14 @@
       </div>
     </header>
 
-    <br />
+    
 
     <main>
       <section class="recipe-content">
         <h2>Chicken Dum Biryani</h2>
 
         <!-- to side recipe details  -->
-        <div class="labels-sided">
+        <div class="recipe-container">
           <!-- image -->
           <div>
             <img
@@ -128,272 +127,228 @@
           <!-- sided recipe details -->
           <div class="sided-details">
             <!-- difficulty -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/difficult.png" alt="Difficulty icon" />
-              Difficulty
-              <br />
-              <span>Beginner</span>
+              <div class="label-details">
+                <p class="label-title">Difficulty</p>
+                <p class="label-txt">Beginner</p>
+              </div>
             </div>
 
-            <br />
+            
 
             <!-- prep, cook, and total time -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/time.png" alt="Time icon" />
-              Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
-              &emsp;&emsp;&emsp;&emsp; Total Time
-              <!-- (&nbsp; => single space), (&ensp; => two spaces), (&emsp; => four spaces) -->
-              <br />
-              <span>
-                12 hrs &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; 30 mins
-                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 12 hrs 30 mins
-              </span>
+
+              <div class="time-container">
+                <div class="label-details">
+                  <p class="label-title">Prep Time</p>
+                  <p class="label-txt">12 hours</p>
+                </div>
+
+                <div class="label-details">
+                  <p class="label-title">Cook Time</p>
+                  <p class="label-txt">30 mins</p>
+                </div>
+
+                <div class="label-details">
+                  <p class="label-title">Total Time</p>
+                  <p class="label-txt">12 hours 30 mins</p>
+                </div>
+              </div>
             </div>
 
-            <br />
+            
 
             <!-- servings -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/servings.png" alt="Servings icon" />
-              Servings
-              <br />
-              <span>4</span>
+
+              <div class="label-details">
+                <p class="label-title">Servings</p>
+                <p class="label-txt">4</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <br />
+        
 
         <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
 
         <!-- description -->
         <div>
-          <h3>Description</h3>
-          <p>
+          <p class="sub-heading">Description</p>
+          <p class="description">
             The BEST chicken dum biryani recipe that actually gives you the
             perfect Biryani every time.
           </p>
         </div>
 
-        <br />
+        
 
         <!-- ingredients -->
         <div>
-          <h3><u>Ingredients</u></h3>
+          <p class="sub-heading">Ingredients</p>
 
           <!-- marinade ingredients -->
           <div>
-            <h4>For the Marinade</h4>
+            <p class="sub-heading-sub">For the Marinade</p>
 
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 750 g chicken pieces with bone (5 -6 drumsticks) </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1 cup plain yogurt </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1 tsp salt </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 2 tbsp ginger garlic paste </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1 tbsp coriander powder </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span>
                 2 tsp red chili powder (change according to your taste)
               </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1 tsp cumin powder </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1⁄2 tsp garam masala </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1⁄2 tsp turmeric powder </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 2 green chilies halved </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1⁄4 cup chopped mint (packed) </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1⁄4 cup chopped cilantro (packed) </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1⁄2 cup fried onions crushed with hands and packed </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1 tbsp oil (best use the oil you fried your onions) </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 2 tsp lemon juice </span>
             </label>
           </div>
 
-          <br /><br />
-
           <!-- rice ingredients -->
           <div>
-            <h4>For the Rice</h4>
+            <p class="sub-heading-sub">For the Rice</p>
 
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1.5 cup basmati rice </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1.5 tsp oil </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> Salt (a lot) </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 0.5 tsp cumin seeds </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 0.5 tsp black peppercorns </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1 piece of cinnamon </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 3 cloves </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 3 cardamom </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> Bay leaves </span>
             </label>
           </div>
 
-          <br /><br />
-
           <!-- layering ingredients -->
           <div>
-            <h4>For the Layering</h4>
+            <p class="sub-heading-sub">For the Layering</p>
 
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 2 tbsp ghee </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> Some fried onions </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 0.25 cup loosely packed cilantro </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 0.25 cup loosely packed mint </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span>
                 2 tsp of milk with a few saffron strands or food color
@@ -402,10 +357,10 @@
           </div>
         </div>
 
-        <br />
+        
 
         <!-- steps -->
-        <h3>Instructions</h3>
+        <p class="sub-heading">Instructions</p>
         <div>
           <ol>
             <li>
@@ -414,8 +369,6 @@
               cups of thinly sliced onions until crispy and golden.
             </li>
 
-            <br /><br />
-
             <li>
               Make the marinade. Mix all the ingredients for the marinade except
               chicken and salt. Taste the mixture and add salt. Make sure to
@@ -423,13 +376,12 @@
               going to add a lot of chicken to this. So make sure the marinade
               tastes a little too salty and sour.
             </li>
-            <br />
+            
             <img
               src="/assets/images/chickenBiryani/cb2.jpg"
               alt="image of chicken dum biryani"
+              class="step-img"
             />
-
-            <br /><br />
 
             <li>
               Now add the chicken pieces. Mix everything well together. I always
@@ -437,39 +389,36 @@
               But if you're in a hurry, 3 to 4 hours would be just fine. I
               always marinate my chicken the day before I want to make biryani.
             </li>
-            <br />
+            
             <img
               src="/assets/images/chickenBiryani/cb3.jpg"
               alt="image of chicken dum biryani"
+              class="step-img"
             />
-
-            <br /><br />
 
             <li>
               Fill a large pot (4 liters) with water and bring to a boil. Add
               salt (it should taste like seawater). Add the remaining spices for
               the rice and the oil.
             </li>
-            <br />
+            
             <img
               src="/assets/images/chickenBiryani/cb4.jpg"
               alt="image of chicken dum biryani"
+              class="step-img"
             />
-
-            <br /><br />
 
             <li>
               Boil the rice until it's half done. You know it is done when you
               can crush it between two fingers, but it should still be too firm
               to eat.
             </li>
-            <br />
+            
             <img
               src="/assets/images/chickenBiryani/cb5.jpg"
               alt="image of chicken dum biryani"
+              class="step-img"
             />
-
-            <br /><br />
 
             <li>
               Layer your biryani. In a heavy bottomed, oven safe pan, put the
@@ -478,26 +427,24 @@
               fried onions. Then layer the rice on top. Then add the remaining
               herbs, fried onions and saffron milk.
             </li>
-            <br />
+            
             <img
               src="/assets/images/chickenBiryani/cb6.jpg"
               alt="image of chicken dum biryani"
+              class="step-img"
             />
-
-            <br /><br />
 
             <li>
               Now cover the pot. You can either use aluminum foil, or just put
               the lid on and make sure it's heavy and tight. In this picture, I
               have covered my pot with foil and then placed the lid on it.
             </li>
-            <br />
+            
             <img
               src="/assets/images/chickenBiryani/cb7.jpg"
               alt="image of chicken dum biryani"
+              class="step-img"
             />
-
-            <br /><br />
 
             <li>
               Heat a skillet/tawa on medium-high heat. Once it's hot, put the
@@ -505,8 +452,6 @@
               dum/steam for about 30 minutes. This low and slow cooking helps
               everything cook evenly, without anything sticking to the bottom.
             </li>
-
-            <br /><br />
 
             <li>
               Now open the pot. You will see that the rice is perfectly cooked
@@ -517,17 +462,17 @@
           </ol>
         </div>
 
-        <br />
+        
 
-        <h4>Enjoy your meal!</h4>
+        <p>Enjoy your meal!</p>
       </section>
 
-      <div class="vertical-line"><hr /></div>
+      <div class="vertical-line"></div>
 
       <!-- __________________________ side content __________________________ -->
       <section class="side-content">
         <aside>
-          <h2 class="side-title">Featured Videos</h2>
+          <p class="side-title">Featured Videos</p>
 
           <!-- video 01 -->
           <div class="video-content">
@@ -616,7 +561,7 @@
       </section>
     </main>
 
-    <br />
+    
 
     <!-- footer -->
     <footer>

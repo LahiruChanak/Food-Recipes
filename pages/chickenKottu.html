@@ -7,7 +7,6 @@
     <link rel="icon" href="/assets/images/logo.png" />
 
     <!-- external css -->
-    <link rel="stylesheet" href="/assets/css/chickenKottu.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
     <link rel="stylesheet" href="/assets/css/common.css" />
@@ -45,7 +44,7 @@
 
         <!-- search bar -->
         <div class="search-bar">
-          <input type="text" placeholder="Search..." required />
+          <input type="text" name="q" placeholder="Search..." required />
           <button type="submit">
             <img
               src="/assets/icons/search.svg"
@@ -108,14 +107,12 @@
       </div>
     </header>
 
-    <br />
-
     <!-- //////////////////// recipe /////////////////// -->
     <main>
       <section class="recipe-content">
         <h2>Sri Lankan Chicken Kottu</h2>
         <!-- to side recipe details  -->
-        <div class="labels-sided">
+        <div class="recipe-container">
           <!-- image -->
           <div>
             <img
@@ -128,49 +125,56 @@
           <!-- sided recipe details -->
           <div class="sided-details">
             <!-- difficulty -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/difficult.png" alt="author icon" />
-              Difficulty
-              <br />
-              <span> Beginner </span>
-            </div>
 
-            <br />
+              <div class="label-details">
+                <p class="label-title">Difficulty</p>
+                <p class="label-txt">Beginner</p>
+              </div>
+            </div>
 
             <!-- prep, cook, and total time -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/time.png" alt="author icon" />
-              Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
-              &emsp;&emsp;&emsp;&emsp; Total Time
-              <br />
-              <span>
-                <!-- &nbsp; => single space, &ensp; => two spaces, &emsp; => four spaces -->
-                15 mins &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; 10 mins
-                &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&nbsp; 25 mins
-              </span>
+
+              <div class="time-container">
+                <div class="label-details">
+                  <p class="label-title">Prep Time</p>
+                  <p class="label-txt">15 mins</p>
+                </div>
+
+                <div class="label-details">
+                  <p class="label-title">Cook Time</p>
+                  <p class="label-txt">10 mins</p>
+                </div>
+
+                <div class="label-details">
+                  <p class="label-title">Total Time</p>
+                  <p class="label-txt">25 mins</p>
+                </div>
+              </div>
             </div>
 
-            <br />
-
             <!-- servings -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/servings.png" alt="author icon" />
-              Servings
-              <br />
-              <span> 4 </span>
+
+              <div class="label-details">
+                <p class="label-title">Servings</p>
+                <p class="label-txt">4</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <br />
 
         <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
 
         <div>
           <!-- description -->
           <div>
-            <h3><u>Description</u></h3>
-            <p>
+            <p class="sub-heading">Description</p>
+            <p class="description">
               Chicken kottu - The best and the most popular Sri Lankan street
               food and probably the most popular Sri Lankan food in the world.
               It's a mix of roti pieces, some veggies, eggs, and a curry sauce.
@@ -178,125 +182,93 @@
             </p>
           </div>
 
-          <br />
-
           <!-- ingredients -->
           <div>
-            <h3>Ingredients</h3>
+            <p class="sub-heading">Ingredients</p>
 
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span>
                 8 Godamba roti pieces (check description for substitutes)
               </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> cup chicken curry (broth only) </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 16 chicken pieces from the curry or roast chicken </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 2 cup carrot julianned </span></label
             >
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 2 cup leek green part sliced </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 1 cup diced tomatoes/ 1 small tomato </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 12 inch leek white/light green part cut into rings </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 8 chilies sliced (can substitute with chili flakes) </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> tsp garlic & ginger minced </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> 8 tbsp onion </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> egg </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> tbsp oil </span>
             </label>
 
-            <br /><br />
-
-            <label class="checkbox-label">
+            <label>
               <input type="checkbox" />
               <span> salt & pepper as needed </span>
             </label>
-
-            <br /><br />
           </div>
-
-          <br />
 
           <!-- steps -->
           <div>
-            <h3>Instructions</h3>
+            <p class="sub-heading">Instructions</p>
 
             <ol>
               <li>
                 Heat oil in a wok and add minced ginger, garlic, and leek rings.
                 (White part or light green part only)
               </li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck2.jpg"
                 alt="image2 of chicken kottu"
                 class="step-img"
               />
-
-              <br /><br />
 
               <li>
                 Add the chicken pieces you took from the chicken curry to the
@@ -304,27 +276,23 @@
                 beforehand if it's hard to break the chicken pieces with the
                 spatula.
               </li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck3.jpg"
                 alt="image2 of chicken kottu"
                 class="step-img"
               />
 
-              <br /><br />
-
               <li>
                 Mix with the rest of the ingredients and let the chicken get
                 brown a little bit.
               </li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck4.jpg"
                 alt="image3 of chicken kottu"
                 class="step-img"
               />
-
-              <br /><br />
 
               <li>
                 Move everything to a side and crack an egg to the middle of the
@@ -332,14 +300,12 @@
                 the egg is almost cooked, mix with the rest of the ingredients
                 on the wok.
               </li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck5.jpg"
                 alt="image4 of chicken kottu"
                 class="step-img"
               />
-
-              <br /><br />
 
               <li>
                 Move the mixture aside and add your chopped onion and sliced
@@ -352,116 +318,96 @@
                 class="step-img"
               />
 
-              <br /><br />
-
               <li>Mix everything well together. Keep mixing.</li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck7.jpg"
                 alt="image6 of chicken kottu"
                 class="step-img"
               />
 
-              <br /><br />
-
               <li>
                 Again, move everything to aside and add the julienned carrots.
                 Mix only the carrots to fry them a little bit.
               </li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck8.jpg"
                 alt="image7 of chicken kottu"
                 class="step-img"
               />
 
-              <br /><br />
-
               <li>Mix everything together and add your diced tomatoes.</li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck9.jpg"
                 alt="image8 of chicken kottu"
                 class="step-img"
               />
 
-              <br /><br />
-
               <li>
                 Mix and add salt as you per to your taste. Mix again to
                 distribute salt. Do a taste test and adjust the salt if needed.
                 (You can add pepper too at this point if you want.)
               </li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck10.jpg"
                 alt="image9 of chicken kottu"
                 class="step-img"
               />
 
-              <br /><br />
-
               <li>Add the Roti pieces and sliced leeks (green part)</li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck11.jpg"
                 alt="image9 of chicken kottu"
                 class="step-img"
               />
 
-              <br /><br />
-
               <li>Mix on high heat for about a minute.</li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck12.jpg"
                 alt="image9 of chicken kottu"
                 class="step-img"
               />
 
-              <br /><br />
-
               <li>
                 Add the chicken curry. You can add more or less according to the
                 texture you want. If you like a dry kottu you can add less than
                 that.
               </li>
-              <br />
+
               <img
                 src="/assets/images/chickenKottu/ck13.jpg"
                 alt="image9 of chicken kottu"
                 class="step-img"
               />
 
-              <br /><br />
-
               <li>
                 Turn the heat to low. Mix all the roti pieces with the curry.
                 Break the roti pieces and vegetables with the wok spatula while
                 mixing.
               </li>
-              <br />
               <img
                 src="/assets/images/chickenKottu/ck14.jpg"
                 alt="image9 of chicken kottu"
                 class="step-img"
               />
-              <br />
             </ol>
           </div>
 
-          <br />
-
-          <h4>Enjoy your meal !</h4>
+          <p class="end-text">Enjoy your meal !</p>
         </div>
       </section>
 
-      <div class="vertical-line"><hr /></div>
+      <div class="vertical-line"></div>
 
       <!-- __________________________ side content __________________________ -->
       <section class="side-content">
         <aside>
-          <h2 class="side-title">Featured Videos</h2>
+          <p class="side-title">Featured Videos</p>
 
           <!-- video 01 -->
           <div class="video-content">
@@ -549,8 +495,6 @@
         </aside>
       </section>
     </main>
-
-    <br />
 
     <!-- footer -->
     <footer>

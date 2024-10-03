@@ -7,7 +7,6 @@
     <link rel="icon" href="/assets/images/logo.png" />
 
     <!-- external css -->
-    <link rel="stylesheet" href="/assets/css/yellowRice.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
     <link rel="stylesheet" href="/assets/css/common.css" />
@@ -45,7 +44,7 @@
 
         <!-- search bar -->
         <div class="search-bar">
-          <input type="text" placeholder="Search..." required />
+          <input type="text" name="q" placeholder="Search..." required />
           <button type="submit">
             <img
               src="/assets/icons/search.svg"
@@ -108,15 +107,13 @@
       </div>
     </header>
 
-    <br />
-
     <!-- ///////////////////////// recipe /////////////////////// -->
 
     <main>
       <section class="recipe-content">
         <h2>Sri Lankan Yellow Rice</h2>
         <!-- to side recipe details  -->
-        <div class="labels-sided">
+        <div class="recipe-container">
           <!-- image -->
           <div>
             <img
@@ -127,49 +124,56 @@
           </div>
 
           <!-- sided recipe details -->
-          <div class="sided-details">
+          <div class="label-container">
             <!-- difficulty -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/difficult.png" alt="Difficulty icon" />
-              Difficulty
-              <br />
-              <span>Beginner</span>
-            </div>
 
-            <br />
+              <div class="label-details">
+                <p class="label-title">Difficulty</p>
+                <p class="label-txt">Beginner</p>
+              </div>
+            </div>
 
             <!-- prep, cook, and total time -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/time.png" alt="Time icon" />
-              Prep Time &emsp;&emsp;&emsp;&emsp; Cook Time
-              &emsp;&emsp;&emsp;&emsp; Total Time
-              <!-- (&nbsp; => single space), (&ensp; => two spaces), (&emsp; => four spaces) -->
-              <br />
-              <span>
-                10 mins &emsp;&emsp;&emsp;&emsp;&ensp;&nbsp; 15 mins
-                &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; 25 mins
-              </span>
+
+              <div class="time-container">
+                <div class="label-details">
+                  <p class="label-title">Prep Time</p>
+                  <p class="label-txt">10 mins</p>
+                </div>
+
+                <div class="label-details">
+                  <p class="label-title">Cook Time</p>
+                  <p class="label-txt">15 mins</p>
+                </div>
+
+                <div class="label-details">
+                  <p class="label-title">Total Time</p>
+                  <p class="label-txt">25 mins</p>
+                </div>
+              </div>
             </div>
 
-            <br />
-
             <!-- servings -->
-            <div class="label-space">
+            <div class="label">
               <img src="/assets/icons/servings.png" alt="Servings icon" />
-              Servings
-              <br />
-              <span>4</span>
+
+              <div class="label-details">
+                <p class="label-title">Servings</p>
+                <p class="label-txt">4</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <br />
 
         <!-- //////////////////////// description, ingredients, and steps //////////////////////// -->
 
         <!-- description -->
         <div>
-          <h3><u>Description</u></h3>
+          <p class="sub-heading">Description</p>
           <p>
             An easy way to make delicious Sri Lankan yellow rice in the instant
             pot or rice cooker. A must for your Sri Lankan party menu. This
@@ -177,97 +181,71 @@
           </p>
         </div>
 
-        <br />
-
         <!-- ingredients -->
         <div>
-          <h3><u>Ingredients</u></h3>
+          <p class="sub-heading">Ingredients</p>
 
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 1.5 cup Washed and drained rice </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> cloves of garlic </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 1 inch piece of ginger </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 1 tbsp butter </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 4 cardamom </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 4 cloves </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 25 black peppercorns </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 0.25 tsp turmeric powder </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 1 sprig of curry leaves </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 1 pandan leaf </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 0.25 cup chopped onion </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span> 2 cup chicken or vegetable stock </span>
           </label>
 
-          <br /><br />
-
-          <label class="checkbox-label">
+          <label>
             <input type="checkbox" />
             <span>
               0.25 cup unsweetened coconut cream (or thick coconut milk)
@@ -275,11 +253,9 @@
           </label>
         </div>
 
-        <br />
-
         <!-- steps -->
         <div>
-          <h3><u>Instructions</u></h3>
+          <p class="sub-heading">Instructions</p>
           <ol>
             <li>
               Wash rice thoroughly until water runs clear and then drain all the
@@ -288,96 +264,102 @@
               store-bought one. Open the cardamom pod a bit by gently crushing
               them using the flat side of your knife.
             </li>
-            <br />
+
             <li>
               Turn on the multicooker/instant pot (or rice cooker) and select
               the saute mode. Add butter. When the butter is melting, add
               cardamoms, cloves and peppercorns. And add pandan leaves and curry
               leaves. Mix for a few seconds.
             </li>
-            <br />
+
             <img
               src="/assets/images/yellowRice/yr2.jpg"
               alt="image2 of yellow rice"
+              class="step-img"
             />
-            <br /><br />
+
             <li>
               Now add ginger garlic paste and chopped onion. Keep. Stirring
               until they get light brown. If they seem to burn, turn off the
               multicooker/instant pot and add a bit more butter.
             </li>
-            <br />
+
             <img
               src="/assets/images/yellowRice/yr3.jpg"
               alt="image3 of yellow rice"
+              class="step-img"
             />
-            <br /><br />
+
             <li>
               When onions are soft and brown, add your washed and drained rice.
               And add turmeric powder. Now mix with the onion mixture.
             </li>
-            <br />
+
             <img
               src="/assets/images/yellowRice/yr4.jpg"
               alt="image4 of yellow rice"
+              class="step-img"
             />
-            <br /><br />
+
             <li>
               Then add the chicken/vegetable stock and coconut milk. Stir.
             </li>
-            <br />
+
             <img
               src="/assets/images/yellowRice/yr5.jpg"
               alt="image5 of yellow rice"
+              class="step-img"
             />
-            <br /><br />
+
             <li>Check for salt. Add more if you need salt. Stir.</li>
-            <br />
+
             <img
               src="/assets/images/yellowRice/yr6.jpg"
               alt="image6 of yellow rice"
+              class="step-img"
             />
-            <br /><br />
+
             <li>
               Then cover and select the “rice” preset on the multicooker. If you
               use a rice cooker, then cook as you normally do.
             </li>
-            <br />
+
             <img
               src="/assets/images/yellowRice/yr7.jpg"
               alt="image7 of yellow rice"
+              class="step-img"
             />
-            <br /><br />
+
             <li>
               Remove the cardamom pods, cloves, and pandan leaves. You can see
               them around the edges sitting on top of the rice. So it's easy to
               spot them.
             </li>
-            <br />
+
             <img
               src="/assets/images/yellowRice/yr8.jpg"
               alt="image8 of yellow rice"
+              class="step-img"
             />
-            <br /><br />
+
             <li>And fluff the rice carefully without breaking the grains.</li>
-            <br />
+
             <img
               src="/assets/images/yellowRice/yr9.jpg"
               alt="image9 of yellow rice"
+              class="step-img"
             />
-            <br /><br />
+
             <li>
               Use fried onions, fried cashews, peas(optional) to decorate.
             </li>
           </ol>
         </div>
 
-        <br />
-
-        <h4>Enjoy your meal !</h4>
+        <p class="end-text">Enjoy your meal !</p>
       </section>
 
-      <div class="vertical-line"><hr /></div>
+      <div class="vertical-line"></div>
 
       <!-- __________________________ side content __________________________ -->
       <section class="side-content">
@@ -470,8 +452,6 @@
         </aside>
       </section>
     </main>
-
-    <br />
 
     <!-- footer -->
     <footer>
