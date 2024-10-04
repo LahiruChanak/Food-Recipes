@@ -35,9 +35,9 @@ section div + hr {
 .recipe-txt-container {
   display: flex;
   align-items: center;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(80, 80, 80, 0.5);
   border-radius: 12px;
-  padding: 5px 15px 0 5px;
+  padding: 10px 15px 5px 10px;
   gap: 25px;
 }
 
@@ -45,7 +45,7 @@ section div + hr {
 .recipe-img {
   width: 200px;
   height: 200px;
-  border-radius: 12px 0 0 12px;
+  border-radius: 10px 0 0 10px;
 }
 
 /* image and text space */
@@ -66,9 +66,22 @@ section div + hr {
   max-width: 300px;
   height: fit-content;
   padding: 25px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 15px rgba(80, 80, 80, 0.5);
+  /* position: relative; */
+}
+
+.recipe-search-bg-img {
+  width: 100%;
+  object-fit: cover;
+
+  /* position: absolute;
+  bottom: 0;
+  right: -35px;
+  height: 100%;
+  width: auto;
+  z-index: -1; */
 }
 
 .recipe-search-title {
@@ -87,20 +100,20 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 5px 15px rgba(80, 80, 80, 0.3);
+  border-radius: 10px;
 }
 
 form input[type="text"] {
-  padding: 8px;
+  padding: 10px;
   width: 100%;
   border-radius: 10px 0 0 10px;
   border: none;
   background-color: #ffe7e6;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 form input[type="submit"] {
-  padding: 8px;
-  margin: 5px 0;
+  padding: 10px 15px;
   border-radius: 0 10px 10px 0;
   background-color: #fe5f55;
   color: #fff;
