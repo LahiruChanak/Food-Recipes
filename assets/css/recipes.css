@@ -1,26 +1,25 @@
 /* hyperlink css */
-section div a {
-  text-decoration: none;
+.img-txt-container a {
+  width: fit-content;
   color: #1b1a18;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
+  transition: color 0.4s ease-in-out;
 }
 
-a:hover {
-  text-decoration: underline;
+.img-txt-container a:hover {
   color: #fe5f55;
-  font-weight: bold;
 }
 
 /* bold text css */
 strong {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 /* paragraph css */
 p {
   color: #808080;
-  font-size: 15px;
+  font-size: 0.94rem;
   margin-right: 25px;
 }
 
@@ -101,24 +100,32 @@ form {
   align-items: center;
   justify-content: center;
   box-shadow: 0px 5px 15px rgba(80, 80, 80, 0.3);
-  border-radius: 10px;
+  border-radius: 17px;
+  border: 3px solid #ccc;
+  padding: 0.2px;
 }
 
 form input[type="text"] {
   padding: 10px;
   width: 100%;
-  border-radius: 10px 0 0 10px;
+  border-radius: 15px 0 0 15px;
   border: none;
-  background-color: #ffe7e6;
+  outline: none;
+  /* background-color: #ffe7e6; */
 }
 
 form input[type="submit"] {
   padding: 10px 15px;
-  border-radius: 0 10px 10px 0;
-  background-color: #fe5f55;
+  border-radius: 0 15px 15px 0;
+  background-color: #1b1a18;
   color: #fff;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background-color: #fe5f55;
 }
 
 .horizontal-line {

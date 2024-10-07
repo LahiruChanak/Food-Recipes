@@ -31,6 +31,7 @@ header hr {
   color: #1b1a18;
   font-size: 15px;
   position: relative;
+  transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
@@ -81,15 +82,18 @@ a.active {
 .search-bar {
   display: flex;
   width: fit-content;
-  padding: 0 10px 0 15px;
+  padding: 5px 10px;
   border: 2px solid #ccc;
   border-radius: 20px;
 }
 
 .search-bar input {
-  width: 12vw;
+  width: 10vw;
   border: none;
   outline: none;
+  border-radius: 10px;
+  /* background-color: #aaa; */
+  padding: 0 10px;
   font-size: 15px;
   color: #808080;
 }
@@ -102,13 +106,18 @@ a.active {
 }
 
 .icon {
-  width: 25px;
+  margin-right: 5px;
   vertical-align: middle;
+  color: #1b1a18;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .icon:hover {
-  filter: brightness(0) saturate(100%) invert(48%) sepia(93%) saturate(3250%)
-    hue-rotate(332deg) brightness(102%) contrast(101%);
+  /* filter: brightness(0) saturate(100%) invert(48%) sepia(93%) saturate(3250%)
+    hue-rotate(332deg) brightness(102%) contrast(101%); */
+
+  color: #fe5f55;
+  transform: scale(1.1);
 }
 
 /* ___________________________ hamburger menu __________________________ */
@@ -122,16 +131,16 @@ a.active {
   cursor: pointer;
 }
 
-.menu-icon img,
-.close-icon img {
-  width: 20px;
+.menu-icon i,
+.close-icon i {
   vertical-align: middle;
+  color: #1b1a18;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.menu-icon img:hover,
-.close-icon img:hover {
-  filter: brightness(0) saturate(100%) invert(48%) sepia(93%) saturate(3250%)
-    hue-rotate(332deg) brightness(102%) contrast(101%);
+.menu-icon i:hover,
+.close-icon i:hover {
+  color: #fe5f55;
   transform: scale(1.1);
 }
 
@@ -151,6 +160,7 @@ a.active {
     transition: right 0.3s ease-in-out;
     z-index: 3;
     padding-left: 2vw;
+    transition: right 0.5s ease-in-out;
   }
 
   /* .search-bar {
@@ -214,7 +224,8 @@ a.active {
 
   /* Overlay */
   .overlay {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -223,10 +234,12 @@ a.active {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
     z-index: 2;
+    transition: opacity 0.5s ease-in-out 0.2s, visibility 0.5s ease-in-out 0.2s;
   }
 
   #menu-toggle:checked ~ .overlay {
-    display: block;
+    opacity: 1;
+    visibility: visible;
   }
 
   #menu-toggle:checked ~ .menu-icon {
@@ -248,9 +261,9 @@ a.active {
 /* __________________________________ scroll-up _________________________________ */
 .scroll-container {
   position: absolute;
-  bottom: 0;
+  top: 50px;
   right: 4vh;
-  height: 100%;
+  height: calc(100% - 50px);
 }
 
 .scroll-container:before {
@@ -276,12 +289,14 @@ a.active {
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+  transition: background 0.3s ease-in-out;
 }
 
 .scroll-container div:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
-.scroll-container img {
-  width: 30px;
+/* scroll icon */
+.scroll {
+  color: #1b1a18;
 }

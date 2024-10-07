@@ -29,6 +29,10 @@ h2 {
   padding-top: 20px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* ___________________________ recipes pages and its' side content ________________________ */
 .recipe-content {
   width: 1000px;
