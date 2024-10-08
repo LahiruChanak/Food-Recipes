@@ -1,0 +1,128 @@
+body {
+  background-color: #eeeeea;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 400px;
+  display: flex;
+  justify-content: start;
+}
+
+.card {
+  width: 80px;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 30px;
+  margin: 0 15px;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .count {
+  background: #223;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.card > .row > .description {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 80px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: 0.3s;
+  transition: all 0.3s ease;
+}
+
+.description {
+}
+
+.description p {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.description h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  width: 600px;
+  transition: width 1s ease-in-out, transform 0.3s ease-in-out;
+}
+
+input[type="radio"]:checked + label:hover {
+  transform: scale(1.03);
+}
+
+input[type="radio"]:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+
+  border-radius: 15px 0 30px 0;
+  padding: 10px 20px;
+  margin-left: 15px;
+
+  /* glassmorphism effect */
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+
+  transition: all 1s ease-in-out 1s;
+}
+
+.card[for="c1"] {
+  background-image: url("/assets/images/chickenBiryani/cb1.jpg");
+}
+.card[for="c2"] {
+  background-image: url("/assets/images/cajunShrimp/cs1.jpg");
+}
+.card[for="c3"] {
+  background-image: url("/assets/images/yellowRice/yr1.jpg");
+}
+.card[for="c4"] {
+  background-image: url("/assets/images/chickenKottu/ck1.jpg");
+}
+.card[for="c5"] {
+  background-image: url("/assets/images/garlicNaan/gn1.jpg");
+}
+.card[for="c6"] {
+  background-image: url("/assets/images/samosa/samosa1.jpg");
+}
+.card[for="c7"] {
+  background-image: url("/assets/images/porkBelly/pb1.jpg");
+}

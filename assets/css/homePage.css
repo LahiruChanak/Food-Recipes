@@ -12,6 +12,7 @@
   color: #212121;
 }
 
+/*
 .cards {
   display: flex;
   padding: 2vh 0;
@@ -19,7 +20,7 @@
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   max-width: 90vw;
-  /* border: 1px solid black; */
+  /* border: 1px solid black; 
   border-radius: 20px;
   background-color: #ecf0f1;
 }
@@ -37,7 +38,7 @@
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease-in-out;
-  /* animation: slide 20s linear infinite; */
+  /* animation: slide 20s linear infinite;
 }
 
 .card:not(:last-child) {
@@ -46,7 +47,7 @@
 
 .card:hover {
   transform: scale(1.03);
-  /* animation-play-state: paused; */
+  /* animation-play-state: paused;
 }
 
 .home-recipe-img {
@@ -179,7 +180,7 @@
 div[class="info-badge"] img {
   width: 25px;
   margin-right: 10px;
-}
+} */
 
 /* __________________________ sub-container __________________________ */
 .sub-container {

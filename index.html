@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
     <link rel="stylesheet" href="/assets/css/common.css" />
+
+    <link rel="stylesheet" href="/experiment.css" />
   </head>
   <body>
     <header>
@@ -90,190 +92,102 @@
 
     <!-- /////////////////////////// Home Content /////////////////////////// -->
     <main class="main-class">
-      <section class="card-container">
+      <section>
         <p class="card-title">Most Popular Recipes</p>
-        <div class="cards">
-          <!-- /////// Card 1 /////// -->
-          <div class="card">
-            <div class="recipe-content">
-              <div class="badge">Hot Recipes</div>
-              <h1 class="recipe-title">Chicken Dum Biryani (Kacchi style)</h1>
-              <p class="recipe-description">
-                The BEST chicken dum biryani recipe...
-              </p>
-              <div class="recipe-info">
-                <div class="info-badge">
-                  <img src="/assets/icons/time.png" alt="time icon" />
-                  30 Minutes
-                </div>
-                <div class="info-badge">
-                  <img src="/assets/icons/meal.png" alt="meal icon" />
-                  Chicken
+
+        <div class="card-container">
+          <div class="container">
+            <input type="radio" name="slide" id="c1" checked />
+            <label for="c1" class="card">
+              <div class="row">
+                <div class="count">1</div>
+                <div class="description">
+                  <h4>Chicken Dum Biryani (Kacchi style)</h4>
+                  <p>The BEST chicken dum biryani recipe...</p>
                 </div>
               </div>
-              <div class="author-info">
-                <img
-                  src="/assets/images/chef1.jpg"
-                  alt="John Smith"
-                  class="author-img"
-                />
-                <div class="author-details">
-                  <span class="author-name"> Heston Blumenthal </span>
-                  <span class="author-date"> 15 March 2024 </span>
+            </label>
+
+            <input type="radio" name="slide" id="c2" />
+            <label for="c2" class="card">
+              <div class="row">
+                <div class="count">2</div>
+                <div class="description">
+                  <h4>Cajun Shrimp in Air Fryer</h4>
+                  <p>
+                    This Cajun Shrimp in the Air fryer is one of the easiest
+                    quickest recipes...
+                  </p>
                 </div>
               </div>
+            </label>
 
-              <br />
-
-              <a href="/pages/chickenDumBiryani.html" class="view-recipes-btn">
-                View Recipes
-              </a>
-            </div>
-
-            <div class="home-recipe-img">
-              <img
-                src="/assets/images/chickenBiryani/cb1.jpg"
-                alt="Spicy Chicken Wings"
-              />
-            </div>
-          </div>
-
-          <!-- /////// Card 2 /////// -->
-          <div class="card">
-            <div class="recipe-content">
-              <div class="badge">Hot Recipes</div>
-              <h1 class="recipe-title">Cajun Shrimp in Air Fryer</h1>
-              <p class="recipe-description">
-                This Cajun Shrimp in the Air fryer is one of the easiest
-                quickest recipes you can make...
-              </p>
-              <div class="recipe-info">
-                <div class="info-badge">
-                  <img src="/assets/icons/time.png" alt="time icon" />
-                  5 Minutes
-                </div>
-                <div class="info-badge">
-                  <img src="/assets/icons/meal.png" alt="meal icon" />
-                  Shrimp
+            <input type="radio" name="slide" id="c3" />
+            <label for="c3" class="card">
+              <div class="row">
+                <div class="count">3</div>
+                <div class="description">
+                  <h4>Sri Lankan Yellow Rice</h4>
+                  <p>
+                    An easy way to make delicious Sri Lankan yellow rice in the
+                    instant pot or rice cooker...
+                  </p>
                 </div>
               </div>
-              <div class="author-info">
-                <img
-                  src="/assets/images/chef4.jpg"
-                  alt="John Smith"
-                  class="author-img"
-                />
-                <div class="author-details">
-                  <span class="author-name"> Delia Smith </span>
-                  <span class="author-date"> 20 December 2023 </span>
+            </label>
+
+            <input type="radio" name="slide" id="c4" />
+            <label for="c4" class="card">
+              <div class="row">
+                <div class="count">4</div>
+                <div class="description">
+                  <h4>Sri Lankan Chicken Kottu</h4>
+                  <p>The best and the most popular Sri Lankan street food...</p>
                 </div>
               </div>
+            </label>
 
-              <br />
-
-              <a href="/pages/cajunShrimp.html" class="view-recipes-btn">
-                View Recipes
-              </a>
-            </div>
-
-            <div class="home-recipe-img">
-              <img
-                src="/assets/images/cajunShrimp/cs1.jpg"
-                alt="Spicy Chicken Wings"
-              />
-            </div>
-          </div>
-
-          <!-- /////// Card 3 /////// -->
-          <div class="card">
-            <div class="recipe-content">
-              <div class="badge">Hot Recipes</div>
-              <h1 class="recipe-title">Sri Lankan Yellow Rice</h1>
-              <p class="recipe-description">
-                An easy way to make delicious Sri Lankan yellow rice in the
-                instant pot or rice cooker...
-              </p>
-              <div class="recipe-info">
-                <div class="info-badge">
-                  <img src="/assets/icons/time.png" alt="time icon" />
-                  15 Minutes
-                </div>
-                <div class="info-badge">
-                  <img src="/assets/icons/meal.png" alt="meal icon" />
-                  Chicken
+            <input type="radio" name="slide" id="c5" />
+            <label for="c5" class="card">
+              <div class="row">
+                <div class="count">5</div>
+                <div class="description">
+                  <h4>Buttery Garlic Naan</h4>
+                  <p>
+                    So buttery and garlicky and so easy to make, I know you'd
+                    never say no to these Indian garlic naan bread...
+                  </p>
                 </div>
               </div>
-              <div class="author-info">
-                <img
-                  src="/assets/images/chef2.jpg"
-                  alt="John Smith"
-                  class="author-img"
-                />
-                <div class="author-details">
-                  <span class="author-name"> Gordon Ramsay </span>
-                  <span class="author-date"> 10 April 2024</span>
+            </label>
+
+            <input type="radio" name="slide" id="c6" />
+            <label for="c6" class="card">
+              <div class="row">
+                <div class="count">6</div>
+                <div class="description">
+                  <h4>Chicken Samosa with Phyllo</h4>
+                  <p>
+                    Baked chicken samosa with phyllo is an easy way to make
+                    samosas without deep frying...
+                  </p>
                 </div>
               </div>
+            </label>
 
-              <br />
-
-              <a href="/pages/yellowRice.html" class="view-recipes-btn">
-                View Recipes
-              </a>
-            </div>
-
-            <div class="home-recipe-img">
-              <img
-                src="/assets/images/yellowRice/yr1.jpg"
-                alt="Spicy Chicken Wings"
-              />
-            </div>
-          </div>
-
-          <!-- /////// Card 4 /////// -->
-          <div class="card">
-            <div class="recipe-content">
-              <div class="badge">Hot Recipes</div>
-              <h1 class="recipe-title">Sri Lankan Chicken Kottu</h1>
-              <p class="recipe-description">
-                The best and the most popular Sri Lankan street food and
-                probably the most popular Sri Lankan food in the world...
-              </p>
-              <div class="recipe-info">
-                <div class="info-badge">
-                  <img src="/assets/icons/time.png" alt="time icon" />
-                  10 Minutes
-                </div>
-                <div class="info-badge">
-                  <img src="/assets/icons/meal.png" alt="meal icon" />
-                  Chicken
+            <input type="radio" name="slide" id="c7" />
+            <label for="c7" class="card">
+              <div class="row">
+                <div class="count">7</div>
+                <div class="description">
+                  <h4>Pork Belly Stir-Fry</h4>
+                  <p>
+                    Easy and quick, this pork belly stir-fry is packed with
+                    flavors...
+                  </p>
                 </div>
               </div>
-              <div class="author-info">
-                <img
-                  src="/assets/images/chef5.jpg"
-                  alt="John Smith"
-                  class="author-img"
-                />
-                <div class="author-details">
-                  <span class="author-name"> Dharshan Munidasa </span>
-                  <span class="author-date"> 05 May 2023</span>
-                </div>
-              </div>
-
-              <br />
-
-              <a href="/pages/chickenKottu.html" class="view-recipes-btn">
-                View Recipes
-              </a>
-            </div>
-
-            <div class="home-recipe-img">
-              <img
-                src="/assets/images/chickenKottu/ck1.jpg"
-                alt="Spicy Chicken Wings"
-              />
-            </div>
+            </label>
           </div>
         </div>
       </section>
