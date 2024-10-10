@@ -159,7 +159,7 @@ a.active {
     background-color: #fff;
     transition: right 0.3s ease-in-out;
     z-index: 3;
-    padding-left: 2vw;
+    /* padding-left: 2vw; */
     transition: right 0.5s ease-in-out;
   }
 
@@ -200,8 +200,36 @@ a.active {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 60px 20px 20px;
+    padding: 60px 20px 20px 0;
     gap: 50px;
+  }
+
+  .nav-links li {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links li::before {
+    /* border-left: transparent 5px solid; */
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0 12px 9px;
+    border-color: transparent;
+    transition: border-left-color 0.5s ease-in-out;
+  }
+
+  .nav-links li:hover::before {
+    border-left-color: #fe5f55;
+  }
+
+  .nav-links a {
+    margin-left: 20px;
+  }
+
+  .nav-links a::after {
+    display: none;
   }
 
   #menu-toggle:checked ~ nav {
