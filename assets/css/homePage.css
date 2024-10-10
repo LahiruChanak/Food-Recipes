@@ -23,7 +23,8 @@ h4 {
 }
 
 label {
-  transition: width 1s ease-in-out, transform 1s ease-in-out;
+  transition: width 1s ease-in-out, height 1s ease-in-out,
+    transform 1s ease-in-out;
 }
 
 .card {
@@ -380,8 +381,16 @@ input[type="radio"]:checked + label .card-description {
   }
 
   .row {
-    flex-direction: column;
-    width: 100%;
+    width: 600px;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .count {
+    align-self: flex-end;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
   }
 
   .card {
@@ -392,7 +401,11 @@ input[type="radio"]:checked + label .card-description {
   }
 
   .card-description {
-    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-in-out;
+    width: 80%;
   }
 
   .recipe-info {
@@ -413,9 +426,11 @@ input[type="radio"]:checked + label .card-description {
     width: 100%;
   }
 
-  input[type="radio"]:checked + .card .card-description {
-    width: 95%;
-    padding: 15px;
+  input[type="radio"]:checked + label .card-description {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s ease-in-out 1s;
   }
 }
 
