@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 /* place footer to the bottom */
 .about-main {
   min-height: 73vh;
@@ -35,6 +39,7 @@
   align-items: center;
   width: 100%;
   max-width: 90vw;
+  margin-top: 25px;
 }
 
 .about-title {

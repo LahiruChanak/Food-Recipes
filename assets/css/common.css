@@ -1,12 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 /* ________________________ common style CSS for all pages ________________________ */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
   width: 100%;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
 }
 
@@ -33,7 +38,7 @@ a {
   text-decoration: none;
 }
 
-/* ___________________________ recipes pages and its' side content ________________________ */
+/* --------------------- recipes pages and its' side content --------------------- */
 .recipe-content {
   width: 1000px;
 }
@@ -176,7 +181,7 @@ iframe {
   border-radius: 10px;
 }
 
-/* ___________________________ media queries ____________________________ */
+/* ------------------------- media queries ------------------------- */
 @media screen and (max-width: 900px) {
   main {
     flex-direction: column;
