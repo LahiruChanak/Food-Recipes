@@ -163,39 +163,6 @@ a.active {
     transition: right 0.5s ease-in-out;
   }
 
-  /* .search-bar {
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
-    width: 130px;
-    margin-left: 2vw;
-    padding: 0px 14px;
-    border: 2px solid #ccc;
-    border-radius: 20px;
-    background-color: #fff;
-    z-index: 3;
-  }
-
-  .icon-container {
-    position: fixed;
-    bottom: 25px;
-    right: 20px;
-    display: flex;
-    background-color: #fff;
-    justify-content: flex-start;
-    gap: 15px;
-    z-index: 3;
-    border: 2px solid #aaa;
-    border-radius: 20px;
-    padding: 5px;
-    margin-left: 2vw;
-  }
-
-  #menu-toggle:checked ~ .search-bar,
-  #menu-toggle:checked ~ .icon-container {
-    display: flex;
-  } */
-
   .nav-links {
     flex-direction: column;
     justify-content: flex-start;
@@ -276,6 +243,7 @@ a.active {
 
   .close-icon {
     display: none;
+    transition: all 0.5s ease-in-out 1s;
   }
 
   #menu-toggle:checked ~ .close-icon {
@@ -289,9 +257,14 @@ a.active {
 /* __________________________________ scroll-up _________________________________ */
 .scroll-container {
   position: absolute;
-  top: 50px;
+  top: 60px;
   right: 4vh;
-  height: calc(100% - 50px);
+  height: calc(100% - 60px);
+  width: 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
 }
 
 .scroll-container:before {
