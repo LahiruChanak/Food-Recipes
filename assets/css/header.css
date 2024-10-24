@@ -141,7 +141,7 @@ a.active {
 .menu-icon i:hover,
 .close-icon i:hover {
   color: #fe5f55;
-  transform: scale(1.1);
+  animation: fa-bounce 1s ease-in-out 1;
 }
 
 @media screen and (max-width: 900px) {
@@ -153,13 +153,13 @@ a.active {
   nav {
     position: fixed;
     right: -100%;
-    top: 0;
-    height: 100vh;
+    top: 3px;
+    height: calc(100vh - 6px);
     width: 180px;
     background-color: #fff;
-    transition: right 0.3s ease-in-out;
-    z-index: 3;
-    /* padding-left: 2vw; */
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.9));
+    border-radius: 10px 0 0 10px;
+    z-index: 5;
     transition: right 0.5s ease-in-out;
   }
 
@@ -209,7 +209,7 @@ a.active {
     position: absolute;
     top: 20px;
     right: 30px;
-    z-index: 4;
+    z-index: 6;
   }
 
   .search-bar,
@@ -228,7 +228,7 @@ a.active {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
-    z-index: 2;
+    z-index: 4;
     transition: opacity 0.5s ease-in-out 0.2s, visibility 0.5s ease-in-out 0.2s;
   }
 
@@ -285,7 +285,7 @@ a.active {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  z-index: 5;
+  z-index: 3;
 
   /* glassmorphism effect */
   background: rgba(0, 0, 0, 0.1);
@@ -300,5 +300,11 @@ a.active {
 
 /* scroll icon */
 .scroll {
-  color: #1b1a18;
+  color: #121212;
+  font-size: 25px;
+}
+
+.scroll-container div:hover .scroll {
+  color: #ff8279;
+  animation: fa-bounce 1s ease-in-out 1;
 }
