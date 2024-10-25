@@ -369,18 +369,19 @@ input[type="radio"]:checked + label .card-description {
   display: block;
   width: 100%;
   max-width: 250px;
-  height: 37px;
+  height: 35px;
   padding: 0 15px;
   background: transparent;
   color: #444;
   border: 2px solid #aaa;
   border-radius: 8px 0 0 8px;
+  outline-color: #ffa500;
   box-sizing: border-box;
 }
 
 .subscribe-form input:focus + label,
 .subscribe-form input:not(:placeholder-shown) + label {
-  top: -8px;
+  top: -9px;
   font-size: 0.87rem;
   color: #fe5f55;
   background: #fbe8d3;
