@@ -81,13 +81,13 @@
 
       <!-- ________________________ scroll-up button ________________________ -->
 
-      <div class="scroll-container">
+      <!-- <div class="scroll-container">
         <div>
           <a href="#top">
             <i class="fa-solid fa-angle-up scroll"></i>
           </a>
         </div>
-      </div>
+      </div> -->
     </header>
 
     <br />
@@ -116,62 +116,52 @@
 
             <!-- /////////////////// contact form /////////////////// -->
 
-            <div class="form-padding">
-              <fieldset>
-                <legend>Personal Details</legend>
+            <fieldset>
+              <legend>Personal Details</legend>
 
-                <br />
+              <br />
 
-                <div class="name-email-container">
-                  <div class="txt-input">
-                    <label for="name">Name</label>
-                    <br />
-                    <input type="text" id="name" required />
-                  </div>
-
-                  <div class="txt-input">
-                    <label for="email">Email</label>
-                    <br />
-                    <input type="text" id="email" required />
-                  </div>
+              <div class="name-email-container">
+                <div class="txt-input">
+                  <input type="text" id="name" placeholder="" required />
+                  <label for="name">Name</label>
                 </div>
-
-                <br />
 
                 <div class="txt-input">
-                  <label for="message">Message</label>
-                  <br />
-                  <textarea id="message" rows="10px" required></textarea>
+                  <input type="email" id="email" placeholder="" required />
+                  <label for="email">Email</label>
                 </div>
+              </div>
 
-                <br />
+              <div class="txt-input">
+                <textarea
+                  id="message"
+                  placeholder=""
+                  rows="4"
+                  required
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
 
-                <div class="txt-input">
-                  <label for="privacyPolicy">Privacy Policy</label>
-                </div>
+              <br />
 
-                <br />
+              <div class="checkbox">
+                <input type="checkbox" id="privacy-policy" required />
+                <label for="privacyPolicy" aria-required="true">
+                  I have read and understood the Privacy Policy.
+                </label>
+              </div>
 
-                <div class="txt-input">
-                  <input type="checkbox" id="privacyPolicy" required />
-                  <label for="privacyPolicy" aria-required="true">
-                    I have read and understood the Privacy Policy.
-                  </label>
-                </div>
+              <button
+                type="submit"
+                onclick="alert('Thank you for contacting me! I will get back to you soon!')"
+                class="submit-btn"
+              >
+                Submit
+              </button>
 
-                <div>
-                  <button
-                    type="submit"
-                    onclick="alert('Thank you for contacting me! I will get back to you soon!')"
-                    class="submit-btn"
-                  >
-                    Submit
-                  </button>
-                </div>
-
-                <br />
-              </fieldset>
-            </div>
+              <br /><br />
+            </fieldset>
           </div>
         </section>
 
@@ -182,32 +172,47 @@
           <aside class="contact-side-content">
             <p class="contact-title">Looking forward to hear from you!</p>
 
-            <p class="sub-heading">Email</p>
-            <p class="sub-txt">tastytales@gmail.com</p>
+            <div class="contact-content">
+              <div class="contact-info">
+                <p class="sub-heading">Email</p>
+                <p class="sub-txt">tastytales@gmail.com</p>
+              </div>
 
-            <p class="sub-heading">Phone</p>
-            <p class="sub-txt">+94 77 123 4567</p>
+              <div class="contact-info">
+                <p class="sub-heading">Phone</p>
+                <p class="sub-txt">+94 77 123 4567</p>
+              </div>
 
-            <p class="sub-heading">Social Media</p>
-            <div class="social-media">
-              <a href="https://www.facebook.com/hungrylankan/" target="_blank">
-                <i class="fa-brands fa-facebook fa-xl"></i>
-              </a>
+              <div class="contact-info">
+                <p class="sub-heading">Social Media</p>
+                <div class="social-media">
+                  <a
+                    href="https://www.facebook.com/hungrylankan/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                  </a>
 
-              <a href="https://www.youtube.com/HungryLankan" target="_blank">
-                <i class="fa-brands fa-youtube fa-xl"></i>
-              </a>
+                  <a
+                    href="https://www.youtube.com/HungryLankan"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-youtube fa-xl"></i>
+                  </a>
 
-              <a href="https://www.pinterest.com/hlankan/" target="_blank">
-                <i class="fa-brands fa-pinterest fa-xl"></i>
-              </a>
+                  <a href="https://www.pinterest.com/hlankan/" target="_blank">
+                    <i class="fa-brands fa-pinterest fa-xl"></i>
+                  </a>
 
-              <a href="https://www.tiktok.com/@hungrylankan" target="_blank">
-                <i class="fa-brands fa-tiktok fa-xl"></i>
-              </a>
+                  <a
+                    href="https://www.tiktok.com/@hungrylankan"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-tiktok fa-xl"></i>
+                  </a>
+                </div>
+              </div>
             </div>
-
-            <br /><br />
           </aside>
         </section>
       </div>

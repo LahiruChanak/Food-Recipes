@@ -1,6 +1,5 @@
 /* hyperlink css */
 .img-txt-container a {
-  width: fit-content;
   color: #1b1a18;
   font-weight: bold;
   font-size: 1.25rem;
@@ -69,6 +68,13 @@ section div + hr {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(80, 80, 80, 0.5);
   /* position: relative; */
+}
+
+.recipe-search-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
 }
 
 .recipe-search-bg-img {
